@@ -1,0 +1,21 @@
+{
+  "id": "1549",
+  "name": "肖雨昕",
+  "code": "AptS:1549",
+  "nickname": "49",
+  "color": {
+    "primary": "#4da6ff",
+    "dark": "#2e8fff"
+  },
+  "role": "守望者",
+  "species": "极星卫",
+  "quote": "为什么天上没有了星星？那就让我自己造一颗吧",
+  "description": "36000km 高空的人造星星",
+  "keywords": ["智慧", "成熟", "孤独"],
+  "backgroundImage": "/images/img_1549.webp",
+  "meta": {
+    "location": "地球同步轨道（36000km）",
+    "abilities": ["轨道支援", "全球通讯", "数据中继"],
+    "mission": "极星卫计划"
+  }
+}
