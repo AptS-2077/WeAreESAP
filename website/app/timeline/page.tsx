@@ -1,7 +1,6 @@
 // Copyright 2025 AptS:1547, AptS:1548
 // SPDX-License-Identifier: Apache-2.0
 
-import { Navigation } from "@/components/Navigation";
 import { TimelineYear } from "@/types/timeline";
 import { TimelineClient } from "./TimelineClient";
 import type { Metadata } from "next";
@@ -44,9 +43,7 @@ export default async function TimelinePage() {
   const years = await getTimelineData();
 
   return (
-    <>
-      <Navigation />
-      <main className="min-h-screen bg-background">
+    <main className="min-h-screen bg-background">
         {/* Hero 区域 */}
         <section className="relative py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
           <div className="max-w-4xl mx-auto text-center">
@@ -84,6 +81,5 @@ export default async function TimelinePage() {
           </div>
         </section>
       </main>
-    </>
   );
 }

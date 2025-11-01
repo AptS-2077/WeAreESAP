@@ -1,7 +1,6 @@
 // Copyright 2025 AptS:1547, AptS:1548
 // SPDX-License-Identifier: Apache-2.0
 
-import { Navigation } from "@/components/Navigation";
 import { TechModule } from "@/types/tech";
 import { TechPageClient } from "./TechPageClient";
 import type { Metadata } from "next";
@@ -42,9 +41,7 @@ export default async function TechPage() {
   const modules = await getTechModules();
 
   return (
-    <>
-      <Navigation />
-      <main>
+    <main>
         {/* Hero 区域 */}
         <section className="relative py-16 px-4 sm:px-6 lg:px-8 bg-muted/30">
           <div className="max-w-7xl mx-auto text-center">
@@ -67,6 +64,5 @@ export default async function TechPage() {
           </div>
         )}
       </main>
-    </>
   );
 }

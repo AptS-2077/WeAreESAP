@@ -1,7 +1,6 @@
 // Copyright 2025 AptS:1547, AptS:1548
 // SPDX-License-Identifier: Apache-2.0
 
-import { Navigation } from "@/components/Navigation";
 import { TriangleLogo } from "@/components/TriangleLogo";
 import { CharacterAccordion } from "@/components/CharacterAccordion";
 import { CharacterMobileView } from "@/components/CharacterMobileView";
@@ -43,10 +42,7 @@ export default async function Home() {
   const characters = await getCharacters();
 
   return (
-    <>
-      <Navigation />
-
-      <main className="min-h-screen">
+    <main className="min-h-screen">
         {/* Hero 区域 */}
         <section className="relative py-20 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto text-center">
@@ -119,30 +115,6 @@ export default async function Home() {
             </p>
           </div>
         </section>
-
-        {/* Footer */}
-        <footer className="py-8 px-4 sm:px-6 lg:px-8 border-t border-border">
-          <div className="max-w-7xl mx-auto text-center text-sm text-muted-foreground space-y-2">
-            <p className="italic">"天上没有星星，但我们造了一颗"</p>
-            <p>
-              <strong>The ESAP Project</strong> © 2021-2025 by AptS:1547,
-              AptS:1548 and contributors
-            </p>
-            <p>
-              本作品采用{" "}
-              <a
-                href="https://creativecommons.org/licenses/by/4.0/deed.zh-hans"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-esap-blue hover:underline"
-              >
-                CC-BY 4.0
-              </a>{" "}
-              协议授权
-            </p>
-          </div>
-        </footer>
       </main>
-    </>
   );
 }
