@@ -33,9 +33,7 @@ export async function getCharacters(): Promise<Character[]> {
  * 根据 ID 获取单个角色详情
  * @param id 角色 ID
  */
-export async function getCharacterById(
-  id: string
-): Promise<Character | null> {
+export async function getCharacterById(id: string): Promise<Character | null> {
   try {
     const response = await fetch(`/api/characters/${id}`);
     if (!response.ok) {

@@ -25,10 +25,10 @@ export function TechModuleView({ module }: TechModuleViewProps) {
         {/* 模块头部 */}
         <div className="mb-12">
           <div className="flex items-center gap-4 mb-4">
-            {module.icon && (
-              <span className="text-5xl">{module.icon}</span>
-            )}
-            <h2 className="text-4xl font-bold text-foreground">{module.name}</h2>
+            {module.icon && <span className="text-5xl">{module.icon}</span>}
+            <h2 className="text-4xl font-bold text-foreground">
+              {module.name}
+            </h2>
           </div>
           <p className="text-lg text-muted-foreground">{module.description}</p>
           <div

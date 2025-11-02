@@ -44,38 +44,41 @@ export default async function TechPage() {
 
   return (
     <main className="relative min-h-screen bg-background">
-        {/* Hero 区域 */}
-        <section className="relative py-16 px-4 sm:px-6 lg:px-8 bg-muted/30">
-          <div className="max-w-7xl mx-auto text-center">
-            <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-foreground">
-              技术设定
-            </h1>
-            <p className="text-lg text-muted-foreground">
-              Technical Specifications of The ESAP Project
-            </p>
-            <div className="w-24 h-1 bg-gradient-to-r from-esap-yellow via-esap-pink to-esap-blue rounded-full mx-auto mt-6" />
-          </div>
-        </section>
+      {/* Hero 区域 */}
+      <section className="relative py-16 px-4 sm:px-6 lg:px-8 bg-muted/30">
+        <div className="max-w-7xl mx-auto text-center">
+          <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-foreground">
+            技术设定
+          </h1>
+          <p className="text-lg text-muted-foreground">
+            Technical Specifications of The ESAP Project
+          </p>
+          <div className="w-24 h-1 bg-gradient-to-r from-esap-yellow via-esap-pink to-esap-blue rounded-full mx-auto mt-6" />
+        </div>
+      </section>
 
-        {/* 技术模块内容 */}
-        <Suspense
-          fallback={
-            <div className="flex flex-col items-center justify-center gap-6 py-20" style={{ minHeight: "600px" }}>
-              <LoadingSpinner size={150} withPulse={true} />
-              <p className="text-lg font-medium text-muted-foreground">
-                正在加载技术设定...
-              </p>
-            </div>
-          }
-        >
-          {modules.length > 0 ? (
-            <TechPageClient modules={modules} />
-          ) : (
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">
-              <p className="text-muted-foreground">暂无技术设定数据</p>
-            </div>
-          )}
-        </Suspense>
-      </main>
+      {/* 技术模块内容 */}
+      <Suspense
+        fallback={
+          <div
+            className="flex flex-col items-center justify-center gap-6 py-20"
+            style={{ minHeight: "600px" }}
+          >
+            <LoadingSpinner size={150} withPulse={true} />
+            <p className="text-lg font-medium text-muted-foreground">
+              正在加载技术设定...
+            </p>
+          </div>
+        }
+      >
+        {modules.length > 0 ? (
+          <TechPageClient modules={modules} />
+        ) : (
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">
+            <p className="text-muted-foreground">暂无技术设定数据</p>
+          </div>
+        )}
+      </Suspense>
+    </main>
   );
 }

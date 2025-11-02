@@ -83,7 +83,9 @@ export function TimelineEventCard({
       >
         <div className="bg-muted/50 backdrop-blur-sm rounded-xl p-4 md:p-6 border border-border hover:border-esap-yellow/50 transition-all duration-300 hover:shadow-lg hover:scale-[1.02]">
           {/* 头部：日期 + 图标 */}
-          <div className={`flex items-center gap-3 mb-3 justify-start ${isLeft ? "" : "md:justify-end"}`}>
+          <div
+            className={`flex items-center gap-3 mb-3 justify-start ${isLeft ? "" : "md:justify-end"}`}
+          >
             <span className="text-2xl">{icon}</span>
             <div>
               <div className="text-sm font-mono text-muted-foreground">

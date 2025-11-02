@@ -62,7 +62,14 @@ export function LoadingSpinner({
     // 粉色 - 右边
     shortenPath(top.x, top.y, bottomRight.x, bottomRight.y, gap, gap),
     // 蓝色 - 底边
-    shortenPath(bottomRight.x, bottomRight.y, bottomLeft.x, bottomLeft.y, gap, gap),
+    shortenPath(
+      bottomRight.x,
+      bottomRight.y,
+      bottomLeft.x,
+      bottomLeft.y,
+      gap,
+      gap
+    ),
   ];
 
   const colors = ["#ffd93d", "#ff69b4", "#4da6ff"]; // 黄、粉、蓝

@@ -1,0 +1,30 @@
+# 依赖
+node_modules
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+
+# 构建输出
+.next
+out
+dist
+build
+
+# 环境变量
+.env
+.env.local
+.env.*.local
+
+# 日志
+*.log
+
+# 系统文件
+.DS_Store
+
+# 其他
+.turbo
+.vercel
+next-env.d.ts
+
+# 数据文件（JSON 保持原样）
+# data/**/*.json

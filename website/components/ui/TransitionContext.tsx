@@ -3,7 +3,13 @@
 
 "use client";
 
-import { createContext, useContext, useState, useEffect, ReactNode } from "react";
+import {
+  createContext,
+  useContext,
+  useState,
+  useEffect,
+  ReactNode,
+} from "react";
 import { usePathname } from "next/navigation";
 
 interface TransitionContextType {
@@ -22,7 +28,9 @@ const INITIAL_LOAD_TIME = 800; // 首次加载动画时长
 
 export function TransitionProvider({ children }: { children: ReactNode }) {
   const [isTransitioning, setIsTransitioning] = useState(true); // 初始为 true，显示首次加载
-  const [transitionStartTime, setTransitionStartTime] = useState<number | null>(Date.now());
+  const [transitionStartTime, setTransitionStartTime] = useState<number | null>(
+    Date.now()
+  );
   const [isInitialLoad, setIsInitialLoad] = useState(true);
   const pathname = usePathname();
 
@@ -42,12 +50,12 @@ export function TransitionProvider({ children }: { children: ReactNode }) {
       };
 
       // 如果页面已经加载完成，立即执行
-      if (document.readyState === 'complete') {
+      if (document.readyState === "complete") {
         handleLoad();
       } else {
         // 否则等待加载完成
-        window.addEventListener('load', handleLoad);
-        return () => window.removeEventListener('load', handleLoad);
+        window.addEventListener("load", handleLoad);
+        return () => window.removeEventListener("load", handleLoad);
       }
     }
   }, [isInitialLoad, transitionStartTime]);
@@ -98,7 +106,9 @@ export function TransitionProvider({ children }: { children: ReactNode }) {
   };
 
   return (
-    <TransitionContext.Provider value={{ isTransitioning, startTransition, finishTransition }}>
+    <TransitionContext.Provider
+      value={{ isTransitioning, startTransition, finishTransition }}
+    >
       {children}
     </TransitionContext.Provider>
   );

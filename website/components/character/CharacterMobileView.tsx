@@ -10,13 +10,30 @@ import Image from "next/image";
 
 interface CharacterMobileViewProps {
   characters: CharacterCardData[];
+  onCharacterClick?: (characterId: string) => void;
 }
 
-export function CharacterMobileView({ characters }: CharacterMobileViewProps) {
+export function CharacterMobileView({
+  characters,
+  onCharacterClick,
+}: CharacterMobileViewProps) {
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
 
   const toggleExpand = (index: number) => {
     setExpandedIndex(expandedIndex === index ? null : index);
+  };
+
+  const handleCharacterClick = (
+    character: CharacterCardData,
+    index: number
+  ) => {
+    // 如果已展开，点击后跳转到详情页
+    if (expandedIndex === index) {
+      onCharacterClick?.(character.id);
+    } else {
+      // 否则展开卡片
+      toggleExpand(index);
+    }
   };
 
   return (
@@ -28,7 +45,7 @@ export function CharacterMobileView({ characters }: CharacterMobileViewProps) {
           <motion.div
             key={character.id}
             className="relative overflow-hidden rounded-lg cursor-pointer"
-            onClick={() => toggleExpand(index)}
+            onClick={() => handleCharacterClick(character, index)}
             initial={false}
             animate={{
               height: isExpanded ? "auto" : "140px",
@@ -52,7 +69,8 @@ export function CharacterMobileView({ characters }: CharacterMobileViewProps) {
               className="absolute top-0 left-0 right-0 h-1"
               style={{
                 background: `linear-gradient(90deg, ${character.color.primary}, ${character.color.dark})`,
-                clipPath: "polygon(0 0, 100% 0, calc(100% - 20px) 100%, 0 100%)",
+                clipPath:
+                  "polygon(0 0, 100% 0, calc(100% - 20px) 100%, 0 100%)",
               }}
             />
 

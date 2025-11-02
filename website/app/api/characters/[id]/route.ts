@@ -29,9 +29,6 @@ export async function GET(
     return NextResponse.json(response);
   } catch (error) {
     console.error("获取角色详情失败:", error);
-    return NextResponse.json(
-      { error: "角色不存在" },
-      { status: 404 }
-    );
+    return NextResponse.json({ error: "角色不存在" }, { status: 404 });
   }
 }

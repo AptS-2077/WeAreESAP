@@ -48,10 +48,7 @@ export function LoadingContainer({
   className = "",
 }: LoadingContainerProps) {
   return (
-    <div
-      className={`relative ${className}`}
-      style={{ minHeight }}
-    >
+    <div className={`relative ${className}`} style={{ minHeight }}>
       <AnimatePresence mode="wait">
         {isLoading ? (
           <motion.div

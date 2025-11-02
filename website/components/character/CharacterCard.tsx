@@ -29,7 +29,8 @@ export function CharacterCard({ character, onClick }: CharacterCardProps) {
           borderWidth: "2px",
           borderStyle: "solid",
           boxShadow: "0 0 0 0 transparent",
-          transition: "border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out",
+          transition:
+            "border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out",
         }}
         onMouseEnter={(e) => {
           e.currentTarget.style.borderColor = character.color.primary;

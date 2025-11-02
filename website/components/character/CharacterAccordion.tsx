@@ -10,6 +10,7 @@ import { CharacterStrip } from "./CharacterStrip";
 
 interface CharacterAccordionProps {
   characters: CharacterCardData[];
+  onCharacterClick?: (characterId: string) => void;
 }
 
 // 鼠标位置记录
@@ -18,12 +19,19 @@ interface MousePosition {
   time: number;
 }
 
-export function CharacterAccordion({ characters }: CharacterAccordionProps) {
+export function CharacterAccordion({
+  characters,
+  onCharacterClick,
+}: CharacterAccordionProps) {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-  const [stableHoveredIndex, setStableHoveredIndex] = useState<number | null>(null);
+  const [stableHoveredIndex, setStableHoveredIndex] = useState<number | null>(
+    null
+  );
   const [isQuickSwitching, setIsQuickSwitching] = useState(false);
   const [mouseVelocity, setMouseVelocity] = useState(0);
-  const [mouseDirection, setMouseDirection] = useState<"left" | "right" | null>(null);
+  const [mouseDirection, setMouseDirection] = useState<"left" | "right" | null>(
+    null
+  );
 
   // Refs
   const lastSwitchTimeRef = useRef<number>(0);
@@ -93,7 +101,8 @@ export function CharacterAccordion({ characters }: CharacterAccordionProps) {
       if (expandTimeoutRef.current) clearTimeout(expandTimeoutRef.current);
       if (stableTimeoutRef.current) clearTimeout(stableTimeoutRef.current);
       if (leaveTimeoutRef.current) clearTimeout(leaveTimeoutRef.current);
-      if (consecutiveResetTimeoutRef.current) clearTimeout(consecutiveResetTimeoutRef.current);
+      if (consecutiveResetTimeoutRef.current)
+        clearTimeout(consecutiveResetTimeoutRef.current);
     };
   }, [handleMouseMove]);
 
@@ -193,7 +202,8 @@ export function CharacterAccordion({ characters }: CharacterAccordionProps) {
     // 清除所有定时器（除了 leaveTimeout）
     if (expandTimeoutRef.current) clearTimeout(expandTimeoutRef.current);
     if (stableTimeoutRef.current) clearTimeout(stableTimeoutRef.current);
-    if (consecutiveResetTimeoutRef.current) clearTimeout(consecutiveResetTimeoutRef.current);
+    if (consecutiveResetTimeoutRef.current)
+      clearTimeout(consecutiveResetTimeoutRef.current);
 
     // 延迟清空状态，避免相邻切换时的瞬间空白
     // 如果 50ms 内进入了新元素，这个定时器会被取消
@@ -305,7 +315,7 @@ export function CharacterAccordion({ characters }: CharacterAccordionProps) {
             character={character}
             isExpanded={stableHoveredIndex === index}
             onClick={() => {
-              console.log(`点击了角色: ${character.code}`);
+              onCharacterClick?.(character.id);
             }}
           />
         </motion.div>

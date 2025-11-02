@@ -57,7 +57,14 @@ export function TriangleLogo({
     // 粉色 - 右边（从顶部到右下）
     shortenPath(top.x, top.y, bottomRight.x, bottomRight.y, gap, gap),
     // 蓝色 - 底边（从右下到左下）
-    shortenPath(bottomRight.x, bottomRight.y, bottomLeft.x, bottomLeft.y, gap, gap),
+    shortenPath(
+      bottomRight.x,
+      bottomRight.y,
+      bottomLeft.x,
+      bottomLeft.y,
+      gap,
+      gap
+    ),
   ];
 
   const colors = ["#ffd93d", "#ff69b4", "#4da6ff"]; // 黄、粉、蓝
@@ -78,7 +85,11 @@ export function TriangleLogo({
           strokeWidth={strokeWidth}
           strokeLinecap="round"
           strokeLinejoin="round"
-          initial={animated ? { pathLength: 0, opacity: 0 } : { pathLength: 1, opacity: 1 }}
+          initial={
+            animated
+              ? { pathLength: 0, opacity: 0 }
+              : { pathLength: 1, opacity: 1 }
+          }
           animate={{ pathLength: 1, opacity: 1 }}
           transition={
             animated

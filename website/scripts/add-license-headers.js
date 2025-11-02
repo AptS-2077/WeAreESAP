@@ -10,8 +10,8 @@
  *   "license:add": "node add-license-headers.js"
  */
 
-const fs = require('fs');
-const path = require('path');
+const fs = require("fs");
+const path = require("path");
 
 // 许可证头部模板
 const LICENSE_HEADERS = {
@@ -31,35 +31,26 @@ const LICENSE_HEADERS = {
 };
 
 // 需要处理的目录
-const DIRECTORIES_TO_PROCESS = [
-  'app',
-  'components',
-  'types',
-  'lib',
-];
+const DIRECTORIES_TO_PROCESS = ["app", "components", "types", "lib"];
 
 // 需要跳过的目录
-const SKIP_DIRECTORIES = [
-  'node_modules',
-  '.next',
-  'dist',
-  'build',
-  '.git',
-];
+const SKIP_DIRECTORIES = ["node_modules", ".next", "dist", "build", ".git"];
 
 // 文件扩展名映射到许可证头部类型
 const FILE_EXTENSIONS = {
-  '.ts': 'ts',
-  '.tsx': 'ts',
-  '.js': 'ts',
-  '.jsx': 'ts',
-  '.css': 'css',
+  ".ts": "ts",
+  ".tsx": "ts",
+  ".js": "ts",
+  ".jsx": "ts",
+  ".css": "css",
 };
 
 // 检查文件是否已有许可证头部
 function hasLicenseHeader(content) {
-  return content.includes('SPDX-License-Identifier') ||
-         content.includes('Apache License');
+  return (
+    content.includes("SPDX-License-Identifier") ||
+    content.includes("Apache License")
+  );
 }
 
 // 处理单个文件
@@ -72,7 +63,7 @@ function processFile(filePath) {
   }
 
   try {
-    let content = fs.readFileSync(filePath, 'utf8');
+    let content = fs.readFileSync(filePath, "utf8");
 
     // 检查是否已有许可证头部
     if (hasLicenseHeader(content)) {
@@ -84,7 +75,7 @@ function processFile(filePath) {
     const header = LICENSE_HEADERS[headerType];
     content = header + content;
 
-    fs.writeFileSync(filePath, content, 'utf8');
+    fs.writeFileSync(filePath, content, "utf8");
     console.log(`  ✅ 已添加许可证: ${filePath}`);
     return true;
   } catch (error) {
@@ -124,7 +115,7 @@ function processDirectory(dirPath, stats = { added: 0, skipped: 0 }) {
 
 // 主函数
 function main() {
-  console.log('🔍 开始扫描并添加许可证头部...\n');
+  console.log("🔍 开始扫描并添加许可证头部...\n");
 
   const startTime = Date.now();
   const stats = { added: 0, skipped: 0 };
@@ -139,20 +130,20 @@ function main() {
 
     console.log(`📂 处理目录: ${dir}`);
     processDirectory(dirPath, stats);
-    console.log('');
+    console.log("");
   }
 
   const duration = ((Date.now() - startTime) / 1000).toFixed(2);
 
-  console.log('✨ 完成！');
+  console.log("✨ 完成！");
   console.log(`\n📊 统计:`);
   console.log(`   ✅ 已添加许可证: ${stats.added} 个文件`);
   console.log(`   ⏭️  已跳过: ${stats.skipped} 个文件`);
   console.log(`   ⏱️  用时: ${duration}s\n`);
 
   if (stats.added > 0) {
-    console.log('💡 提示: 请检查修改的文件，确保许可证头部位置正确。');
-    console.log('   如需撤销，可使用 git 恢复文件。\n');
+    console.log("💡 提示: 请检查修改的文件，确保许可证头部位置正确。");
+    console.log("   如需撤销，可使用 git 恢复文件。\n");
   }
 }
 

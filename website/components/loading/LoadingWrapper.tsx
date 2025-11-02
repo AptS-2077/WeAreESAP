@@ -68,10 +68,7 @@ export function LoadingWrapper({
   const [showLoading, setShowLoading] = useState(isLoading);
   const [loadingStartTime, setLoadingStartTime] = useState<number | null>(null);
 
-  const {
-    duration = 0.3,
-    stagger = 0.1,
-  } = transition;
+  const { duration = 0.3, stagger = 0.1 } = transition;
 
   // 处理最小加载时间
   useEffect(() => {
@@ -109,7 +106,9 @@ export function LoadingWrapper({
     <div className="flex flex-col items-center justify-center gap-4 py-20">
       <div className="text-6xl">⚠️</div>
       <h3 className="text-xl font-semibold text-foreground">加载失败</h3>
-      <p className="text-muted-foreground">{error.message || "发生了一个错误"}</p>
+      <p className="text-muted-foreground">
+        {error.message || "发生了一个错误"}
+      </p>
     </div>
   ) : null;
 

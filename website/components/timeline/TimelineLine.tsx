@@ -41,7 +41,13 @@ export function TimelineLine({ totalEvents }: TimelineLineProps) {
       >
         <defs>
           {/* 三色渐变 */}
-          <linearGradient id="timeline-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+          <linearGradient
+            id="timeline-gradient"
+            x1="0%"
+            y1="0%"
+            x2="0%"
+            y2="100%"
+          >
             <stop offset="0%" stopColor="#ffd93d" />
             <stop offset="50%" stopColor="#ff69b4" />
             <stop offset="100%" stopColor="#4da6ff" />

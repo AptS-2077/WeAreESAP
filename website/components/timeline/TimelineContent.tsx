@@ -12,7 +12,10 @@ import {
 } from "@/types/timeline";
 
 // 角色颜色映射
-const CHARACTER_COLORS: Record<string, { bg: string; border: string; text: string }> = {
+const CHARACTER_COLORS: Record<
+  string,
+  { bg: string; border: string; text: string }
+> = {
   "1547": {
     bg: "bg-esap-yellow/10 dark:bg-esap-yellow/20",
     border: "border-esap-yellow/50",

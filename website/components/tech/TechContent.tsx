@@ -96,9 +96,7 @@ function TechWarning({ data }: { data: WarningBlock }) {
   const style = styles[data.level];
 
   return (
-    <div
-      className={`my-6 p-4 rounded-lg border-2 ${style.bg} ${style.border}`}
-    >
+    <div className={`my-6 p-4 rounded-lg border-2 ${style.bg} ${style.border}`}>
       <div className="flex items-start gap-3">
         <span className="text-2xl">{style.icon}</span>
         <div className="flex-1">
@@ -121,7 +119,9 @@ function TechCode({ data }: { data: CodeBlock }) {
   return (
     <div className="my-6">
       <pre className="bg-muted p-4 rounded-lg overflow-x-auto border border-border">
-        <code className="text-sm font-mono text-foreground">{data.content}</code>
+        <code className="text-sm font-mono text-foreground">
+          {data.content}
+        </code>
       </pre>
     </div>
   );
@@ -129,14 +129,18 @@ function TechCode({ data }: { data: CodeBlock }) {
 
 // 段落组件
 function TechParagraph({ data }: { data: ParagraphBlock }) {
-  return <p className="my-4 text-foreground/80 leading-relaxed">{data.content}</p>;
+  return (
+    <p className="my-4 text-foreground/80 leading-relaxed">{data.content}</p>
+  );
 }
 
 // 子章节组件
 function TechSubsection({ data }: { data: SubsectionBlock }) {
   return (
     <div className="my-6 ml-4 pl-4 border-l-2 border-esap-blue/30">
-      <h4 className="text-lg font-semibold text-foreground mb-3">{data.title}</h4>
+      <h4 className="text-lg font-semibold text-foreground mb-3">
+        {data.title}
+      </h4>
       {data.content.map((block, index) => (
         <ContentBlockRenderer key={index} block={block} />
       ))}

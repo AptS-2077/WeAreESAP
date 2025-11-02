@@ -10,8 +10,8 @@ export function Footer() {
       <div className="max-w-7xl mx-auto text-center text-sm text-muted-foreground space-y-2">
         <p className="italic">"天上没有星星，但我们造了一颗"</p>
         <p>
-          <strong>The ESAP Project</strong> © 2021-2025 by AptS:1547,
-          AptS:1548 and contributors
+          <strong>The ESAP Project</strong> © 2021-2025 by AptS:1547, AptS:1548
+          and contributors
         </p>
         <p>
           本作品采用{" "}

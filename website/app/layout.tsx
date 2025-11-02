@@ -26,7 +26,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "We Are ESAP - 向那卫星许愿",
-  description: "The ESAP Project（逃离计划）- 一个科幻世界观创作企划，讲述仿生人与人类共存的未来故事",
+  description:
+    "The ESAP Project（逃离计划）- 一个科幻世界观创作企划，讲述仿生人与人类共存的未来故事",
   keywords: ["ESAP", "科幻", "仿生人", "世界观", "创作企划"],
   authors: [{ name: "AptS:1547" }, { name: "AptS:1548" }],
   openGraph: {
@@ -49,9 +50,7 @@ export default function RootLayout({
         <ThemeProvider>
           <TransitionProvider>
             <Navigation />
-            <PageTransition>
-              {children}
-            </PageTransition>
+            <PageTransition>{children}</PageTransition>
             <Footer />
             <ScrollToTop />
             <TransitionOverlay />

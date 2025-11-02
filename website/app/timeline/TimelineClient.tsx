@@ -44,9 +44,10 @@ export function TimelineClient({ years }: TimelineClientProps) {
             {/* 该年份的事件 */}
             {year.events.map((event, eventIndex) => {
               // 计算全局索引
-              const globalIndex = years
-                .slice(0, yearIndex)
-                .reduce((sum, y) => sum + y.events.length, 0) + eventIndex;
+              const globalIndex =
+                years
+                  .slice(0, yearIndex)
+                  .reduce((sum, y) => sum + y.events.length, 0) + eventIndex;
 
               // 左右交替
               const isLeft = globalIndex % 2 === 0;

@@ -33,9 +33,6 @@ export async function GET() {
     return NextResponse.json(response);
   } catch (error) {
     console.error("获取角色列表失败:", error);
-    return NextResponse.json(
-      { error: "获取角色列表失败" },
-      { status: 500 }
-    );
+    return NextResponse.json({ error: "获取角色列表失败" }, { status: 500 });
   }
 }
