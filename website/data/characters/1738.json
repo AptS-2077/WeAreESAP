@@ -13,6 +13,7 @@
   "description": "在纷争中保持冷静的调停者",
   "keywords": ["冷静", "平衡", "忠诚"],
   "backgroundImage": "/images/img_1738.webp",
+  "tier": "core",
   "meta": {
     "background": "主动加入 ESAP，认同其理念",
     "abilities": ["调停谈判", "情绪感知", "社会网络", "战略分析"],

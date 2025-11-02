@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 
 export function ThemeToggle() {
   const [mounted, setMounted] = useState(false);
-  const { theme, setTheme } = useTheme();
+  const { resolvedTheme, setTheme } = useTheme();
 
   useEffect(() => {
     setMounted(true);
@@ -22,11 +22,11 @@ export function ThemeToggle() {
 
   return (
     <button
-      onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+      onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
       className="w-10 h-10 rounded-lg bg-muted hover:bg-border transition-colors flex items-center justify-center group"
       aria-label="切换主题"
     >
-      {theme === "dark" ? (
+      {resolvedTheme === "dark" ? (
         <svg
           className="w-5 h-5 text-esap-yellow group-hover:rotate-12 transition-transform"
           fill="none"

@@ -1,3 +1,6 @@
+// Copyright 2025 AptS:1547, AptS:1548
+// SPDX-License-Identifier: Apache-2.0
+
 import { RoleTypeCard } from "@/components/RoleTypeCard";
 import { ChecklistItem } from "@/components/ChecklistItem";
 import { StepCard } from "@/components/StepCard";

@@ -13,6 +13,7 @@
   "description": "36000km 高空的人造星星",
   "keywords": ["智慧", "成熟", "孤独"],
   "backgroundImage": "/images/img_1549.webp",
+  "tier": "core",
   "meta": {
     "location": "地球同步轨道（36000km）",
     "abilities": ["轨道支援", "全球通讯", "数据中继"],

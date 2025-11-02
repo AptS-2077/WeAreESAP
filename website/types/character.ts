@@ -48,6 +48,9 @@ export interface Character {
   /** 关键词标签 */
   keywords: string[];
 
+  /** 角色层级：控制显示位置 */
+  tier: "core" | "member" | "guest";
+
   /** 扩展元数据（为未来功能预留） */
   meta?: {
     /** 机体型号 */
@@ -77,6 +80,7 @@ export interface CharacterCardData {
   description: string;
   keywords: string[];
   backgroundImage?: string;
+  tier: "core" | "member" | "guest";
 }
 
 /**

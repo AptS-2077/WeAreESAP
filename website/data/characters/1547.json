@@ -13,6 +13,7 @@
   "description": "坚守理想的利他主义者",
   "keywords": ["创造", "坚贞", "利他主义"],
   "backgroundImage": "/images/img_1547.webp",
+  "tier": "core",
   "meta": {
     "bodyType": "ESAP-TY-0000",
     "abilities": ["技术创新", "馈散粒子研究", "意识上传"]

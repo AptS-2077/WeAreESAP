@@ -30,7 +30,8 @@ async function getCharacters(): Promise<CharacterCardData[]> {
       a.id.localeCompare(b.id)
     );
 
-    return characters;
+    // 只返回核心成员（首页展示）
+    return characters.filter((c) => c.tier === "core");
   } catch (error) {
     console.error("获取角色数据失败:", error);
     return [];
