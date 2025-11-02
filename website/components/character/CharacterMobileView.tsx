@@ -14,10 +14,15 @@ interface CharacterMobileViewProps {
 }
 
 export function CharacterMobileView({
-  characters,
+  characters = [], // 设置默认值为空数组
   onCharacterClick,
 }: CharacterMobileViewProps) {
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
+
+  // 如果没有角色数据，不渲染
+  if (characters.length === 0) {
+    return null;
+  }
 
   const toggleExpand = (index: number) => {
     setExpandedIndex(expandedIndex === index ? null : index);

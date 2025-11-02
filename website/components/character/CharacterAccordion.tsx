@@ -20,7 +20,7 @@ interface MousePosition {
 }
 
 export function CharacterAccordion({
-  characters,
+  characters = [], // 设置默认值为空数组
   onCharacterClick,
 }: CharacterAccordionProps) {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -280,6 +280,11 @@ export function CharacterAccordion({
     // 中间角色：左右都斜切 (/)，斜切量一致
     return `polygon(${skewAmount}px 0, 100% 0, calc(100% - ${skewAmount}px) 100%, 0 100%)`;
   };
+
+  // 如果没有角色数据，不渲染
+  if (characters.length === 0) {
+    return null;
+  }
 
   return (
     <div

@@ -44,6 +44,12 @@ async function getCharacters(): Promise<CharacterCardData[]> {
 export default async function CharactersPage() {
   const characters = await getCharacters();
 
+  // 按 tier 分组：core + member 放到手风琴，其他 tier 放到卡片网格
+  const accordionCharacters =
+    characters?.filter((c) => c.tier === "core" || c.tier === "member") || [];
+  const otherCharacters =
+    characters?.filter((c) => c.tier !== "core" && c.tier !== "member") || [];
+
   return (
     <main className="min-h-screen">
       {/* 页面标题 */}
@@ -60,7 +66,10 @@ export default async function CharactersPage() {
       </section>
 
       {/* 角色展示（响应式） */}
-      <CharactersClient characters={characters} />
+      <CharactersClient
+        accordionCharacters={accordionCharacters}
+        otherCharacters={otherCharacters}
+      />
 
       {/* 底部间距 */}
       <div className="h-20" />

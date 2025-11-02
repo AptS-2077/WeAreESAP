@@ -17,6 +17,13 @@ export function CharacterInfo({ character }: CharacterInfoProps) {
     { label: "定位", value: character.role },
     { label: "种族", value: character.species },
     { label: "机体型号", value: character.meta?.bodyType as string },
+    { label: "位置", value: character.meta?.location as string },
+    { label: "职业", value: character.meta?.occupation as string },
+    { label: "任务", value: character.meta?.mission as string },
+    {
+      label: "三体系统",
+      value: character.meta?.threeBodySystem as string,
+    },
   ].filter((item) => item.value); // 过滤掉没有值的项
 
   return (

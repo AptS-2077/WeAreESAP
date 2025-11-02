@@ -8,7 +8,11 @@ import {
   CharacterHero,
   CharacterInfo,
   CharacterStory,
+  CharacterSpeechStyle,
   CharacterAbilities,
+  CharacterDailyLife,
+  CharacterSpecialMoments,
+  CharacterPhilosophy,
   CharacterRelationships,
 } from "@/components/character/detail";
 
@@ -81,8 +85,20 @@ export default async function CharacterDetailPage({
           {/* 角色故事 */}
           <CharacterStory character={character} />
 
+          {/* 说话风格 */}
+          <CharacterSpeechStyle character={character} />
+
           {/* 能力设定 */}
           <CharacterAbilities character={character} />
+
+          {/* 日常生活 */}
+          <CharacterDailyLife character={character} />
+
+          {/* 特殊时刻 */}
+          <CharacterSpecialMoments character={character} />
+
+          {/* 哲学观 */}
+          <CharacterPhilosophy character={character} />
 
           {/* 人际关系 */}
           <CharacterRelationships character={character} />

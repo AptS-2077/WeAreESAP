@@ -4,5 +4,9 @@
 export { CharacterHero } from "./CharacterHero";
 export { CharacterInfo } from "./CharacterInfo";
 export { CharacterStory } from "./CharacterStory";
+export { CharacterSpeechStyle } from "./CharacterSpeechStyle";
 export { CharacterAbilities } from "./CharacterAbilities";
+export { CharacterDailyLife } from "./CharacterDailyLife";
+export { CharacterSpecialMoments } from "./CharacterSpecialMoments";
+export { CharacterPhilosophy } from "./CharacterPhilosophy";
 export { CharacterRelationships } from "./CharacterRelationships";

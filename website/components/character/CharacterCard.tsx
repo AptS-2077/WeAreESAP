@@ -4,6 +4,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { CharacterCardData } from "@/types/character";
 
 interface CharacterCardProps {
@@ -23,7 +24,7 @@ export function CharacterCard({ character, onClick }: CharacterCardProps) {
     >
       {/* 卡片主体 */}
       <div
-        className="relative bg-muted rounded-xl p-6 h-full overflow-hidden border-2 transition-all duration-300"
+        className="relative bg-muted rounded-xl min-h-[400px] overflow-hidden border-2 transition-all duration-300"
         style={{
           borderColor: "transparent",
           borderWidth: "2px",
@@ -41,19 +42,38 @@ export function CharacterCard({ character, onClick }: CharacterCardProps) {
           e.currentTarget.style.boxShadow = "0 0 0 0 transparent";
         }}
       >
-        {/* 悬停时的背景发光效果（移到 inset 内部避免溢出） */}
+        {/* 背景图片 */}
+        {character.backgroundImage && (
+          <Image
+            src={character.backgroundImage}
+            alt={character.name}
+            fill
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
+            className="object-cover"
+          />
+        )}
+
+        {/* 遮罩层 */}
         <div
-          className="absolute inset-[2px] rounded-[10px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
+          className="absolute inset-0 transition-all duration-300"
           style={{
-            background: `linear-gradient(135deg, ${character.color.primary}10, ${character.color.dark}10)`,
+            background: `linear-gradient(135deg, ${character.color.primary}85, ${character.color.dark}90)`,
+          }}
+        />
+
+        {/* 悬停时的发光效果 */}
+        <div
+          className="absolute inset-0 opacity-0 group-hover:opacity-30 transition-opacity duration-300 pointer-events-none"
+          style={{
+            background: `radial-gradient(circle at center, ${character.color.primary}, transparent 70%)`,
           }}
         />
 
         {/* 内容 */}
-        <div className="relative z-10">
+        <div className="relative z-10 h-full p-6 flex flex-col justify-end text-white">
           {/* 顶部色块装饰 */}
           <div
-            className="w-12 h-1 rounded-full mb-4 group-hover:w-16 transition-all duration-300"
+            className="w-12 h-1 rounded-full mb-4 group-hover:w-16 transition-all duration-300 drop-shadow-lg"
             style={{
               background: `linear-gradient(90deg, ${character.color.primary}, ${character.color.dark})`,
             }}
@@ -61,29 +81,53 @@ export function CharacterCard({ character, onClick }: CharacterCardProps) {
 
           {/* 角色代号 */}
           <div
-            className="text-sm font-mono font-semibold mb-2"
-            style={{ color: character.color.primary }}
+            className="text-lg font-mono font-bold mb-2"
+            style={{
+              color: character.color.primary,
+              textShadow: "0 2px 4px rgba(0,0,0,0.9), 0 0 8px rgba(0,0,0,0.7)",
+            }}
           >
             {character.code}
           </div>
 
           {/* 角色名称 */}
-          <h3 className="text-2xl font-bold mb-2 text-foreground">
+          <h3
+            className="text-3xl font-bold mb-2"
+            style={{
+              textShadow:
+                "0 2px 8px rgba(0,0,0,0.9), 0 4px 16px rgba(0,0,0,0.8)",
+            }}
+          >
             {character.name}
           </h3>
 
           {/* 角色定位 */}
-          <div className="text-sm text-muted-foreground mb-4">
+          <div
+            className="text-base opacity-90 mb-4"
+            style={{
+              textShadow: "0 2px 4px rgba(0,0,0,0.9), 0 0 8px rgba(0,0,0,0.7)",
+            }}
+          >
             {character.role}
           </div>
 
           {/* 引言 */}
-          <p className="text-sm text-foreground/80 italic mb-4 line-clamp-2">
-            "{character.quote}"
+          <p
+            className="text-sm italic opacity-80 mb-4 line-clamp-2"
+            style={{
+              textShadow: "0 1px 4px rgba(0,0,0,0.9), 0 0 8px rgba(0,0,0,0.7)",
+            }}
+          >
+            &quot;{character.quote}&quot;
           </p>
 
           {/* 描述 */}
-          <p className="text-sm text-muted-foreground mb-4">
+          <p
+            className="text-sm opacity-75 mb-4 line-clamp-2"
+            style={{
+              textShadow: "0 1px 4px rgba(0,0,0,0.9), 0 0 8px rgba(0,0,0,0.7)",
+            }}
+          >
             {character.description}
           </p>
 
@@ -92,9 +136,10 @@ export function CharacterCard({ character, onClick }: CharacterCardProps) {
             {character.keywords.map((keyword, index) => (
               <span
                 key={index}
-                className="px-2 py-1 text-xs rounded-full bg-background/50 transition-colors group-hover:bg-background"
+                className="px-3 py-1 text-xs rounded-full backdrop-blur-sm bg-black/30 dark:bg-black/50 transition-all"
                 style={{
                   color: character.color.primary,
+                  border: `1.5px solid ${character.color.primary}80`,
                 }}
               >
                 {keyword}
@@ -102,14 +147,6 @@ export function CharacterCard({ character, onClick }: CharacterCardProps) {
             ))}
           </div>
         </div>
-
-        {/* 底部渐变装饰 */}
-        <div
-          className="absolute bottom-0 left-0 right-0 h-32 opacity-0 group-hover:opacity-20 transition-opacity duration-300 pointer-events-none"
-          style={{
-            background: `linear-gradient(to top, ${character.color.primary}, transparent)`,
-          }}
-        />
       </div>
     </motion.div>
   );
