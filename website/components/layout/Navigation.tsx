@@ -3,10 +3,9 @@
 
 "use client";
 
-import Link from "next/link";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { TriangleLogo, ThemeToggle } from "@/components/ui";
+import { TriangleLogo, ThemeToggle, TransitionLink } from "@/components/ui";
 
 const navLinks = [
   { href: "/tech", label: "技术设定" },
@@ -27,7 +26,7 @@ export function Navigation() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
           {/* Logo 和站点名称 */}
-          <Link href="/" className="flex items-center gap-3 group" onClick={closeMobileMenu}>
+          <TransitionLink href="/" className="flex items-center gap-3 group" onClick={closeMobileMenu}>
             <TriangleLogo size={40} animated={false} className="opacity-90 group-hover:opacity-100 transition-opacity" />
             <div className="flex flex-col">
               <span className="text-lg font-bold text-foreground group-hover:text-esap-yellow transition-colors">
@@ -37,18 +36,18 @@ export function Navigation() {
                 向那卫星许愿
               </span>
             </div>
-          </Link>
+          </TransitionLink>
 
           {/* 桌面端导航链接 */}
           <div className="hidden md:flex items-center gap-6">
             {navLinks.map((link) => (
-              <Link
+              <TransitionLink
                 key={link.href}
                 href={link.href}
                 className="text-sm text-muted-foreground hover:text-foreground transition-colors"
               >
                 {link.label}
-              </Link>
+              </TransitionLink>
             ))}
           </div>
 
@@ -106,14 +105,14 @@ export function Navigation() {
             >
               <div className="flex flex-col p-6 gap-4">
                 {navLinks.map((link) => (
-                  <Link
+                  <TransitionLink
                     key={link.href}
                     href={link.href}
                     onClick={closeMobileMenu}
                     className="text-lg text-foreground hover:text-esap-pink transition-colors py-2 border-b border-border/50"
                   >
                     {link.label}
-                  </Link>
+                  </TransitionLink>
                 ))}
               </div>
 

@@ -4,7 +4,15 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider, Navigation, Footer, ScrollToTop } from "@/components";
+import {
+  ThemeProvider,
+  TransitionProvider,
+  PageTransition,
+  TransitionOverlay,
+  Navigation,
+  Footer,
+  ScrollToTop,
+} from "@/components";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -39,10 +47,15 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <ThemeProvider>
-          <Navigation />
-          {children}
-          <Footer />
-          <ScrollToTop />
+          <TransitionProvider>
+            <Navigation />
+            <PageTransition>
+              {children}
+            </PageTransition>
+            <Footer />
+            <ScrollToTop />
+            <TransitionOverlay />
+          </TransitionProvider>
         </ThemeProvider>
       </body>
     </html>

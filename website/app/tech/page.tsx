@@ -1,8 +1,10 @@
 // Copyright 2025 AptS:1547, AptS:1548
 // SPDX-License-Identifier: Apache-2.0
 
+import { Suspense } from "react";
 import { TechModule } from "@/types/tech";
 import { TechPageClient } from "./TechPageClient";
+import { LoadingContainer } from "@/components";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -56,13 +58,23 @@ export default async function TechPage() {
         </section>
 
         {/* 技术模块内容 */}
-        {modules.length > 0 ? (
-          <TechPageClient modules={modules} />
-        ) : (
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">
-            <p className="text-muted-foreground">暂无技术设定数据</p>
-          </div>
-        )}
+        <Suspense
+          fallback={
+            <LoadingContainer
+              text="正在加载技术设定..."
+              size={150}
+              minHeight="600px"
+            />
+          }
+        >
+          {modules.length > 0 ? (
+            <TechPageClient modules={modules} />
+          ) : (
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">
+              <p className="text-muted-foreground">暂无技术设定数据</p>
+            </div>
+          )}
+        </Suspense>
       </main>
   );
 }

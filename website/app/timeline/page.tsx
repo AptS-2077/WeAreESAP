@@ -1,8 +1,10 @@
 // Copyright 2025 AptS:1547, AptS:1548
 // SPDX-License-Identifier: Apache-2.0
 
+import { Suspense } from "react";
 import { TimelineYear } from "@/types/timeline";
 import { TimelineClient } from "./TimelineClient";
+import { LoadingContainer } from "@/components";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -61,13 +63,23 @@ export default async function TimelinePage() {
         </section>
 
         {/* 时间线内容 */}
-        {years.length > 0 ? (
-          <TimelineClient years={years} />
-        ) : (
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">
-            <p className="text-muted-foreground">暂无时间线数据</p>
-          </div>
-        )}
+        <Suspense
+          fallback={
+            <LoadingContainer
+              text="正在加载时间线..."
+              size={150}
+              minHeight="600px"
+            />
+          }
+        >
+          {years.length > 0 ? (
+            <TimelineClient years={years} />
+          ) : (
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">
+              <p className="text-muted-foreground">暂无时间线数据</p>
+            </div>
+          )}
+        </Suspense>
 
         {/* 结尾引用 */}
         <section className="py-16 px-4 sm:px-6 lg:px-8 bg-muted/30">

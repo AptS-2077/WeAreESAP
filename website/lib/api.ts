@@ -1,3 +1,6 @@
+// Copyright 2025 AptS:1547, AptS:1548
+// SPDX-License-Identifier: Apache-2.0
+
 /**
  * API 调用封装
  * 客户端组件使用的 API 调用函数
