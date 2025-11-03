@@ -2,11 +2,7 @@
 // SPDX-License-Identifier: Apache-2.0
 
 import dynamic from "next/dynamic";
-import {
-  RoleTypeCard,
-  ChecklistItem,
-  StepCard,
-} from "@/components";
+import { RoleTypeCard, ChecklistItem, StepCard } from "@/components";
 import { Icon, type IconName } from "@/components/ui";
 import fs from "fs/promises";
 import path from "path";
@@ -19,7 +15,8 @@ const FAQAccordion = dynamic(
 );
 
 const ContactPlaceholder = dynamic(
-  () => import("@/components").then((mod) => ({ default: mod.ContactPlaceholder })),
+  () =>
+    import("@/components").then((mod) => ({ default: mod.ContactPlaceholder })),
   { loading: () => <div className="h-48 animate-pulse bg-muted rounded-xl" /> }
 );
 

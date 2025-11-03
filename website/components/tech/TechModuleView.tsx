@@ -27,11 +27,7 @@ export function TechModuleView({ module }: TechModuleViewProps) {
         <div className="mb-12">
           <div className="flex items-center gap-4 mb-4">
             {module.icon && (
-              <Icon
-                name={module.icon}
-                size={48}
-                color={module.color.primary}
-              />
+              <Icon name={module.icon} size={48} color={module.color.primary} />
             )}
             <h2 className="text-4xl font-bold text-foreground">
               {module.name}

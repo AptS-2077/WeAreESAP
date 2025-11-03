@@ -91,96 +91,94 @@ export function CharacterMobileView({
             />
 
             {/* 内容区域 */}
-            <div className="relative h-full p-6 text-white">
-              <div
-                className="backdrop-blur-md bg-black/50 dark:bg-black/70 p-4 rounded-lg"
-                style={{
-                  textShadow: "0 2px 10px rgba(0,0,0,0.8)",
-                }}
-              >
-                {/* 基础信息（始终显示） */}
-                <div className="space-y-2">
-                  {/* 角色代号 */}
-                  <div
-                    className="text-lg font-mono font-bold"
-                    style={{ color: character.color.primary }}
-                  >
-                    {character.code}
-                  </div>
-
-                  {/* 角色名字和定位 */}
-                  <div className="flex items-baseline gap-3">
-                    <h3 className="text-2xl font-bold">{character.name}</h3>
-                    <span className="text-sm opacity-80">{character.role}</span>
-                  </div>
-
-                  {/* 简短描述 */}
-                  {!isExpanded && (
-                    <p className="text-sm opacity-75 line-clamp-2">
-                      {character.description}
-                    </p>
-                  )}
+            <div
+              className="relative h-full p-6 text-white"
+              style={{
+                textShadow: "0 2px 12px rgba(0,0,0,0.8)",
+              }}
+            >
+              {/* 基础信息（始终显示） */}
+              <div className="space-y-2">
+                {/* 角色代号 */}
+                <div
+                  className="text-lg font-mono font-bold"
+                  style={{ color: character.color.primary }}
+                >
+                  {character.code}
                 </div>
 
-                {/* 展开内容 */}
-                <AnimatePresence>
-                  {isExpanded && (
-                    <motion.div
-                      initial={{ opacity: 0, height: 0 }}
-                      animate={{ opacity: 1, height: "auto" }}
-                      exit={{ opacity: 0, height: 0 }}
-                      transition={{ duration: 0.3 }}
-                      className="mt-4 space-y-4"
-                    >
-                      {/* 装饰线 */}
-                      <div
-                        className="w-12 h-1 rounded-full"
-                        style={{
-                          background: `linear-gradient(90deg, ${character.color.primary}, ${character.color.dark})`,
-                        }}
-                      />
+                {/* 角色名字和定位 */}
+                <div className="flex items-baseline gap-3">
+                  <h3 className="text-2xl font-bold">{character.name}</h3>
+                  <span className="text-sm opacity-80">{character.role}</span>
+                </div>
 
-                      {/* 引言 */}
-                      <p className="text-base italic opacity-90 leading-relaxed">
-                        &quot;{character.quote}&quot;
-                      </p>
-
-                      {/* 描述 */}
-                      <p className="text-sm opacity-80">
-                        {character.description}
-                      </p>
-
-                      {/* 关键词标签 */}
-                      <div className="flex flex-wrap gap-2">
-                        {character.keywords.map((keyword, keyIndex) => (
-                          <span
-                            key={keyIndex}
-                            className="px-3 py-1 rounded-full text-xs font-medium bg-black/40 dark:bg-black/60"
-                            style={{
-                              color: character.color.primary,
-                              border: `1.5px solid ${character.color.primary}80`,
-                            }}
-                          >
-                            {keyword}
-                          </span>
-                        ))}
-                      </div>
-
-                      {/* 点击提示 */}
-                      <div className="text-xs opacity-50 italic pt-2">
-                        点击查看完整档案 →
-                      </div>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-
-                {/* 收起状态的提示 */}
+                {/* 简短描述 */}
                 {!isExpanded && (
-                  <div className="text-xs opacity-50 italic mt-2">
-                    点击查看更多 ↓
-                  </div>
+                  <p className="text-sm opacity-75 line-clamp-2">
+                    {character.description}
+                  </p>
                 )}
               </div>
+
+              {/* 展开内容 */}
+              <AnimatePresence>
+                {isExpanded && (
+                  <motion.div
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: "auto" }}
+                    exit={{ opacity: 0, height: 0 }}
+                    transition={{ duration: 0.3 }}
+                    className="mt-4 space-y-4"
+                  >
+                    {/* 装饰线 */}
+                    <div
+                      className="w-12 h-1 rounded-full"
+                      style={{
+                        background: `linear-gradient(90deg, ${character.color.primary}, ${character.color.dark})`,
+                      }}
+                    />
+
+                    {/* 引言 */}
+                    <p className="text-base italic opacity-90 leading-relaxed">
+                      &quot;{character.quote}&quot;
+                    </p>
+
+                    {/* 描述 */}
+                    <p className="text-sm opacity-80">
+                      {character.description}
+                    </p>
+
+                    {/* 关键词标签 */}
+                    <div className="flex flex-wrap gap-2">
+                      {character.keywords.map((keyword, keyIndex) => (
+                        <span
+                          key={keyIndex}
+                          className="px-3 py-1 rounded-full text-xs font-medium backdrop-blur-sm bg-black/20 dark:bg-black/30"
+                          style={{
+                            color: character.color.primary,
+                            border: `1.5px solid ${character.color.primary}80`,
+                          }}
+                        >
+                          {keyword}
+                        </span>
+                      ))}
+                    </div>
+
+                    {/* 点击提示 */}
+                    <div className="text-xs opacity-50 italic pt-2">
+                      点击查看完整档案 →
+                    </div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+
+              {/* 收起状态的提示 */}
+              {!isExpanded && (
+                <div className="text-xs opacity-50 italic mt-2">
+                  点击查看更多 ↓
+                </div>
+              )}
             </div>
           </motion.div>
         );

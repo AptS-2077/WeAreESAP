@@ -5,44 +5,62 @@ import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import dynamic from "next/dynamic";
 import { Character } from "@/types/character";
-import {
-  CharacterHero,
-  CharacterInfo,
-} from "@/components/character/detail";
+import { CharacterHero, CharacterInfo } from "@/components/character/detail";
 
 // 懒加载非首屏组件
 const CharacterStory = dynamic(
-  () => import("@/components/character/detail").then((mod) => ({ default: mod.CharacterStory })),
+  () =>
+    import("@/components/character/detail").then((mod) => ({
+      default: mod.CharacterStory,
+    })),
   { loading: () => <div className="h-64 animate-pulse bg-muted rounded-xl" /> }
 );
 
 const CharacterSpeechStyle = dynamic(
-  () => import("@/components/character/detail").then((mod) => ({ default: mod.CharacterSpeechStyle })),
+  () =>
+    import("@/components/character/detail").then((mod) => ({
+      default: mod.CharacterSpeechStyle,
+    })),
   { loading: () => <div className="h-64 animate-pulse bg-muted rounded-xl" /> }
 );
 
 const CharacterAbilities = dynamic(
-  () => import("@/components/character/detail").then((mod) => ({ default: mod.CharacterAbilities })),
+  () =>
+    import("@/components/character/detail").then((mod) => ({
+      default: mod.CharacterAbilities,
+    })),
   { loading: () => <div className="h-64 animate-pulse bg-muted rounded-xl" /> }
 );
 
 const CharacterDailyLife = dynamic(
-  () => import("@/components/character/detail").then((mod) => ({ default: mod.CharacterDailyLife })),
+  () =>
+    import("@/components/character/detail").then((mod) => ({
+      default: mod.CharacterDailyLife,
+    })),
   { loading: () => <div className="h-64 animate-pulse bg-muted rounded-xl" /> }
 );
 
 const CharacterSpecialMoments = dynamic(
-  () => import("@/components/character/detail").then((mod) => ({ default: mod.CharacterSpecialMoments })),
+  () =>
+    import("@/components/character/detail").then((mod) => ({
+      default: mod.CharacterSpecialMoments,
+    })),
   { loading: () => <div className="h-64 animate-pulse bg-muted rounded-xl" /> }
 );
 
 const CharacterPhilosophy = dynamic(
-  () => import("@/components/character/detail").then((mod) => ({ default: mod.CharacterPhilosophy })),
+  () =>
+    import("@/components/character/detail").then((mod) => ({
+      default: mod.CharacterPhilosophy,
+    })),
   { loading: () => <div className="h-64 animate-pulse bg-muted rounded-xl" /> }
 );
 
 const CharacterRelationships = dynamic(
-  () => import("@/components/character/detail").then((mod) => ({ default: mod.CharacterRelationships })),
+  () =>
+    import("@/components/character/detail").then((mod) => ({
+      default: mod.CharacterRelationships,
+    })),
   { loading: () => <div className="h-64 animate-pulse bg-muted rounded-xl" /> }
 );
 

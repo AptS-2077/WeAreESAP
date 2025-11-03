@@ -15,7 +15,11 @@ interface CharacterCardProps {
   priority?: boolean; // 是否优先加载图片（首屏图片）
 }
 
-function CharacterCardComponent({ character, onClick, priority = false }: CharacterCardProps) {
+function CharacterCardComponent({
+  character,
+  onClick,
+  priority = false,
+}: CharacterCardProps) {
   return (
     <motion.div
       className="relative group cursor-pointer"
@@ -159,11 +163,14 @@ function CharacterCardComponent({ character, onClick, priority = false }: Charac
 }
 
 // 使用 memo 优化，只在 character.id 或 priority 改变时重新渲染
-export const CharacterCard = memo(CharacterCardComponent, (prevProps, nextProps) => {
-  return (
-    prevProps.character.id === nextProps.character.id &&
-    prevProps.priority === nextProps.priority
-  );
-});
+export const CharacterCard = memo(
+  CharacterCardComponent,
+  (prevProps, nextProps) => {
+    return (
+      prevProps.character.id === nextProps.character.id &&
+      prevProps.priority === nextProps.priority
+    );
+  }
+);
 
 CharacterCard.displayName = "CharacterCard";

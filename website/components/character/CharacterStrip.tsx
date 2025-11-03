@@ -51,7 +51,9 @@ function CharacterStripComponent({
       />
 
       {/* 内容区域 */}
-      <div className={`relative h-full flex p-6 text-white ${isExpanded ? 'items-start justify-start' : 'items-center justify-center'}`}>
+      <div
+        className={`relative h-full flex p-6 text-white ${isExpanded ? "items-start justify-start" : "items-center justify-center"}`}
+      >
         {isExpanded ? (
           // 扩展模式：显示完整信息
           <motion.div
@@ -156,11 +158,14 @@ function CharacterStripComponent({
 }
 
 // 使用 memo 优化，只在 character.id 或 isExpanded 改变时重新渲染
-export const CharacterStrip = memo(CharacterStripComponent, (prevProps, nextProps) => {
-  return (
-    prevProps.character.id === nextProps.character.id &&
-    prevProps.isExpanded === nextProps.isExpanded
-  );
-});
+export const CharacterStrip = memo(
+  CharacterStripComponent,
+  (prevProps, nextProps) => {
+    return (
+      prevProps.character.id === nextProps.character.id &&
+      prevProps.isExpanded === nextProps.isExpanded
+    );
+  }
+);
 
 CharacterStrip.displayName = "CharacterStrip";
