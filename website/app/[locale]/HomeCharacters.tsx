@@ -3,8 +3,7 @@
 
 "use client";
 
-import { useRouter } from "next/navigation";
-import { useLocale } from "next-intl";
+import { useRouter } from "@/i18n/navigation";
 import { useTransition } from "@/components/ui";
 import { CharacterAccordion, CharacterMobileView } from "@/components";
 import { CharacterCardData } from "@/types/character";
@@ -15,14 +14,13 @@ interface HomeCharactersProps {
 
 export function HomeCharacters({ characters }: HomeCharactersProps) {
   const router = useRouter();
-  const locale = useLocale();
   const { startTransition } = useTransition();
 
   const handleCharacterClick = (characterId: string) => {
     // 先触发过渡动画
     startTransition();
-    // 然后跳转路由
-    router.push(`/${locale}/characters/${characterId}`);
+    // 然后跳转路由（next-intl 的 router 会自动处理 locale）
+    router.push(`/characters/${characterId}`);
   };
 
   return (

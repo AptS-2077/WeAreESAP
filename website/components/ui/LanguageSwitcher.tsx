@@ -3,7 +3,7 @@
 
 "use client";
 
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname, useRouter } from "@/i18n/navigation";
 import { useLocale } from "next-intl";
 import { locales } from "@/i18n/request";
 import { useState, useRef, useEffect } from "react";
@@ -39,23 +39,8 @@ export function LanguageSwitcher() {
   }, []);
 
   const handleLocaleChange = (newLocale: string) => {
-    // 移除当前 locale 前缀，构造新路径
-    const segments = pathname.split("/");
-    const currentLocaleIndex = segments.findIndex((seg) =>
-      locales.includes(seg as any)
-    );
-
-    let newPath: string;
-    if (currentLocaleIndex !== -1) {
-      // 替换 locale
-      segments[currentLocaleIndex] = newLocale;
-      newPath = segments.join("/");
-    } else {
-      // 添加 locale
-      newPath = `/${newLocale}${pathname}`;
-    }
-
-    router.push(newPath);
+    // 使用 next-intl 的 router，自动处理 locale 切换
+    router.push(pathname, { locale: newLocale });
     setIsOpen(false);
   };
 
