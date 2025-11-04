@@ -32,6 +32,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
       tech: (await import(`@/messages/${locale}/tech.json`)).default,
       timeline: (await import(`@/messages/${locale}/timeline.json`)).default,
       join: (await import(`@/messages/${locale}/join.json`)).default,
+      notFound: (await import(`@/messages/${locale}/notFound.json`)).default,
     },
   };
 });
