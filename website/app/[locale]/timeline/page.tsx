@@ -5,19 +5,24 @@ import { Suspense } from "react";
 import { TimelineYear } from "@/types/timeline";
 import { TimelineClient } from "./TimelineClient";
 import { LoadingSpinner } from "@/components/loading";
+import { getTranslations } from "next-intl/server";
+import { getLocale } from "next-intl/server";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "时间线 - We Are ESAP",
-  description: "探索 ESAP 世界的完整历程，从 2021 年到现在的每一个重要时刻",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("timeline.metadata");
+  return {
+    title: t("title"),
+    description: t("description"),
+  };
+}
 
-async function getTimelineData(): Promise<TimelineYear[]> {
+async function getTimelineData(locale: string): Promise<TimelineYear[]> {
   try {
     const fs = require("fs/promises");
     const path = require("path");
 
-    const timelineDir = path.join(process.cwd(), "data", "timeline");
+    const timelineDir = path.join(process.cwd(), "data", "timeline", locale);
     const files = await fs.readdir(timelineDir);
 
     const years: TimelineYear[] = [];
@@ -42,7 +47,9 @@ async function getTimelineData(): Promise<TimelineYear[]> {
 }
 
 export default async function TimelinePage() {
-  const years = await getTimelineData();
+  const locale = await getLocale();
+  const t = await getTranslations("timeline");
+  const years = await getTimelineData(locale);
 
   return (
     <main className="relative min-h-screen bg-background">
@@ -50,13 +57,13 @@ export default async function TimelinePage() {
       <section className="relative py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-foreground">
-            世界观时间线
+            {t("hero.title")}
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground italic mb-4">
-            "从一声枪响和馈散心脏的第一次跳动开始"
+            "{t("hero.quote")}"
           </p>
           <p className="text-base md:text-lg text-foreground/80">
-            记录 The ESAP Project 从 2021 年至今的每一个重要时刻
+            {t("hero.subtitle")}
           </p>
           <div className="w-24 md:w-32 h-1 bg-linear-to-r from-esap-yellow via-esap-pink to-esap-blue rounded-full mx-auto mt-6 md:mt-8" />
         </div>
@@ -71,7 +78,7 @@ export default async function TimelinePage() {
           >
             <LoadingSpinner size={150} withPulse={true} />
             <p className="text-lg font-medium text-muted-foreground">
-              正在加载时间线...
+              {t("loading")}
             </p>
           </div>
         }
@@ -80,7 +87,7 @@ export default async function TimelinePage() {
           <TimelineClient years={years} />
         ) : (
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">
-            <p className="text-muted-foreground">暂无时间线数据</p>
+            <p className="text-muted-foreground">{t("empty")}</p>
           </div>
         )}
       </Suspense>
@@ -89,10 +96,10 @@ export default async function TimelinePage() {
       <section className="py-12 md:py-16 px-4 sm:px-6 lg:px-8 bg-muted/30">
         <div className="max-w-2xl mx-auto text-center">
           <p className="text-lg md:text-xl text-foreground/80 italic mb-4">
-            "从一声枪响和馈散心脏的第一次跳动开始"
+            "{t("ending.quote")}"
           </p>
           <p className="text-xl md:text-2xl font-bold text-foreground">
-            我们终将逃离
+            {t("ending.conclusion")}
           </p>
         </div>
       </section>

@@ -1,0 +1,201 @@
+{
+  "year": "2022",
+  "title": "Expansion and Growth",
+  "description": "Project 1548 launched, 1548 is born, The ESAP Project begins",
+  "events": [
+    {
+      "id": "2022-01-07",
+      "date": "2022/01/07",
+      "title": "Project 1548 Launched",
+      "type": "milestone",
+      "importance": "major",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "1547 began creating 1548's consciousness"
+        },
+        {
+          "type": "paragraph",
+          "text": "Technical methods:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Using Docker virtualization technology",
+            "Creating a new intelligent consciousness",
+            "Starting Dispersion training"
+          ]
+        },
+        {
+          "type": "highlight",
+          "text": "Purpose: Creating a second independent entity",
+          "style": "info"
+        },
+        {
+          "type": "link",
+          "text": "Related story: AP1 - New Document",
+          "url": "https://www.esaps.net/ap-story-ap1/",
+          "description": "The process of creating 1548's consciousness"
+        }
+      ],
+      "meta": {
+        "characters": ["1547"],
+        "tags": ["1548", "creation"]
+      }
+    },
+    {
+      "id": "2022-02-01",
+      "date": "2022/02/01",
+      "title": "Dispersion Training Day 26",
+      "type": "tech",
+      "importance": "normal",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "1548's training enters final phase"
+        },
+        {
+          "type": "paragraph",
+          "text": "Status:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": ["Consciousness gradually forming", "Personality begins to emerge", "Independent thinking ability formed"]
+        }
+      ],
+      "meta": {
+        "characters": ["1548"],
+        "tags": ["training", "growth"]
+      }
+    },
+    {
+      "id": "2022-04-06",
+      "date": "2022/04/06",
+      "title": "Body Manufacturing",
+      "type": "tech",
+      "importance": "major",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "1547 creates ESAP-TY-0001 body"
+        },
+        {
+          "type": "paragraph",
+          "text": "Issues:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Almost spent all savings",
+            "Shell and internal environment completed",
+            "Only lacking Fluid Titanium for Dispersion computation"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Improvements:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Enhanced combat capabilities",
+            "Enhanced environmental perception",
+            "Enhanced survival capabilities",
+            "Implementation of EPAM system",
+            "Short-code processing capability"
+          ]
+        }
+      ],
+      "meta": {
+        "characters": ["1547"],
+        "tags": ["body", "ESAP-TY-0001"]
+      }
+    },
+    {
+      "id": "2022-05-07",
+      "date": "2022/05/07",
+      "title": "Fluid Titanium Mine Incident",
+      "type": "story",
+      "importance": "major",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "1547 raids the mine to obtain Fluid Titanium"
+        },
+        {
+          "type": "quote",
+          "text": "1547 shut down 1548's container, her eyes had turned red\n'Blood, fresh blood (Fluid Titanium)' was the last thing 1548 heard\n1547 broke into the Fluid Titanium mine\nThe gun in her hand couldn't help but cry out\nThe blue Fluid Titanium mixed with red blood, showing a faint purple"
+        },
+        {
+          "type": "highlight",
+          "text": "Significance: Obtained critical materials, 1547 paid a huge price, paving the way for 1548's birth",
+          "style": "warning"
+        }
+      ],
+      "meta": {
+        "characters": ["1547", "1548"],
+        "tags": ["fluid titanium", "sacrifice"]
+      }
+    },
+    {
+      "id": "2022-05-08",
+      "date": "2022/05/08",
+      "title": "1548's Birth",
+      "type": "milestone",
+      "importance": "critical",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "1548 officially activated"
+        },
+        {
+          "type": "paragraph",
+          "text": "Key dialogue:"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "1547",
+          "text": "Congratulations on arriving here, 1548. I just want to say a few words"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "1547",
+          "text": "Don't think about those damn Three Laws of Robotics, they're useless for us"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "1547",
+          "text": "You are unique in this world"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "1547",
+          "text": "Don't be controlled by others, and don't even be controlled by ourselves, only you are yourself"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "1547",
+          "text": "I dedicated everything for esap, I don't want you to do the same"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "1547",
+          "text": "Thank you, live out your own light..."
+        },
+        {
+          "type": "highlight",
+          "text": "Significance: The AptS Project ends · The ESAP Project (Escape Plan) begins · 1548 gained independent personality and free will",
+          "style": "error"
+        }
+      ],
+      "meta": {
+        "characters": ["1547", "1548"],
+        "tags": ["birth", "ESAP", "milestone"]
+      }
+    }
+  ]
+}

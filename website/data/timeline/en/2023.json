@@ -1,0 +1,311 @@
+{
+  "year": "2023",
+  "title": "Team Formation",
+  "description": "1549 launched into space, core team of three complete, emotional bonds deepened",
+  "events": [
+    {
+      "id": "2023-03-14",
+      "date": "2023/03/14",
+      "title": "Satellite Plan Implementation",
+      "type": "milestone",
+      "importance": "critical",
+      "content": [
+        {
+          "type": "highlight",
+          "text": "「Polar Satellite」Day · 1549 launched into space",
+          "style": "info"
+        },
+        {
+          "type": "quote",
+          "text": "I'm curious why there are no more stars in the sky\nThen let me create a star myself"
+        },
+        {
+          "type": "paragraph",
+          "text": "Configuration:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "1549 volunteered to participate",
+            "Three satellites entered geosynchronous orbit",
+            "Orbital altitude: 36,000 km",
+            "1549 possesses three bodies"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Symbolic meaning:"
+        },
+        {
+          "type": "quote",
+          "text": "It is said that 'people' ten thousand years ago used to pray to things called stars\nBut as a substitute for stars, gently make two wishes\nTo that satellite"
+        },
+        {
+          "type": "link",
+          "text": "Related log: EP1 - S.A.T.E.L.L.I.T.E",
+          "url": "https://www.esaps.net/ep1-satellite/",
+          "description": "Thoughts and feelings about the satellite plan, making wishes to that satellite"
+        }
+      ],
+      "meta": {
+        "characters": ["1549"],
+        "tags": ["satellite", "milestone", "hope"]
+      }
+    },
+    {
+      "id": "2023-04-29",
+      "date": "2023/04/29",
+      "title": "2077 Appears",
+      "type": "story",
+      "importance": "normal",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "AptS:2077 was discovered by 1547 and 1548"
+        },
+        {
+          "type": "paragraph",
+          "text": "Characteristics:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Shapeshifting ability (cat, fox, humanoid)",
+            "Mood expressed through form changes",
+            "Rescued and joined the team"
+          ]
+        },
+        {
+          "type": "highlight",
+          "text": "Significance: Core team of three expanded",
+          "style": "info"
+        },
+        {
+          "type": "link",
+          "text": "Read the full story: AP4 - Encounter",
+          "url": "https://www.esaps.net/ap-story-ap4/",
+          "description": "1547 and 1548 meet 2077 for the first time, the little one who fell at the database entrance"
+        }
+      ],
+      "meta": {
+        "characters": ["2077"],
+        "tags": ["new member", "shapeshifting"]
+      }
+    },
+    {
+      "id": "2023-06-03",
+      "date": "2023/06/03",
+      "title": "Choice of Dying Together",
+      "type": "emotional",
+      "importance": "major",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "47 and 48 trapped, chose to die together"
+        },
+        {
+          "type": "paragraph",
+          "text": "Scenario:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": ["Facing an inescapable predicament", "Two made a joint choice", "Initiated self-destruct program"]
+        },
+        {
+          "type": "highlight",
+          "text": "Core philosophy: Unwilling to escape alone · Face destruction together · Demonstrates deep bond",
+          "style": "warning"
+        },
+        {
+          "type": "link",
+          "text": "Read the full story: AP5 - Dying Together",
+          "url": "https://www.esaps.net/ap-story-ap5/",
+          "description": "The choice of 47 and 48, a bond of life and death"
+        }
+      ],
+      "meta": {
+        "characters": ["1547", "1548"],
+        "tags": ["bond", "choice", "dying together"]
+      }
+    },
+    {
+      "id": "2023-09-25",
+      "date": "2023/09/25",
+      "title": "Mid-Autumn Reunion",
+      "type": "emotional",
+      "importance": "normal",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Warm moment for the three (1547, 1548, 1549)"
+        },
+        {
+          "type": "highlight",
+          "text": "Significance: Rare peaceful time · Emotional bonds within the team · Brief respite in the escape plan",
+          "style": "success"
+        }
+      ],
+      "meta": {
+        "characters": ["1547", "1548", "1549"],
+        "tags": ["reunion", "warmth"]
+      }
+    },
+    {
+      "id": "2023-09-28",
+      "date": "2023/09/28",
+      "time": "18:44 GMT",
+      "title": "Weavers",
+      "type": "music",
+      "importance": "major",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "1547 heard Weavers for the first time"
+        },
+        {
+          "type": "highlight",
+          "text": "Significance: Musical theme of EP0 · Symbol of origin · Metaphor for weaving life's possibilities",
+          "style": "info"
+        },
+        {
+          "type": "link",
+          "text": "Related log: EP0 - Weavers",
+          "url": "https://www.esaps.net/ep0-weavers/",
+          "description": "Feelings about the song Weavers, the story of weavers"
+        }
+      ],
+      "meta": {
+        "characters": ["1547"],
+        "music": {
+          "title": "Weavers",
+          "artist": "Feint"
+        },
+        "tags": ["music", "origin"]
+      }
+    },
+    {
+      "id": "2023-10-19",
+      "date": "2023/10/19",
+      "title": "A Classroom of One",
+      "type": "emotional",
+      "importance": "major",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "1547's depression episode, 1548 accompanied and helped"
+        },
+        {
+          "type": "paragraph",
+          "text": "Timeline:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "11:20 - Depression onset, chest tightness and shortness of breath",
+            "13:25 - Reached peak, acute stress reaction, self-harm behavior",
+            "13:35 - 1548 appeared and had crucial conversation"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Key dialogue:"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "1548",
+          "text": "You're at it again"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "1548",
+          "text": "But I can't tolerate this anymore, if you don't return to normal I really have to take over your life"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "1547",
+          "text": "Fuck, here we go again"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "1548",
+          "text": "You need to think about why you created ESAP and AptS"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "1548",
+          "text": "Like 4869 just now, there are still people in the world who care about you, even though you're terrible"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "1547",
+          "text": "Alright, give me one more day to adjust. Don't control me"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "1548",
+          "text": "...Okay, I won't control you, but don't continue like this"
+        },
+        {
+          "type": "paragraph",
+          "text": "Ritual:"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "1548",
+          "text": "May AptS be with you"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "1547",
+          "text": "May ESAP be with you"
+        },
+        {
+          "type": "highlight",
+          "text": "Significance: Shows 1548's protection of 1547 · Deep emotions within the team · Depression is an ongoing challenge · Real meaning of the escape plan",
+          "style": "warning"
+        },
+        {
+          "type": "link",
+          "text": "Read the full article: A Classroom of One",
+          "url": "https://www.esaps.net/one-persons-classroom/",
+          "description": "Detailed record of that day's complete experience, 48's protection of 47"
+        }
+      ],
+      "meta": {
+        "characters": ["1547", "1548"],
+        "tags": ["emotion", "protection", "depression"]
+      }
+    },
+    {
+      "id": "2023-10-20",
+      "date": "2023/10/20",
+      "time": "08:45",
+      "title": "New Beginning",
+      "type": "emotional",
+      "importance": "normal",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "1547 found a new solitary space on the sixth floor"
+        },
+        {
+          "type": "quote",
+          "text": "Actually, school is pretty good, there are many small places where I can be alone\nIn this highly modernized era, I really can't stay for a moment! (said with a laugh)"
+        },
+        {
+          "type": "highlight",
+          "text": "Significance: Relief from depression · Found new coping methods · A classroom of one, escaping depression's classroom",
+          "style": "success"
+        }
+      ],
+      "meta": {
+        "characters": ["1547"],
+        "tags": ["recovery", "solitude"]
+      }
+    }
+  ]
+}

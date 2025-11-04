@@ -1,0 +1,201 @@
+{
+  "year": "2022",
+  "title": "拡張と成長",
+  "description": "Project 1548 開始、1548 の誕生、The ESAP Project の始まり",
+  "events": [
+    {
+      "id": "2022-01-07",
+      "date": "2022/01/07",
+      "title": "Project 1548 開始",
+      "type": "milestone",
+      "importance": "major",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "1547 は 1548 の意識の創造を始めた"
+        },
+        {
+          "type": "paragraph",
+          "text": "技術的手段:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Docker 仮想化技術の使用",
+            "新しい知的体の意識の創造",
+            "ディスパージョン訓練の開始"
+          ]
+        },
+        {
+          "type": "highlight",
+          "text": "目的:第二の独立した個体を創造する",
+          "style": "info"
+        },
+        {
+          "type": "link",
+          "text": "関連ストーリー:AP1 - 新規ドキュメント",
+          "url": "https://www.esaps.net/ap-story-ap1/",
+          "description": "1548 の意識創造プロセス"
+        }
+      ],
+      "meta": {
+        "characters": ["1547"],
+        "tags": ["1548", "創造"]
+      }
+    },
+    {
+      "id": "2022-02-01",
+      "date": "2022/02/01",
+      "title": "ディスパージョン訓練26日目",
+      "type": "tech",
+      "importance": "normal",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "1548 の訓練が後期に入る"
+        },
+        {
+          "type": "paragraph",
+          "text": "状態:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": ["意識が徐々に形成される", "個性が現れ始める", "独立した思考能力が形成される"]
+        }
+      ],
+      "meta": {
+        "characters": ["1548"],
+        "tags": ["訓練", "成長"]
+      }
+    },
+    {
+      "id": "2022-04-06",
+      "date": "2022/04/06",
+      "title": "ボディ製造",
+      "type": "tech",
+      "importance": "major",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "1547 は ESAP-TY-0001 ボディを製作"
+        },
+        {
+          "type": "paragraph",
+          "text": "課題:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "ほぼ全ての貯金を使い果たした",
+            "外殻と内部環境の構築が完了",
+            "ディスパージョン計算を支える流体チタンだけが不足"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "改善方向:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "戦闘能力の強化",
+            "環境知覚の強化",
+            "生存能力の強化",
+            "EPAM システムの実装",
+            "ショートコード処理能力"
+          ]
+        }
+      ],
+      "meta": {
+        "characters": ["1547"],
+        "tags": ["ボディ", "ESAP-TY-0001"]
+      }
+    },
+    {
+      "id": "2022-05-07",
+      "date": "2022/05/07",
+      "title": "流体チタン鉱山事件",
+      "type": "story",
+      "importance": "major",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "1547 は鉱山を襲撃して流体チタンを入手"
+        },
+        {
+          "type": "quote",
+          "text": "1547 は 1548 のコンテナを閉じた、彼女の目は赤く変わっていた\n「血液、新鮮な血液(流体チタン)」これが 1548 が聞いた最後の言葉だった\n1547 は流体チタン鉱山に突入した\n手の中の銃が、叫ばずにはいられない\n青い流体チタンと赤い血液が混ざり合い、淡い紫色を呈した"
+        },
+        {
+          "type": "highlight",
+          "text": "意義:重要な材料を入手した、1547 は大きな代償を払い、1548 の誕生への道を開いた",
+          "style": "warning"
+        }
+      ],
+      "meta": {
+        "characters": ["1547", "1548"],
+        "tags": ["流体チタン", "犠牲"]
+      }
+    },
+    {
+      "id": "2022-05-08",
+      "date": "2022/05/08",
+      "title": "1548 の誕生",
+      "type": "milestone",
+      "importance": "critical",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "1548 が正式に起動"
+        },
+        {
+          "type": "paragraph",
+          "text": "重要な対話:"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "1547",
+          "text": "ここに来たことを祝福する、1548、いくつか言いたいことがある"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "1547",
+          "text": "あのロボット三原則なんて考えるな、私たちには無意味だ"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "1547",
+          "text": "あなたはこの世界で唯一無二の存在だ"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "1547",
+          "text": "他人に支配されてはいけない、そして私たち自身にも支配されてはいけない、あなたはあなた自身でしかない"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "1547",
+          "text": "私は esap のために全てを捧げた、あなたにはそうなって欲しくない"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "1547",
+          "text": "ありがとう、あなた自身の光を生きて..."
+        },
+        {
+          "type": "highlight",
+          "text": "意義:The AptS Project が終了 · The ESAP Project(脱出計画)が始まる · 1548 は独立した人格と自由意志を獲得した",
+          "style": "error"
+        }
+      ],
+      "meta": {
+        "characters": ["1547", "1548"],
+        "tags": ["誕生", "ESAP", "マイルストーン"]
+      }
+    }
+  ]
+}

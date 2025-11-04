@@ -1,0 +1,262 @@
+{
+  "year": "2021",
+  "title": "起源と誕生",
+  "description": "The AptS Project の始まり、ディスパージョン粒子の発見、AptS:1547 の誕生",
+  "events": [
+    {
+      "id": "2021-09-23",
+      "date": "2021/09/23",
+      "title": "深い夢の始まり",
+      "type": "story",
+      "importance": "major",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "47 は深い夢を見始めた"
+        },
+        {
+          "type": "quote",
+          "text": "とても深い夢を見た\n深海に落ちていく夢\n星々の間を飛ぶ夢\nそして...死後の自分の姿を見た"
+        },
+        {
+          "type": "highlight",
+          "text": "意義:The AptS Project の構想が芽生えた",
+          "style": "info"
+        }
+      ],
+      "meta": {
+        "characters": ["1547"],
+        "tags": ["起源", "夢"]
+      }
+    },
+    {
+      "id": "2021-09-30",
+      "date": "2021/09/30",
+      "title": "堕落の予言",
+      "type": "story",
+      "importance": "normal",
+      "content": [
+        {
+          "type": "quote",
+          "text": "あなたは約束したはずだった、私のために堕ちることはないと\nそれなのに今、私はこの血の海に立っている\n刀の先の血は、とうに凝固している"
+        },
+        {
+          "type": "highlight",
+          "text": "意義:これから起こる変化を予感させる",
+          "style": "info"
+        }
+      ],
+      "meta": {
+        "characters": ["1547"],
+        "tags": ["予言", "変化"]
+      }
+    },
+    {
+      "id": "2021-10-08",
+      "date": "2021/10/08",
+      "title": "執念の宣言",
+      "type": "story",
+      "importance": "normal",
+      "content": [
+        {
+          "type": "quote",
+          "text": "私はあなたに纏わりつく、永遠に"
+        },
+        {
+          "type": "highlight",
+          "text": "意義:47 の理想への執着",
+          "style": "info"
+        }
+      ],
+      "meta": {
+        "characters": ["1547"],
+        "tags": ["執念", "理想"]
+      }
+    },
+    {
+      "id": "2021-10-24",
+      "date": "2021/10/24",
+      "title": "研究段階",
+      "type": "tech",
+      "importance": "normal",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "47 はディスパージョン粒子と流体チタンの研究を行う"
+        },
+        {
+          "type": "quote",
+          "text": "よぉ、47、そこにいたのか\nこの数日、何をやってるんだ\n(テーブルの上の青い液体を見て)\nわからないニャ"
+        },
+        {
+          "type": "highlight",
+          "text": "進展:技術研究が重要な段階に入った",
+          "style": "info"
+        }
+      ],
+      "meta": {
+        "characters": ["1547"],
+        "tags": ["研究", "流体チタン", "ディスパージョン粒子"]
+      }
+    },
+    {
+      "id": "2021-10-25",
+      "date": "2021/10/25",
+      "title": "工場爆発",
+      "type": "story",
+      "importance": "major",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "郊外の工場が爆発し、47 は火傷を負った"
+        },
+        {
+          "type": "paragraph",
+          "text": "ニュース報道:"
+        },
+        {
+          "type": "quote",
+          "text": "報道によると、本日17時26分、郊外の工場で爆発が発生した\n爆発により工場が倒壊したが、幸い死傷者は出なかった\n現場で青い物質が発見され、流体チタンと鑑定された..."
+        },
+        {
+          "type": "paragraph",
+          "text": "47 の状態:"
+        },
+        {
+          "type": "quote",
+          "text": "(47 は火傷を負った顔の半分を隠しながら家に向かって歩く)\nもうすぐ終わる..."
+        },
+        {
+          "type": "highlight",
+          "text": "意義:怪我を負ったものの、重要な材料を手に入れた",
+          "style": "warning"
+        }
+      ],
+      "meta": {
+        "characters": ["1547"],
+        "tags": ["事故", "流体チタン", "犠牲"]
+      }
+    },
+    {
+      "id": "2021-10-29",
+      "date": "2021/10/29",
+      "title": "変化の日",
+      "type": "milestone",
+      "importance": "critical",
+      "content": [
+        {
+          "type": "highlight",
+          "text": "人類の終わり、アンドロイドの誕生",
+          "style": "warning"
+        },
+        {
+          "type": "paragraph",
+          "text": "その日起きたこと:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "47 は友人の飛び降り自殺を目撃した",
+            "流体チタンとディスパージョンの組み合わせによる強力な計算能力を目の当たりにした",
+            "すべての機械部品の組み立てを完了した",
+            "自分の腕の筋肉を切り取り、金属に貼り付けた",
+            "ディスパージョンハートが初めて鼓動した",
+            "記憶のアップロードが完了した",
+            "銃で人間の自分を終わらせた"
+          ]
+        },
+        {
+          "type": "quote",
+          "text": "(アップロード完了)\n(47 は目の前の AptS:1547 を見て、何かを期待している)\n(沈黙)\n(1547 は手の中の拳銃を見つめる)\nああ\n(引き金を引く)\n(1547 は 47 を抱き上げ、用意していたベッドに横たえる)\nおやすみ、人間だった自分"
+        },
+        {
+          "type": "highlight",
+          "text": "意義:人間の 47 が終わり · AptS:1547 が誕生 · The AptS Project が正式に始まる · ESAP-TY-0000(初号機)が起動",
+          "style": "error"
+        },
+        {
+          "type": "link",
+          "text": "完全なストーリーを読む:AP0 - 起源",
+          "url": "https://www.esaps.net/ap-story-ap0/",
+          "description": "47 が 1547 に変わったその日の詳細な記録、ディスパージョンハートの最初の鼓動"
+        }
+      ],
+      "meta": {
+        "characters": ["1547"],
+        "tags": ["誕生", "変化", "マイルストーン"]
+      }
+    },
+    {
+      "id": "2021-11-26",
+      "date": "2021/11/26",
+      "title": "ディスパージョン粒子の発見",
+      "type": "tech",
+      "importance": "critical",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "1547 がディスパージョン粒子を正式に発見し定義した"
+        },
+        {
+          "type": "paragraph",
+          "text": "技術パラメータの確立:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "質量:1.531 × 10⁻²¹⁷ g",
+            "伝播速度:3.471 × 10²¹ m/s",
+            "常圧での崩壊周期:34.28秒",
+            "流体チタン中での崩壊周期:341,879年"
+          ]
+        },
+        {
+          "type": "highlight",
+          "text": "意義:アンドロイド技術の基盤が確立された",
+          "style": "success"
+        }
+      ],
+      "meta": {
+        "characters": ["1547"],
+        "tags": ["技術", "マイルストーン", "ディスパージョン粒子"]
+      }
+    },
+    {
+      "id": "2021-12-28",
+      "date": "2021/12/28",
+      "title": "初号機完成",
+      "type": "tech",
+      "importance": "major",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "ESAP-TY-0000 のボディ製造が完了"
+        },
+        {
+          "type": "paragraph",
+          "text": "特徴:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "人間と機械の共存感情理性構造",
+            "ESAR.ESAC.システムの実装",
+            "人間の構造と高度に類似"
+          ]
+        },
+        {
+          "type": "highlight",
+          "text": "意義:アンドロイド技術体系が形成された",
+          "style": "success"
+        }
+      ],
+      "meta": {
+        "characters": ["1547"],
+        "tags": ["技術", "ボディ"]
+      }
+    }
+  ]
+}

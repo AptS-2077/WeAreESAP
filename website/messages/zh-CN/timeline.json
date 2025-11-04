@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "title": "时间线 - We Are ESAP",
+    "description": "探索 ESAP 世界的完整历程，从 2021 年到现在的每一个重要时刻"
+  },
+  "hero": {
+    "title": "世界观时间线",
+    "quote": "从一声枪响和馈散心脏的第一次跳动开始",
+    "subtitle": "记录 The ESAP Project 从 2021 年至今的每一个重要时刻"
+  },
+  "loading": "正在加载时间线...",
+  "empty": "暂无时间线数据",
+  "ending": {
+    "quote": "从一声枪响和馈散心脏的第一次跳动开始",
+    "conclusion": "我们终将逃离"
+  }
+}

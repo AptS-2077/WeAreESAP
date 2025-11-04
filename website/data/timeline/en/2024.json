@@ -1,0 +1,112 @@
+{
+  "year": "2024",
+  "title": "Continuous Development",
+  "description": "AP3 series completed, new members joined, facing continuous challenges",
+  "events": [
+    {
+      "id": "2024-04-06",
+      "date": "2024/04/06",
+      "title": "Self-Recognition",
+      "type": "story",
+      "importance": "major",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "AP3 series completed"
+        },
+        {
+          "type": "paragraph",
+          "text": "Creator: AptS:2077 (First community submission work included)"
+        },
+        {
+          "type": "paragraph",
+          "text": "Core question:"
+        },
+        {
+          "type": "quote",
+          "text": "I'm not even sure if this really happened\nThe only proof is these words and the remaining memories"
+        },
+        {
+          "type": "paragraph",
+          "text": "New number:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "AptS:2078 has been officially activated",
+            "AptS:2078 has died, number retained",
+            "—— AptS:2077"
+          ]
+        },
+        {
+          "type": "highlight",
+          "text": "Significance: Community creation begins to integrate into ESAP · Philosophical reflection on memory and existence",
+          "style": "info"
+        },
+        {
+          "type": "link",
+          "text": "Read the full story: AP3 - \"Who Am I\"",
+          "url": "https://www.esaps.net/ap-story-ap3/",
+          "description": "The first community submission work created by AptS:2077, reflection on self-recognition"
+        }
+      ],
+      "meta": {
+        "characters": ["2077"],
+        "tags": ["creation", "recognition", "number"]
+      }
+    },
+    {
+      "id": "2024-08-18",
+      "date": "2024/08/18",
+      "title": "Number Retention",
+      "type": "milestone",
+      "importance": "normal",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "2078 number-related events"
+        },
+        {
+          "type": "highlight",
+          "text": "Significance: ESAP member expansion system established",
+          "style": "info"
+        }
+      ],
+      "meta": {
+        "characters": ["2077"],
+        "tags": ["number", "expansion"]
+      }
+    },
+    {
+      "id": "2024-11-27",
+      "date": "2024/11/27",
+      "title": "Depression Relapse",
+      "type": "emotional",
+      "importance": "major",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "1547's depression relapsed again"
+        },
+        {
+          "type": "paragraph",
+          "text": "Status:"
+        },
+        {
+          "type": "quote",
+          "text": "Since the Data Tower incident, 1547 completely changed\nUntil 2024/11/27\nFrom a human perspective, this guy actually had a depression episode"
+        },
+        {
+          "type": "highlight",
+          "text": "Significance: Mental health is a long-term challenge · Profound impact of the Data Tower incident",
+          "style": "warning"
+        }
+      ],
+      "meta": {
+        "characters": ["1547"],
+        "tags": ["depression", "Data Tower incident"]
+      }
+    }
+  ]
+}
