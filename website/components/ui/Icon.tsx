@@ -31,6 +31,8 @@ import {
   LuRadio,
   LuAtom,
   LuDroplet,
+  LuMenu,
+  LuX,
 } from "react-icons/lu";
 
 import {
@@ -86,7 +88,10 @@ export type IconName =
   | "Cpu"
   | "Radio"
   | "Atom"
-  | "Droplet";
+  | "Droplet"
+  // 导航图标
+  | "Menu"
+  | "X";
 
 // 图标映射表
 const iconMap: Record<IconName, ComponentType<{ className?: string }>> = {
@@ -132,6 +137,10 @@ const iconMap: Record<IconName, ComponentType<{ className?: string }>> = {
   Radio: LuRadio,
   Atom: LuAtom,
   Droplet: LuDroplet,
+
+  // 导航图标 (Lucide)
+  Menu: LuMenu,
+  X: LuX,
 };
 
 export interface IconProps {

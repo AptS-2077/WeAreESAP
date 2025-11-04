@@ -27,11 +27,11 @@ const EVENT_ICONS: Record<string, IconName> = {
 // 重要性样式
 const IMPORTANCE_STYLES: Record<string, { node: string; glow: string }> = {
   critical: {
-    node: "w-6 h-6 bg-gradient-to-br from-esap-yellow via-esap-pink to-esap-blue",
+    node: "w-6 h-6 bg-linear-to-br from-esap-yellow via-esap-pink to-esap-blue",
     glow: "shadow-[0_0_20px_rgba(255,217,61,0.6)]",
   },
   major: {
-    node: "w-5 h-5 bg-gradient-to-br from-esap-pink to-esap-blue",
+    node: "w-5 h-5 bg-linear-to-br from-esap-pink to-esap-blue",
     glow: "shadow-[0_0_15px_rgba(255,105,180,0.5)]",
   },
   normal: {

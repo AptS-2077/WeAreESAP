@@ -7,7 +7,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { ThemeToggle, TransitionLink } from "@/components/ui";
+import { ThemeToggle, TransitionLink, Icon } from "@/components/ui";
 
 const navLinks = [
   { href: "/project", label: "项目企划" },
@@ -74,7 +74,7 @@ export function Navigation() {
                     {active && (
                       <motion.div
                         layoutId="nav-indicator"
-                        className="absolute -bottom-[17px] left-0 right-0 h-0.5 bg-gradient-to-r from-esap-yellow via-esap-pink to-esap-blue"
+                        className="absolute -bottom-[17px] left-0 right-0 h-0.5 bg-linear-to-r from-esap-yellow via-esap-pink to-esap-blue"
                         transition={{
                           type: "spring",
                           stiffness: 380,
@@ -95,31 +95,25 @@ export function Navigation() {
               {/* 移动端汉堡菜单按钮 */}
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="md:hidden w-10 h-10 rounded-lg bg-muted hover:bg-border transition-colors flex items-center justify-center"
+                className="md:hidden w-10 h-10 rounded-lg bg-muted hover:bg-border transition-colors flex items-center justify-center group"
                 aria-label="切换菜单"
               >
-                <div className="w-5 h-4 flex flex-col justify-between">
-                  <motion.span
-                    animate={
-                      isMobileMenuOpen
-                        ? { rotate: 45, y: 6 }
-                        : { rotate: 0, y: 0 }
-                    }
-                    className="w-full h-0.5 bg-foreground rounded-full"
-                  />
-                  <motion.span
-                    animate={isMobileMenuOpen ? { opacity: 0 } : { opacity: 1 }}
-                    className="w-full h-0.5 bg-foreground rounded-full"
-                  />
-                  <motion.span
-                    animate={
-                      isMobileMenuOpen
-                        ? { rotate: -45, y: -6 }
-                        : { rotate: 0, y: 0 }
-                    }
-                    className="w-full h-0.5 bg-foreground rounded-full"
-                  />
-                </div>
+                <AnimatePresence mode="wait">
+                  <motion.div
+                    key={isMobileMenuOpen ? "close" : "open"}
+                    initial={{ opacity: 0, rotate: -90 }}
+                    animate={{ opacity: 1, rotate: 0 }}
+                    exit={{ opacity: 0, rotate: 90 }}
+                    transition={{ duration: 0.2 }}
+                    className="flex items-center justify-center"
+                  >
+                    <Icon
+                      name={isMobileMenuOpen ? "X" : "Menu"}
+                      size={20}
+                      className="text-foreground group-hover:text-esap-pink transition-colors"
+                    />
+                  </motion.div>
+                </AnimatePresence>
               </button>
             </div>
           </div>
@@ -169,7 +163,7 @@ export function Navigation() {
 
               {/* 底部装饰 */}
               <div className="absolute bottom-8 left-0 right-0 px-6">
-                <div className="w-full h-1 bg-gradient-to-r from-esap-yellow via-esap-pink to-esap-blue rounded-full" />
+                <div className="w-full h-1 bg-linear-to-r from-esap-yellow via-esap-pink to-esap-blue rounded-full" />
               </div>
             </motion.div>
           </>

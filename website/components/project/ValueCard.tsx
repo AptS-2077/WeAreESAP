@@ -45,7 +45,7 @@ export function ValueCard({ value, index }: ValueCardProps) {
         <p className="text-sm text-foreground/70">{value.description}</p>
 
         {/* 底部光效 */}
-        <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-esap-yellow via-esap-pink to-esap-blue opacity-0 group-hover:opacity-30 transition-opacity duration-300 rounded-b-xl" />
+        <div className="absolute bottom-0 left-0 right-0 h-1 bg-linear-to-r from-esap-yellow via-esap-pink to-esap-blue opacity-0 group-hover:opacity-30 transition-opacity duration-300 rounded-b-xl" />
       </div>
     </motion.div>
   );

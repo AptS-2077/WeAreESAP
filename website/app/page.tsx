@@ -70,7 +70,7 @@ export default async function Home() {
           </p>
 
           {/* 分隔线 */}
-          <div className="w-24 h-1 bg-gradient-to-r from-esap-yellow via-esap-pink to-esap-blue rounded-full mx-auto my-8" />
+          <div className="w-24 h-1 bg-linear-to-r from-esap-yellow via-esap-pink to-esap-blue rounded-full mx-auto my-8" />
 
           {/* 简介 */}
           <div className="max-w-2xl mx-auto space-y-4 text-foreground/80">

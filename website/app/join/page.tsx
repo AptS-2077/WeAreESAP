@@ -50,7 +50,7 @@ export default async function JoinPage() {
   return (
     <main className="min-h-screen">
       {/* Hero 区域 */}
-      <section className="relative py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-muted/30 to-transparent">
+      <section className="relative py-20 px-4 sm:px-6 lg:px-8 bg-linear-to-b from-muted/30 to-transparent">
         <div className="max-w-4xl mx-auto text-center space-y-6">
           <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">
             加入我们
@@ -60,7 +60,7 @@ export default async function JoinPage() {
             "{data.hero.quote}"
           </blockquote>
 
-          <div className="w-24 h-1 bg-gradient-to-r from-esap-yellow via-esap-pink to-esap-blue rounded-full mx-auto my-8" />
+          <div className="w-24 h-1 bg-linear-to-r from-esap-yellow via-esap-pink to-esap-blue rounded-full mx-auto my-8" />
 
           <p className="text-lg text-foreground/80">{data.hero.welcome}</p>
 
@@ -495,7 +495,7 @@ export default async function JoinPage() {
       </section>
 
       {/* 结语 */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-transparent to-muted/30">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-linear-to-b from-transparent to-muted/30">
         <div className="max-w-3xl mx-auto text-center space-y-6">
           <p className="text-foreground/80 leading-relaxed">
             {data.closing.message}
@@ -513,7 +513,7 @@ export default async function JoinPage() {
             欢迎来到 ESAP。
           </p>
 
-          <div className="w-24 h-1 bg-gradient-to-r from-esap-yellow via-esap-pink to-esap-blue rounded-full mx-auto my-8" />
+          <div className="w-24 h-1 bg-linear-to-r from-esap-yellow via-esap-pink to-esap-blue rounded-full mx-auto my-8" />
 
           <blockquote className="text-foreground/60 italic">
             {data.closing.finalQuote}

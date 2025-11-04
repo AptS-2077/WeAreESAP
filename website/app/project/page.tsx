@@ -41,7 +41,7 @@ export default async function ProjectPage() {
   return (
     <main className="min-h-screen">
       {/* Hero 区域 */}
-      <section className="relative py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-muted/30 to-transparent">
+      <section className="relative py-20 px-4 sm:px-6 lg:px-8 bg-linear-to-b from-muted/30 to-transparent">
         <div className="max-w-5xl mx-auto text-center space-y-6">
           <h1 className="text-4xl sm:text-5xl font-bold text-foreground">
             {data.hero.title}
@@ -60,7 +60,7 @@ export default async function ProjectPage() {
           </p>
 
           {/* 分隔线 */}
-          <div className="w-24 h-1 bg-gradient-to-r from-esap-yellow via-esap-pink to-esap-blue rounded-full mx-auto mt-8" />
+          <div className="w-24 h-1 bg-linear-to-r from-esap-yellow via-esap-pink to-esap-blue rounded-full mx-auto mt-8" />
         </div>
       </section>
 
@@ -267,7 +267,7 @@ export default async function ProjectPage() {
       </section>
 
       {/* 结语 */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-transparent to-muted/30">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-linear-to-b from-transparent to-muted/30">
         <div className="max-w-3xl mx-auto text-center space-y-6">
           <p className="text-foreground/80 leading-relaxed">
             这个世界太过复杂，我们常常感到迷失。
@@ -286,7 +286,7 @@ export default async function ProjectPage() {
           <p className="text-xl text-esap-yellow font-bold mt-8">
             向那卫星许下你的愿望吧。
           </p>
-          <div className="w-24 h-1 bg-gradient-to-r from-esap-yellow via-esap-pink to-esap-blue rounded-full mx-auto mt-8" />
+          <div className="w-24 h-1 bg-linear-to-r from-esap-yellow via-esap-pink to-esap-blue rounded-full mx-auto mt-8" />
           <p className="text-sm text-muted-foreground italic">
             The ESAP Project - 我们终将逃离
           </p>

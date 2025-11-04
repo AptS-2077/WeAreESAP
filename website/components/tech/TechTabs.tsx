@@ -49,7 +49,7 @@ export function TechTabs({ modules, activeId, onTabChange }: TechTabsProps) {
                 {isActive && (
                   <motion.div
                     layoutId="activeTab"
-                    className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-esap-yellow via-esap-pink to-esap-blue"
+                    className="absolute bottom-0 left-0 right-0 h-0.5 bg-linear-to-r from-esap-yellow via-esap-pink to-esap-blue"
                     transition={{
                       type: "spring",
                       stiffness: 500,

@@ -69,7 +69,7 @@ export default async function CharactersPage() {
           <p className="text-lg text-muted-foreground">
             探索 ESAP 项目的核心成员
           </p>
-          <div className="w-24 h-1 bg-gradient-to-r from-esap-yellow via-esap-pink to-esap-blue rounded-full mx-auto mt-6" />
+          <div className="w-24 h-1 bg-linear-to-r from-esap-yellow via-esap-pink to-esap-blue rounded-full mx-auto mt-6" />
         </div>
       </section>
 

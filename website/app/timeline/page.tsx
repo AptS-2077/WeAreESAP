@@ -58,7 +58,7 @@ export default async function TimelinePage() {
           <p className="text-base md:text-lg text-foreground/80">
             记录 The ESAP Project 从 2021 年至今的每一个重要时刻
           </p>
-          <div className="w-24 md:w-32 h-1 bg-gradient-to-r from-esap-yellow via-esap-pink to-esap-blue rounded-full mx-auto mt-6 md:mt-8" />
+          <div className="w-24 md:w-32 h-1 bg-linear-to-r from-esap-yellow via-esap-pink to-esap-blue rounded-full mx-auto mt-6 md:mt-8" />
         </div>
       </section>
 

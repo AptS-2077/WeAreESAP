@@ -42,14 +42,16 @@ export function CharactersClient({
       </section>
 
       {/* 移动端：可折叠列表 */}
-      <section className="md:hidden py-8">
-        <CharacterMobileView
-          characters={accordionCharacters}
-          onCharacterClick={handleCharacterClick}
-        />
+      <section className="md:hidden py-8 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <CharacterMobileView
+            characters={accordionCharacters}
+            onCharacterClick={handleCharacterClick}
+          />
+        </div>
       </section>
 
-      {/* 其他角色：卡片网格展示（桌面端和移动端共用） */}
+      {/* 其他角色 */}
       {otherCharacters.length > 0 && (
         <section className="py-16 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
@@ -58,11 +60,11 @@ export function CharactersClient({
               <h2 className="text-3xl font-bold mb-4 text-foreground">
                 其他成员
               </h2>
-              <div className="w-16 h-1 bg-gradient-to-r from-esap-yellow via-esap-pink to-esap-blue rounded-full mx-auto" />
+              <div className="w-16 h-1 bg-linear-to-r from-esap-yellow via-esap-pink to-esap-blue rounded-full mx-auto" />
             </div>
 
-            {/* 响应式网格 */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            {/* 桌面端：卡片网格 */}
+            <div className="max-md:hidden md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
               {otherCharacters.map((character, index) => (
                 <CharacterCard
                   key={character.id}
@@ -71,6 +73,14 @@ export function CharactersClient({
                   priority={index === 0}
                 />
               ))}
+            </div>
+
+            {/* 移动端：折叠列表 */}
+            <div className="md:hidden">
+              <CharacterMobileView
+                characters={otherCharacters}
+                onCharacterClick={handleCharacterClick}
+              />
             </div>
           </div>
         </section>

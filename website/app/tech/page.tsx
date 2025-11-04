@@ -53,7 +53,7 @@ export default async function TechPage() {
           <p className="text-lg text-muted-foreground">
             Technical Specifications of The ESAP Project
           </p>
-          <div className="w-24 h-1 bg-gradient-to-r from-esap-yellow via-esap-pink to-esap-blue rounded-full mx-auto mt-6" />
+          <div className="w-24 h-1 bg-linear-to-r from-esap-yellow via-esap-pink to-esap-blue rounded-full mx-auto mt-6" />
         </div>
       </section>
 
