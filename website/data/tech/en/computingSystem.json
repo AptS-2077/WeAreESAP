@@ -1,0 +1,208 @@
+{
+  "id": "computing-system",
+  "name": "Feedscatteron Computing System",
+  "icon": "Zap",
+  "color": {
+    "primary": "#ffd93d",
+    "dark": "#ffc107"
+  },
+  "description": "A Feedscatteron-based computational system that transcends traditional computing",
+  "sections": [
+    {
+      "id": "electrical-principle",
+      "title": "Electrical Principles",
+      "content": [
+        {
+          "type": "subsection",
+          "title": "Basic Formula",
+          "content": [
+            {
+              "type": "code",
+              "language": "text",
+              "content": "I_k = U_k / R"
+            },
+            {
+              "type": "paragraph",
+              "content": "Similar to Ohm's law, but applicable to Feedscatteron flow. Where I_k is the Feedscatteron current intensity, U_k is the Feedscatteron voltage, and R is the Feedscatteron resistance."
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Safety Parameters",
+          "content": [
+            {
+              "type": "table",
+              "headers": ["State", "Current Threshold", "Description"],
+              "rows": [
+                ["Normal Operation", "I_k < 5A", "Safe operating range"],
+                ["Warning Threshold", "I_k = 5-6A", "Caution required, approaching danger zone"],
+                ["Danger Threshold", "I_k > 6A", "Decay cycle shortened to 27.1ms, extremely dangerous"]
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": "When current intensity I_k > 6A, Feedscatteron undergoes accelerated decay, with the decay cycle drastically shortening from the normal 34.28 seconds to 27.1ms, releasing massive amounts of heat and potentially causing system collapse."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fluid-protection",
+      "title": "Fluid Protection Mechanism",
+      "content": [
+        {
+          "type": "subsection",
+          "title": "Circular Motion Protection",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": "To prevent Feedscatteron from colliding with pipe walls and increasing current intensity I_k, the system employs a Fluid Titanium circular motion protection mechanism:"
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Purpose: Prevent pipe wall collisions that increase I_k",
+                "Concentration Requirement: 1.2 mmol/L⁻¹",
+                "Effect: Feedscatteron turns in perfect arcs",
+                "Advantage: Zero kinetic energy loss, efficient transmission"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Transmission Optimization",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": "The special molecular structure of Fluid Titanium enables Feedscatteron to:"
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Turn with zero kinetic energy loss",
+                "Achieve high-speed data transmission",
+                "Maintain stable quantum states",
+                "Operate with extremely low energy consumption (almost no heat generation)"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "computing-performance",
+      "title": "Computing Performance",
+      "content": [
+        {
+          "type": "subsection",
+          "title": "Theoretical Performance",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": "Single silicon chip floating-point computational capacity: 6.7 × 10⁴ billion times that of human supercomputers"
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Single-core floating-point operations: Far exceeds contemporary supercomputers",
+                "Parallel processing capability: Supports massive concurrency",
+                "Energy efficiency: Extremely low (almost no heat generation)",
+                "Response speed: Near-instantaneous"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Practical Applications",
+          "content": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Human brain-level consciousness simulation",
+                "Real-time environmental perception processing",
+                "Complex decision-making computation",
+                "Memory storage and retrieval",
+                "Emotional pattern computation"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "storage-media",
+      "title": "Storage Media",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "The decay cycle of Feedscatteron in different media determines its viability as a storage medium:"
+        },
+        {
+          "type": "table",
+          "headers": ["Medium", "Decay Cycle", "Suitability"],
+          "rows": [
+            ["Liquid Titanium", "341,879 years", "Long-term storage, optimal choice"],
+            ["Specialized Silicon Chip", "3,417 months", "Medium-term storage, suitable for computation"],
+            ["Room Temperature/Pressure", "34.28 seconds", "Not suitable for storage"],
+            ["Metal", "21.1 ms", "Transmission only, not for storage"]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "Liquid Titanium is currently the best known medium for preserving Feedscatteron, capable of extending the decay cycle to over 300,000 years, making the long-term existence of Synthetics possible."
+        }
+      ]
+    },
+    {
+      "id": "applications",
+      "title": "Application Areas",
+      "content": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "CPU/GPU Computational Medium: Replacing traditional silicon-based chips",
+            "Brain Reconstruction: Complete replication of human brain structure and function",
+            "Memory Carrier: Storing a human lifetime of memories",
+            "Consciousness Simulation: Running complete copies of human consciousness",
+            "Environmental Perception: Real-time processing of sensor data",
+            "Decision Systems: Supporting complex logical reasoning"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "limitations",
+      "title": "Technical Limitations",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "Despite the powerful performance of the Feedscatteron computing system, some limitations remain:"
+        },
+        {
+          "type": "warning",
+          "level": "warning",
+          "title": "Current Technical Limitations",
+          "content": [
+            "Material Scarcity: Fluid Titanium is difficult to obtain and extremely expensive",
+            "Current Control: Must be strictly controlled below 6A",
+            "Environmental Dependency: Requires specific temperature and pressure conditions",
+            "Decay Risk: Rapid decay under high current may cause system collapse"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "These limitations mean that Feedscatteron computing systems cannot yet be widely deployed, and are only used for special purposes such as Synthetic consciousness computation."
+        }
+      ]
+    }
+  ]
+}

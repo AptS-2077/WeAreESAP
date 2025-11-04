@@ -1,0 +1,173 @@
+{
+  "id": "fluid-titanium",
+  "name": "Fluid Titanium",
+  "icon": "Droplet",
+  "color": {
+    "primary": "#4da6ff",
+    "dark": "#2e8fff"
+  },
+  "description": "The bridge connecting life and machinery, the core of synthetic blood systems",
+  "sections": [
+    {
+      "id": "basic-info",
+      "title": "Basic Information",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "Fluid Titanium, also known as \"Fluid Body\", is a class of metallic titanium organic compounds that appears as a blue liquid."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Appearance: Blue liquid",
+            "Molecular Structure: Chain structure with gaps between molecular chains",
+            "Special Properties: Composition partially unknown",
+            "Color Change: Appears pale purple when mixed with human blood"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "physical-properties",
+      "title": "Physical Properties",
+      "content": [
+        {
+          "type": "subsection",
+          "title": "Structural Characteristics",
+          "content": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Gaps between molecular chains support simultaneous passage of electrons and data",
+                "Can serve as a dual-channel medium for information transmission",
+                "Possesses high biocompatibility",
+                "Supports perfect integration of Fluid Titanium and Feedscatteron"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Feedscatteron Preservation Capability",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": "The most important property of Fluid Titanium is its ability to stably preserve Feedscatteron:"
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Extends Feedscatteron decay cycle from 34.28 seconds to 341,879 years",
+                "Particles remain active during preservation",
+                "Supports high-speed data transmission",
+                "Exact preservation mechanism not yet fully understood"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": "This preservation capability may be related to the special gaps in the molecular structure, which can stabilize the quantum states of Feedscatteron."
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Color Characteristics",
+          "content": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Pure State: Blue",
+                "Mixed with Human Blood: Pale, muted purple",
+                "Displays different shades at different concentrations"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "applications",
+      "title": "Application Scenarios",
+      "content": [
+        {
+          "type": "subsection",
+          "title": "Synthetic Blood System",
+          "content": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Serves as the primary medium for the circulatory system",
+                "Transports nutrients and signals",
+                "Supports Feedscatteron flow",
+                "Concentration Control: 1.2 mmol/L⁻¹ (circular motion region)",
+                "Flow Characteristics: Perfect arc turns with zero kinetic energy loss"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Computing System Medium",
+          "content": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "CPU/GPU computational medium",
+                "Data transmission channel",
+                "Heat management system",
+                "Computation cycle in specialized silicon chips: 3,417 months"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "safety",
+      "title": "Safety and Hazards",
+      "content": [
+        {
+          "type": "warning",
+          "level": "danger",
+          "title": "Extreme Toxicity Warning",
+          "content": [
+            "Fluid Titanium is extremely toxic to humans",
+            "Small amounts can cause human death",
+            "Requires professional protective measures",
+            "Strictly controlled circulation"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "On October 25, 2021, during a suburban factory explosion accident, blue Fluid Titanium was discovered at the scene. The accident caused the factory to collapse, and 1547 was injured in the incident but obtained crucial materials."
+        },
+        {
+          "type": "paragraph",
+          "content": "On May 7, 2022, during the Fluid Titanium mine incident, the blue Fluid Titanium mixed with red blood, revealing a pale, muted purple color. This incident provided the necessary materials for the birth of 1548."
+        }
+      ]
+    },
+    {
+      "id": "technical-specs",
+      "title": "Technical Specifications",
+      "content": [
+        {
+          "type": "table",
+          "headers": ["Parameter", "Value"],
+          "rows": [
+            ["Circular Motion Concentration Ratio", "1.2 mmol/L⁻¹"],
+            ["Feedscatteron Preservation Cycle", "341,879 years"],
+            ["Computation Cycle in Silicon Chip", "3,417 months"],
+            ["Flow Characteristics", "Perfect arc turns, zero kinetic energy loss"]
+          ]
+        }
+      ]
+    }
+  ]
+}

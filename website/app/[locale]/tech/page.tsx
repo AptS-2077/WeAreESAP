@@ -5,19 +5,23 @@ import { Suspense } from "react";
 import { TechModule } from "@/types/tech";
 import { TechPageClient } from "./TechPageClient";
 import { LoadingSpinner } from "@/components/loading";
+import { getTranslations, getLocale } from "next-intl/server";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "技术设定 - We Are ESAP",
-  description: "探索 ESAP 世界的核心技术：馈散粒子、流体钛、仿生人技术等",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("tech.metadata");
+  return {
+    title: t("title"),
+    description: t("description"),
+  };
+}
 
-async function getTechModules(): Promise<TechModule[]> {
+async function getTechModules(locale: string): Promise<TechModule[]> {
   try {
     const fs = require("fs/promises");
     const path = require("path");
 
-    const techDir = path.join(process.cwd(), "data", "tech");
+    const techDir = path.join(process.cwd(), "data", "tech", locale);
     const files = await fs.readdir(techDir);
 
     const modules: TechModule[] = [];
@@ -40,7 +44,9 @@ async function getTechModules(): Promise<TechModule[]> {
 }
 
 export default async function TechPage() {
-  const modules = await getTechModules();
+  const locale = await getLocale();
+  const modules = await getTechModules(locale);
+  const t = await getTranslations("tech");
 
   return (
     <main className="relative min-h-screen bg-background">
@@ -48,10 +54,10 @@ export default async function TechPage() {
       <section className="relative py-16 px-4 sm:px-6 lg:px-8 bg-muted/30">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-foreground">
-            技术设定
+            {t("hero.title")}
           </h1>
           <p className="text-lg text-muted-foreground">
-            Technical Specifications of The ESAP Project
+            {t("hero.subtitle")}
           </p>
           <div className="w-24 h-1 bg-linear-to-r from-esap-yellow via-esap-pink to-esap-blue rounded-full mx-auto mt-6" />
         </div>
@@ -66,7 +72,7 @@ export default async function TechPage() {
           >
             <LoadingSpinner size={150} withPulse={true} />
             <p className="text-lg font-medium text-muted-foreground">
-              正在加载技术设定...
+              {t("loading")}
             </p>
           </div>
         }
@@ -75,7 +81,7 @@ export default async function TechPage() {
           <TechPageClient modules={modules} />
         ) : (
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">
-            <p className="text-muted-foreground">暂无技术设定数据</p>
+            <p className="text-muted-foreground">{t("empty")}</p>
           </div>
         )}
       </Suspense>

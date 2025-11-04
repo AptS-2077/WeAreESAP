@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "title": "角色档案 - We Are ESAP",
+    "description": "探索 ESAP 项目的核心成员，了解每个角色的故事与设定"
+  },
+  "hero": {
+    "title": "角色档案",
+    "subtitle": "探索 ESAP 项目的核心成员"
+  },
+  "sections": {
+    "otherMembers": "其他成员"
+  },
+  "ui": {
+    "expandHint": "点击查看更多 ↓",
+    "detailHint": "点击查看完整档案 →"
+  }
+}

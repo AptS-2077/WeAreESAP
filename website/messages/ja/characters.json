@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "title": "キャラクター - We Are ESAP",
+    "description": "ESAPプロジェクトのコアメンバーを探索し、それぞれのストーリーと設定について学ぶ"
+  },
+  "hero": {
+    "title": "キャラクター",
+    "subtitle": "ESAPプロジェクトのコアメンバーを探索"
+  },
+  "sections": {
+    "otherMembers": "その他のメンバー"
+  },
+  "ui": {
+    "expandHint": "タップして詳細を見る ↓",
+    "detailHint": "タップして完全なプロフィールを見る →"
+  }
+}

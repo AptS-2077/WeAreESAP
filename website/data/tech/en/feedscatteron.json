@@ -1,0 +1,144 @@
+{
+  "id": "feedback-particle",
+  "name": "Feedscatteron",
+  "icon": "Atom",
+  "color": {
+    "primary": "#ffd93d",
+    "dark": "#ffc107"
+  },
+  "description": "A discovery that changes the nature of computation, enabling consciousness upload and faster-than-light transmission",
+  "sections": [
+    {
+      "id": "basic-params",
+      "title": "Basic Parameters",
+      "content": [
+        {
+          "type": "table",
+          "headers": ["Parameter", "Value", "Unit"],
+          "rows": [
+            ["Mass", "1.531 × 10⁻²¹⁷", "g"],
+            ["Vacuum Propagation Speed", "3.471 × 10²¹", "m/s"],
+            ["Atmospheric Pressure Decay Cycle", "34.28", "seconds"],
+            ["Decay Cycle in Liquid Titanium", "341,879", "years"],
+            ["Computation Cycle in Silicon Chip", "3,417", "months"],
+            ["Decay Cycle in Metal", "21.1", "ms"]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "discovery",
+      "title": "Discovery History",
+      "content": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Discoverer: AptS:1547",
+            "Discovery Date: November 26, 2021",
+            "Form of Existence: Widely present in dark matter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "physical-properties",
+      "title": "Physical Properties",
+      "content": [
+        {
+          "type": "subsection",
+          "title": "Particle Characteristics",
+          "content": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Extremely small volume, approximately 1/10⁻²⁹ the size of an electron",
+                "Possesses electron-like properties",
+                "Obeys kinetic energy and momentum theorems",
+                "Does not undergo refraction or diffraction"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Decay Characteristics",
+          "content": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Standard State (room temperature and pressure): Highly prone to Feedscatteron decay",
+                "Decay Product: Heat (total mass loss)",
+                "Accelerated Decay: When current intensity I_k > 6A, decay cycle uniformly shortens to 27.1ms"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Preservation Conditions",
+          "content": [
+            {
+              "type": "list",
+              "ordered": true,
+              "items": [
+                "Liquid Titanium Preservation: Decay cycle extended to 341,879 years",
+                "Specialized Silicon Chip Preservation: Decay cycle extended to 3,417 months",
+                "Metal Preservation: Not suitable for long-term storage (21.1ms decay cycle)"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "computing",
+      "title": "Computing Capability",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "Single silicon chip floating-point computational capacity: Theoretical value of 6.7 × 10⁴ billion times that of human supercomputers"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": ["CPU/GPU Computational Medium", "Brain Reconstruction", "Memory Carrier", "Consciousness Simulation"]
+        }
+      ]
+    },
+    {
+      "id": "transmission",
+      "title": "Transmission Characteristics",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "Advantages:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Propagation in metal can be considered heat-free",
+            "Faster-than-light transmission capability",
+            "Precise quantum state control"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "Limitations:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Requires Fluid Titanium as a protective medium",
+            "Strict requirements for current intensity",
+            "Decay cycle heavily influenced by environment"
+          ]
+        }
+      ]
+    }
+  ]
+}

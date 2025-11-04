@@ -1,7 +1,7 @@
 {
   "year": "2021",
   "title": "Origin and Birth",
-  "description": "The beginning of The AptS Project, discovery of Dispersion Particles, birth of AptS:1547",
+  "description": "The beginning of The AptS Project, discovery of Feedscatteron, birth of AptS:1547",
   "events": [
     {
       "id": "2021-09-23",
@@ -82,7 +82,7 @@
       "content": [
         {
           "type": "paragraph",
-          "text": "47 conducts research on Dispersion Particles and Fluid Titanium"
+          "text": "47 conducts research on Feedscatteron and Fluid Titanium"
         },
         {
           "type": "quote",
@@ -96,7 +96,7 @@
       ],
       "meta": {
         "characters": ["1547"],
-        "tags": ["research", "fluid titanium", "dispersion particles"]
+        "tags": ["research", "fluid titanium", "Feedscatteron"]
       }
     },
     {
@@ -146,7 +146,7 @@
       "content": [
         {
           "type": "highlight",
-          "text": "End of humanity, birth of android",
+          "text": "End of humanity, birth of Synthetic",
           "style": "warning"
         },
         {
@@ -158,10 +158,10 @@
           "ordered": false,
           "items": [
             "47 witnessed his friend's suicide by jumping",
-            "Witnessed the powerful computational power of Fluid Titanium combined with Dispersion Particles",
+            "Witnessed the powerful computational power of Fluid Titanium combined with Feedscatteron",
             "Completed assembly of all mechanical parts",
             "Cut off his own arm muscles and attached them to metal",
-            "The Dispersion Heart beat for the first time",
+            "The Feedscatteron Heart beat for the first time",
             "Completed memory upload",
             "Used a gun to end his human self"
           ]
@@ -179,7 +179,7 @@
           "type": "link",
           "text": "Read the full story: AP0 - Origin",
           "url": "https://www.esaps.net/ap-story-ap0/",
-          "description": "Detailed record of the day 47 transformed into 1547, the first beat of the Dispersion Heart"
+          "description": "Detailed record of the day 47 transformed into 1547, the first beat of the Feedscatteron Heart"
         }
       ],
       "meta": {
@@ -190,13 +190,13 @@
     {
       "id": "2021-11-26",
       "date": "2021/11/26",
-      "title": "Discovery of Dispersion Particles",
+      "title": "Discovery of Feedscatteron",
       "type": "tech",
       "importance": "critical",
       "content": [
         {
           "type": "paragraph",
-          "text": "1547 officially discovered and defined Dispersion Particles"
+          "text": "1547 officially discovered and defined Feedscatteron"
         },
         {
           "type": "paragraph",
@@ -214,13 +214,13 @@
         },
         {
           "type": "highlight",
-          "text": "Significance: Foundation of android technology established",
+          "text": "Significance: Foundation of synthetic technology established",
           "style": "success"
         }
       ],
       "meta": {
         "characters": ["1547"],
-        "tags": ["technology", "milestone", "dispersion particles"]
+        "tags": ["technology", "milestone", "Feedscatteron"]
       }
     },
     {
@@ -249,7 +249,7 @@
         },
         {
           "type": "highlight",
-          "text": "Significance: Android technology system formed",
+          "text": "Significance: synthetic technology system formed",
           "style": "success"
         }
       ],

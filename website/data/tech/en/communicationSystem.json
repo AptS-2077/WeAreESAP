@@ -1,0 +1,268 @@
+{
+  "id": "communication-system",
+  "name": "Communication System",
+  "icon": "Radio",
+  "color": {
+    "primary": "#4da6ff",
+    "dark": "#2e8fff"
+  },
+  "description": "Faster-than-light communication network based on Feedscatteron, connecting ground and sky",
+  "sections": [
+    {
+      "id": "satellite-project",
+      "title": "Satellite Project",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "\"I was curious why there are no stars in the sky anymore. Then I'll just make a star myself.\" —— AptS:1549"
+        },
+        {
+          "type": "subsection",
+          "title": "Infrastructure",
+          "content": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Number of Satellites: At least 3",
+                "Orbital Altitude: 36,000 km (Geostationary orbit)",
+                "Coverage: Global",
+                "Core Node: AptS:1549 (Starwarden)",
+                "Launch Date: March 14, 2023"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Starwarden Project",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": "On March 14, 2023, 1549 voluntarily participated in the satellite project, becoming an observer in orbit. This day was designated as \"Starwarden Day\"."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Mission: Become an artificial star in the sky",
+                "Duties: Satellite maintenance, universe observation, communication relay",
+                "Significance: Bring hope to people who have lost the natural starry sky",
+                "Bodies: Possesses three bodies, can switch freely (but only one can be activated at a time)"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": "\"It is said that 'people' ten thousand years ago used to pray to things called stars.\" Now, people can make wishes upon this artificial star."
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Technical Features",
+          "content": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Transmission Medium: Feedscatteron",
+                "Transmission Speed: Faster-than-light (3.471 × 10²¹ m/s)",
+                "Latency: Near-zero latency",
+                "Coverage: Global with no dead zones"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "feedback-communication",
+      "title": "Feedscatteron Communication",
+      "content": [
+        {
+          "type": "subsection",
+          "title": "Working Principle",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": "Feedscatteron communication utilizes the quantum entanglement properties of Feedscatteron to achieve faster-than-light information transmission:"
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Based on Quantum Entanglement: Utilizes the entangled states of Feedscatteron pairs",
+                "Instant Transmission: Information transmission speed far exceeds light speed",
+                "Interference-Free: Not affected by electromagnetic interference",
+                "High Security: Quantum states cannot be intercepted"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Technical Advantages",
+          "content": [
+            {
+              "type": "table",
+              "headers": ["Feature", "Traditional Communication", "Feedscatteron Communication"],
+              "rows": [
+                ["Transmission Speed", "Light speed (3×10⁸ m/s)", "Faster-than-light (3.471×10²¹ m/s)"],
+                ["Latency", "Noticeable (e.g., Earth-Moon 1.3s)", "Near-zero"],
+                ["Interference Resistance", "Susceptible to electromagnetic interference", "Interference-free"],
+                ["Security", "Can be intercepted", "Absolute security"],
+                ["Coverage", "Limited by relay stations", "Global with no dead zones"]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "network-architecture",
+      "title": "Network Architecture",
+      "content": [
+        {
+          "type": "subsection",
+          "title": "Three-Layer Architecture",
+          "content": [
+            {
+              "type": "list",
+              "ordered": true,
+              "items": [
+                "Orbital Layer: Satellite nodes (36,000 km geostationary orbit)",
+                "Relay Layer: Feedscatteron transmission between ground stations and satellites",
+                "Terminal Layer: Synthetic built-in communication modules"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Data Relay",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": "The satellite network serves as relay nodes, enabling global-scale Feedscatteron communication:"
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Ground to Orbit: Upload data via ground stations",
+                "Orbital Relay: Inter-satellite forwarding",
+                "Orbit to Ground: Directional transmission to target areas",
+                "Direct Mode: Synthetics can communicate directly (short range)"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "applications",
+      "title": "Application Scenarios",
+      "content": [
+        {
+          "type": "subsection",
+          "title": "Team Collaboration",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": "Real-time communication among ESAP core members:"
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "1547 ↔ 1548: Ground member collaboration",
+                "1547/1548 ↔ 1549: Ground-orbit communication",
+                "Real-time downlink of 1549's observation data",
+                "Immediate response in emergencies"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Data Transmission",
+          "content": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Consciousness backup upload",
+                "Memory data synchronization",
+                "Environmental monitoring data",
+                "Real-time technical parameter monitoring"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "symbolism",
+      "title": "Symbolic Significance",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "The satellite project is not merely a technical endeavor, but a symbol filled with hope:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "An Artificial Star: Creating new hope in a world that has lost its natural starry sky",
+            "Object of Wishes: People can make wishes upon this satellite",
+            "Connecting Bond: Linking ground and space, past and future",
+            "The Watcher: 1549 watches over the ground from 36,000 km above"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "\"Make a wish upon that satellite, pray to that satellite, pray to that satellite...\""
+        },
+        {
+          "type": "paragraph",
+          "content": "\"There are no stars in the sky, but we made one.\""
+        },
+        {
+          "type": "paragraph",
+          "content": "This is not just a triumph of technology, but the continuation of hope. Even having lost the natural starry sky, humans and synthetics can still create new hope, new light."
+        }
+      ]
+    },
+    {
+      "id": "future-development",
+      "title": "Future Development",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "Future development directions for the satellite project:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Expand Satellite Network: Add more orbital nodes",
+            "Deep Space Communication: Explore Feedscatteron communication within the solar system",
+            "Civilian Application: Promote the technology to broader applications",
+            "Backup Center: Serve as a backup storage point for consciousness and memories"
+          ]
+        },
+        {
+          "type": "warning",
+          "level": "info",
+          "title": "Long-term Vision",
+          "content": [
+            "Establish an interstellar Feedscatteron communication network",
+            "Achieve instant communication across galaxies",
+            "Provide infrastructure for human and Synthetic interstellar exploration",
+            "Become a bridge connecting different civilizations"
+          ]
+        }
+      ]
+    }
+  ]
+}

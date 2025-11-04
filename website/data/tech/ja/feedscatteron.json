@@ -1,0 +1,144 @@
+{
+  "id": "feedback-particle",
+  "name": "反饋粒子",
+  "icon": "Atom",
+  "color": {
+    "primary": "#ffd93d",
+    "dark": "#ffc107"
+  },
+  "description": "計算の本質を変える発見、意識アップロードと超光速伝送を実現",
+  "sections": [
+    {
+      "id": "basic-params",
+      "title": "基本パラメータ",
+      "content": [
+        {
+          "type": "table",
+          "headers": ["パラメータ", "数値", "単位"],
+          "rows": [
+            ["質量", "1.531 × 10⁻²¹⁷", "g"],
+            ["真空伝播速度", "3.471 × 10²¹", "m/s"],
+            ["常圧崩壊周期", "34.28", "秒"],
+            ["液体チタン中崩壊周期", "341,879", "年"],
+            ["シリコンチップ中計算周期", "3,417", "ヶ月"],
+            ["金属中崩壊周期", "21.1", "ms"]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "discovery",
+      "title": "発見の歴史",
+      "content": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "発見者：AptS:1547（アプツ1547）",
+            "発見時期：2021年11月26日",
+            "存在形態：暗黒物質中に広く存在"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "physical-properties",
+      "title": "物理的特性",
+      "content": [
+        {
+          "type": "subsection",
+          "title": "粒子特性",
+          "content": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "体積極小、電子の約10⁻²⁹分の1",
+                "電子に類似した特性を持つ",
+                "運動エネルギー、運動量の定理に従う",
+                "屈折や回折現象は発生しない"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "崩壊特性",
+          "content": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "標準状態（常温常圧）：反饋崩壊が極めて起こりやすい",
+                "崩壊産物：熱（質量が全て欠損）",
+                "崩壊加速性：電流強度 I_k > 6A の時、崩壊周期が一律に27.1msに短縮"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "保存条件",
+          "content": [
+            {
+              "type": "list",
+              "ordered": true,
+              "items": [
+                "液体チタン保存：崩壊周期が341,879年に延長",
+                "特製シリコンチップ保存：崩壊周期が3,417ヶ月に延長",
+                "金属保存：長期保存に不適（21.1ms崩壊周期）"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "computing",
+      "title": "計算能力",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "単一シリコンチップの浮動小数点演算能力：理論値で人類のスーパーコンピュータの 6.7 × 10⁴ 億倍"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": ["CPU/GPU 演算媒体", "脳の再構築", "記憶担体", "意識シミュレーション"]
+        }
+      ]
+    },
+    {
+      "id": "transmission",
+      "title": "伝送特性",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "優位性："
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "金属中の伝播は発熱しないと見なせる",
+            "超光速伝送能力",
+            "精確な量子状態制御"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "制限："
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "液体チタンを保護媒体として必要とする",
+            "電流強度に厳格な要求がある",
+            "崩壊周期が環境の影響を大きく受ける"
+          ]
+        }
+      ]
+    }
+  ]
+}
