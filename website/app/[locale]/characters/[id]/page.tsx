@@ -5,9 +5,12 @@ import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import dynamic from "next/dynamic";
 import { Character } from "@/types/character";
+import { Relationship } from "@/types/relationship";
+import { RelationshipNodeData } from "@/types/relationship-node";
 import { CharacterHero, CharacterInfo } from "@/components/character/detail";
 import { getImageUrl } from "@/lib/utils";
 import { getTranslations } from "next-intl/server";
+import { getCharacterRelationships } from "@/lib/relationship-parser";
 
 // 懒加载非首屏组件
 const CharacterStory = dynamic(
@@ -154,6 +157,27 @@ async function getCharacter(
   }
 }
 
+// 获取相关角色的基本数据（用于关系图谱）
+async function getRelatedCharactersData(
+  relationships: Relationship[],
+  locale: string
+): Promise<Record<string, RelationshipNodeData>> {
+  const characterMap: Record<string, RelationshipNodeData> = {};
+
+  for (const rel of relationships) {
+    const relatedChar = await getCharacter(rel.targetId, locale);
+    if (relatedChar) {
+      characterMap[rel.targetId] = {
+        id: relatedChar.id,
+        name: relatedChar.name,
+        color: relatedChar.color.primary,
+      };
+    }
+  }
+
+  return characterMap;
+}
+
 export default async function CharacterDetailPage({
   params,
 }: {
@@ -165,6 +189,15 @@ export default async function CharacterDetailPage({
   if (!character) {
     notFound();
   }
+
+  // 获取关系数据
+  const relationships = await getCharacterRelationships(id);
+
+  // 预获取相关角色的数据
+  const relatedCharactersData = await getRelatedCharactersData(
+    relationships,
+    locale
+  );
 
   return (
     <main className="min-h-screen">
@@ -196,7 +229,11 @@ export default async function CharacterDetailPage({
           <CharacterPhilosophy character={character} />
 
           {/* 人际关系 */}
-          <CharacterRelationships character={character} />
+          <CharacterRelationships
+            character={character}
+            relationships={relationships}
+            relatedCharactersData={relatedCharactersData}
+          />
         </div>
       </div>
 

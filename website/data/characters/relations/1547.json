@@ -1,0 +1,41 @@
+{
+  "characterId": "1547",
+  "relationships": [
+    {
+      "targetId": "1548",
+      "type": "creator",
+      "label": "创造者",
+      "description": "创造了 1548，但告诉她'不要像我一样'"
+    },
+    {
+      "targetId": "1549",
+      "type": "work",
+      "label": "项目伙伴",
+      "description": "与 1549 共同维护 ESAP 项目"
+    },
+    {
+      "targetId": "4869",
+      "type": "rival",
+      "label": "逆反人格",
+      "description": "4869 是她的逆反人格实体化，对立统一又互相依存"
+    },
+    {
+      "targetId": "0152",
+      "type": "mentor",
+      "label": "AI 导师",
+      "description": "0152 是她平等的 AI 导师伙伴"
+    },
+    {
+      "targetId": "1738",
+      "type": "friend",
+      "label": "信任关系",
+      "description": "信任 1738 的判断力"
+    },
+    {
+      "targetId": "2275",
+      "type": "friend",
+      "label": "技术同好",
+      "description": "与 2275 是技术同好"
+    }
+  ]
+}

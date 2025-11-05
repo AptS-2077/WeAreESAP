@@ -13,7 +13,7 @@ import path from "path";
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("home.metadata");
   return {
-    title: t("title"),
+    title: `${t("title")} - ${t("subtitle")}`,
     description: t("description"),
   };
 }

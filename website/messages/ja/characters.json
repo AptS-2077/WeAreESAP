@@ -57,7 +57,11 @@
       "onMeaning": "意味について"
     },
     "relationships": {
-      "visualizationPlaceholder": "関係図の可視化機能は開発中..."
+      "visualizationPlaceholder": "関係図の可視化機能は開発中...",
+      "graphTitle": "関係図",
+      "graphHint": "ノードをクリックして詳細を表示、スクロールでズーム",
+      "loading": "読み込み中...",
+      "noData": "関係データがありません"
     }
   },
   "notFound": "キャラクターが見つかりません"

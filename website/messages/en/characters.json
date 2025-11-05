@@ -57,7 +57,11 @@
       "onMeaning": "On Meaning"
     },
     "relationships": {
-      "visualizationPlaceholder": "Relationship visualization feature in development..."
+      "visualizationPlaceholder": "Relationship visualization feature in development...",
+      "graphTitle": "Relationship Graph",
+      "graphHint": "Click nodes to view details, scroll to zoom",
+      "loading": "Loading...",
+      "noData": "No relationship data available"
     }
   },
   "notFound": "Character not found"

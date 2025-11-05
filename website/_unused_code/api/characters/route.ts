@@ -12,12 +12,33 @@ export async function GET(
 ) {
   try {
     const { id } = await params;
-    const filePath = path.join(
+
+    // 从 URL 查询参数获取 locale，默认为 zh-CN
+    const { searchParams } = new URL(request.url);
+    const locale = searchParams.get("locale") || "zh-CN";
+
+    // 尝试读取指定语言的文件
+    let filePath = path.join(
       process.cwd(),
       "data",
       "characters",
+      locale,
       `${id}.json`
     );
+
+    // 检查文件是否存在，不存在则回退到 zh-CN
+    try {
+      await fs.access(filePath);
+    } catch {
+      console.log(`角色文件 ${locale}/${id}.json 不存在，回退到 zh-CN`);
+      filePath = path.join(
+        process.cwd(),
+        "data",
+        "characters",
+        "zh-CN",
+        `${id}.json`
+      );
+    }
 
     const fileContent = await fs.readFile(filePath, "utf-8");
     const character: Character = JSON.parse(fileContent);
