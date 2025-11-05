@@ -12,6 +12,7 @@ import {
   Navigation,
   Footer,
   ScrollToTop,
+  PanguProvider,
 } from "@/components";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
@@ -67,6 +68,7 @@ export default async function RootLayout({
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider>
             <TransitionProvider>
+              <PanguProvider />
               <Navigation />
               <PageTransition>{children}</PageTransition>
               <Footer />

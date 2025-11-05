@@ -6,6 +6,7 @@ export { ThemeToggle } from "./ThemeToggle";
 export { ThemeProvider } from "./ThemeProvider";
 export { Icon, hasIcon, type IconName, type IconProps } from "./Icon";
 export { LanguageSwitcher } from "./LanguageSwitcher";
+export { PanguProvider } from "./PanguProvider";
 
 // 页面过渡相关
 export { TransitionProvider, useTransition } from "./TransitionContext";
