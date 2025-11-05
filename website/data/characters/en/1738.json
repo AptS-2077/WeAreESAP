@@ -15,13 +15,46 @@
   "backgroundImage": "/images/characters/img_1738.webp",
   "tier": "core",
   "meta": {
-    "background": "Actively joined ESAP, identifies with its philosophy",
-    "abilities": [
-      "mediation and negotiation",
-      "emotional perception",
-      "social networking",
-      "strategic analysis"
+    "bodyType": "Human",
+    "background": "Was once a core member of a human organization that claimed to pursue progress and innovation, but was actually filled with power struggles and profit games. Within the organization, 1738 gradually saw through the hypocrisy behind the so-called 'black and white' principles—rules were strictly enforced on ordinary members, while the leadership could always find exceptions. This experience taught him to question superficial justice, and he chose to leave when their ideologies no longer aligned. In 2023, when news of the Polar Star Satellite launch spread, he was moved by ESAP's philosophy that 'even artificial light can guide the way,' believing that bionic beings and humans should coexist rather than oppose each other. After observation and understanding, he proactively contacted and joined ESAP, becoming a bridge between the team and the outside world. He later introduced his friend Lin Chengyao (2275) to the team.",
+    "relationship": "1547 trusts his judgment and consults him when facing external crises or major decisions; will counsel 1547 with calm methods when she loses emotional control; provides ground intelligence and orbital action support for 1549, acting as coordinator between heaven and earth; introduced his friend 2275 to the team, the two complement each other in cooperation; maintains respectful distance with 1548, understands her rebellion but won't accommodate it; plays the role of coordinator and external liaison in the team.",
+    "abilities": ["mediation and negotiation", "emotional perception", "social networking", "strategic analysis", "crisis management", "information gathering", "multi-party coordination"],
+    "characterTraits": [
+      "Calm and steady: not easily swayed by emotions, can maintain rational thinking even in crises",
+      "Good listener: can patiently listen to all sides' positions, understand concerns and demands from different angles",
+      "Flexible and pragmatic: doesn't adhere to absolute principles, knows how to find feasible balance points in reality, but has untouchable bottom lines",
+      "Low-key and cautious: doesn't reveal his thoughts too much, habitually observes before acting, leaves room in actions",
+      "Balance sense forged by experience: having experienced organizational hypocrisy, learned to seek true gray wisdom between black and white",
+      "Pragmatist: compared to idealistic slogans, more concerned with what results can actually be achieved",
+      "Reliable coordinator: team members know that entrusting complex external affairs to him will get proper handling",
+      "Principled flexibility: though choosing the gray zone, never compromises on core values (like protecting the team, no betrayal)"
     ],
-    "role": "Coordinator and balancer"
+    "speechStyle": [
+      "Concise and powerful: 'This matter can be handled this way' 'I suggest we observe first,' no nonsense",
+      "Objective statements: 'From their perspective...' 'There are three possibilities here,' showing the full picture rather than a single position",
+      "Provides options without forcing: 'You can choose A or B, I'll support your decision,' respecting others' autonomy",
+      "Firm at critical moments: 'This bottom line cannot be crossed' 'I'll handle this matter,' won't hesitate when firmness is needed",
+      "Rational during emotional regulation: 'I understand your anger, but now we need to...' 'Calm down, let's figure this out together'",
+      "Counsel to 1547: 'You need to rest' 'This decision is too impulsive, think again'",
+      "Tone is peaceful but carries weight, making people feel they can trust and rely on him"
+    ],
+    "dailyLife": [
+      "Collects and analyzes external information, monitors dynamics that might affect ESAP",
+      "Coordinates internal team communication, ensuring information flow and understanding",
+      "Handles contact and negotiations with external organizations and institutions",
+      "Observes team members' conditions, provides support or mediation when necessary",
+      "Works with 2275 to maintain team infrastructure and daily operations",
+      "Does much behind-the-scenes work quietly, rarely seeks credit proactively",
+      "Contemplates long-term challenges facing the team and response strategies alone"
+    ],
+    "specialMoments": [
+      "2023/11 - Joining ESAP: Shortly after the Polar Star Satellite launch, attracted by ESAP's philosophy, proactively contacted and joined the team after observation, becoming AptS:1738",
+      "First external negotiation: Represented ESAP in negotiations with a human organization skeptical of bionic beings, successfully resolved a potential conflict and gained buffer space for the project",
+      "1547's emotional breakdown incident: When 1547 exploded from both external pressure and internal depression, preparing to make an extreme decision, 1738 calmly intervened 'You're not rational right now, put down the weapon, let's talk,' successfully stabilizing the situation",
+      "Introducing 2275: Seeing the team needed more warmth and technical support, introduced his friend Lin Chengyao, 'She'll be a good partner'",
+      "Providing key intelligence to 1549: In a crisis, 1738's gathered ground intelligence combined with 1549's orbital perspective successfully predicted the crisis direction and formulated response strategies",
+      "Data Tower incident aftermath: After the incident, 1738 was responsible for coordinating relationships among all parties, handling aftermath to prevent further escalation, while comforting 1548's extreme emotions",
+      "Moment of breaking with former organization (flashback): When he discovered the hypocrisy and double standards of the organization's leadership, he chose to leave saying 'I will no longer endorse hypocritical justice,' this became a turning point in his life"
+    ]
   }
 }
