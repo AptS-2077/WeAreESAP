@@ -82,8 +82,8 @@ export function CharacterHero({ character }: CharacterHeroProps) {
         className="absolute inset-0 z-[1]"
         style={{
           background: character.backgroundImage
-            ? `linear-gradient(135deg, ${character.color.primary}50, ${character.color.dark}70)`
-            : `linear-gradient(135deg, ${character.color.primary}60, ${character.color.dark}80)`,
+            ? `linear-gradient(135deg, ${character.color.primary}40, ${character.color.dark}60)`
+            : `linear-gradient(135deg, ${character.color.primary}50, ${character.color.dark}70)`,
         }}
       />
 

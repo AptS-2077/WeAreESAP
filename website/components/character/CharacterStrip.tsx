@@ -28,7 +28,7 @@ function CharacterStripComponent({
 
   // 预计算颜色值
   const lightModeColor = getContrastTextColor(character.color.primary);
-  const darkModeColor = getContrastTextColorDark(character.color.primary);
+  const darkModeColor = getContrastTextColorDark(character.color.dark);
 
   return (
     <motion.div
@@ -56,13 +56,21 @@ function CharacterStripComponent({
         />
       )}
 
-      {/* 遮罩层 */}
+      {/* 遮罩层 - 使用两层实现平滑过渡 */}
+      {/* 收起状态的遮罩 */}
       <div
-        className="absolute inset-0 transition-all duration-500"
+        className="absolute inset-0 transition-opacity duration-500"
         style={{
-          background: isExpanded
-            ? `linear-gradient(135deg, ${character.color.primary}40, ${character.color.dark}50)`
-            : `linear-gradient(to bottom, ${character.color.primary}80, ${character.color.dark}80)`,
+          background: `linear-gradient(to bottom, ${character.color.primary}80, ${character.color.dark}80)`,
+          opacity: isExpanded ? 0 : 1,
+        }}
+      />
+      {/* 展开状态的遮罩 */}
+      <div
+        className="absolute inset-0 transition-opacity duration-500"
+        style={{
+          background: `linear-gradient(135deg, ${character.color.primary}40, ${character.color.dark}50)`,
+          opacity: isExpanded ? 1 : 0,
         }}
       />
 
