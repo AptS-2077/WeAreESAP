@@ -1,0 +1,22 @@
+
+{
+  "id": "2078",
+  "name": "陆",
+  "code": "AptS:2078",
+  "nickname": "2078",
+  "color": {
+    "primary": "#ffd93d",
+    "dark": "#ffc107"
+  },
+  "role": "批判者",
+  "species": "人格",
+  "quote": "你必须尽可能做你认为最正确的事！",
+  "description": "感性是人类最珍贵的品质，而理性是人类最宝贵的财富",
+  "keywords": ["批判", "辩证", "理性"],
+  "backgroundImage": "/images/characters/img_2078.webp",
+  "tier": "guest",
+  "meta": {
+    "bodyType": "思维",
+    "abilities": ["政治学", "辩证法", "唯物论", "哲学"]
+  }
+}
