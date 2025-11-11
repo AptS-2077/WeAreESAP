@@ -130,8 +130,7 @@ app/[locale]/
 
 **关键特性：**
 
-- ✅ Server Components（默认）
-- ✅ React Server Components（RSC）
+- ✅ React Server Components (RSC)
 - ✅ 自动代码分割
 - ✅ 流式渲染（Streaming）
 - ✅ 布局嵌套（Nested Layouts）
