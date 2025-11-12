@@ -229,6 +229,7 @@ export async function isDarkTheme(page: Page): Promise<boolean> {
  */
 export async function getCurrentLocale(page: Page): Promise<string> {
   const url = page.url();
-  const match = url.match(/\/(zh-CN|zh|en|ja)(?:\/|$)/);
-  return match ? (match[1] === "zh-CN" ? "zh" : match[1]) : "zh";
+  const match = url.match(/\/(zh-CN|en|ja)(?:\/|$)/);
+  // 'zh-CN' is the default locale and might not have a path prefix.
+  return match ? match[1] : "zh-CN";
 }
