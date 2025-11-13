@@ -16,7 +16,8 @@ export async function generateMetadata(): Promise<Metadata> {
   const title = `${t("title")} - ${t("subtitle")}`;
   const description = t("description");
   const ogImage = "/images/homepage.jpg";
-  const pageUrl = `${SITE_CONFIG.baseUrl}/${locale}`;
+  const baseUrl = SITE_CONFIG.baseUrl;
+  const pageUrl = `${baseUrl}/${locale}`;
 
   return {
     title,
