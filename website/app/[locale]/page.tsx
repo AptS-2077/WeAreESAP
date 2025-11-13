@@ -8,12 +8,40 @@ import { HomeCharacters } from "./HomeCharacters";
 import { getLocale, getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
 import { loadJsonFiles } from "@/lib/data-loader";
+import { SITE_CONFIG } from "@/lib/constants";
 
 export async function generateMetadata(): Promise<Metadata> {
+  const locale = await getLocale();
   const t = await getTranslations("home.metadata");
+  const title = `${t("title")} - ${t("subtitle")}`;
+  const description = t("description");
+  const ogImage = "/images/homepage.jpg";
+  const pageUrl = `${SITE_CONFIG.baseUrl}/${locale}`;
+
   return {
-    title: `${t("title")} - ${t("subtitle")}`,
-    description: t("description"),
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      type: "website",
+      url: pageUrl,
+      images: [
+        {
+          url: `${SITE_CONFIG.baseUrl}${ogImage}`,
+          width: 1200,
+          height: 630,
+          alt: SITE_CONFIG.siteName,
+        },
+      ],
+      siteName: SITE_CONFIG.siteName,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [`${SITE_CONFIG.baseUrl}${ogImage}`],
+    },
   };
 }
 
