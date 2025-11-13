@@ -11,9 +11,33 @@ import { loadJsonFiles } from "@/lib/data-loader";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("home.metadata");
+  const title = `${t("title")} - ${t("subtitle")}`;
+  const description = t("description");
+  const ogImage = "/images/homepage.jpg";
+
   return {
-    title: `${t("title")} - ${t("subtitle")}`,
-    description: t("description"),
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      type: "website",
+      images: [
+        {
+          url: ogImage,
+          width: 1200,
+          height: 630,
+          alt: "We Are ESAP",
+        },
+      ],
+      siteName: "We Are ESAP",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [ogImage],
+    },
   };
 }
 
