@@ -14,7 +14,7 @@ import { SITE_CONFIG, DEFAULT_IMAGES } from "@/lib/constants";
 export const revalidate = 3600;
 
 export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations("home.metadata"); 
+  const t = await getTranslations("home.metadata");
   const title = `${t("title")} - ${t("subtitle")}`;
   const description = t("description");
   const ogImage = DEFAULT_IMAGES.homepage;
