@@ -104,7 +104,9 @@ function DebugPanel({
       </div>
 
       {/* 设备检测 */}
-      <div className={`p-2 rounded ${isDesktop ? "bg-blue-900" : "bg-purple-900"}`}>
+      <div
+        className={`p-2 rounded ${isDesktop ? "bg-blue-900" : "bg-purple-900"}`}
+      >
         <div className="font-bold mb-1">📱 设备检测</div>
         <div>设备类型: {isDesktop ? "✅ 桌面端" : "✅ 移动端"}</div>
         <div className="text-xs opacity-70 mt-1">
@@ -116,9 +118,7 @@ function DebugPanel({
       </div>
 
       {/* 功能启用状态 */}
-      <div
-        className={`p-2 rounded ${enabled ? "bg-green-900" : "bg-red-900"}`}
-      >
+      <div className={`p-2 rounded ${enabled ? "bg-green-900" : "bg-red-900"}`}>
         <div>功能启用: {enabled ? "✅ 是" : "❌ 否"}</div>
         <div>有隐藏属性: {hiddenProfile ? "✅ 是" : "❌ 否"}</div>
         <div>深色模式: {isDarkMode ? "✅ 是" : "❌ 否"}</div>
@@ -275,7 +275,6 @@ export function PullToReveal({
 
     setIsModalOpen(false);
     reset();
-
   }, [reset]);
 
   // ESC 键关闭隐藏内容
@@ -406,90 +405,90 @@ export function PullToReveal({
             exit={{ opacity: 0, y: 10 }}
             transition={{ duration: 0.35, ease: "easeOut" }}
           >
-          {/* 🔥 调试标签（仅调试模式） */}
-          {DEBUG_MODE && (
-            <div className="text-center text-xs font-bold text-white bg-orange-700 py-1">
-              🔥 进度指示器已显示 - 正在拉动中
+            {/* 🔥 调试标签（仅调试模式） */}
+            {DEBUG_MODE && (
+              <div className="text-center text-xs font-bold text-white bg-orange-700 py-1">
+                🔥 进度指示器已显示 - 正在拉动中
+              </div>
+            )}
+            {/* 进度环 */}
+            <div className="flex justify-center mb-4">
+              <svg width="60" height="60" className="transform -rotate-90">
+                {/* 背景圆 */}
+                <circle
+                  cx="30"
+                  cy="30"
+                  r="24"
+                  fill="none"
+                  stroke={`${characterColor}20`}
+                  strokeWidth="3"
+                />
+                {/* 进度圆 */}
+                <motion.circle
+                  cx="30"
+                  cy="30"
+                  r="24"
+                  fill="none"
+                  stroke={characterColor}
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                  strokeDasharray={circleCircumference}
+                  style={{
+                    strokeDashoffset,
+                    filter:
+                      progress >= 1
+                        ? "drop-shadow(0 0 8px currentColor)"
+                        : "none",
+                  }}
+                />
+              </svg>
             </div>
-          )}
-          {/* 进度环 */}
-          <div className="flex justify-center mb-4">
-            <svg width="60" height="60" className="transform -rotate-90">
-              {/* 背景圆 */}
-              <circle
-                cx="30"
-                cy="30"
-                r="24"
-                fill="none"
-                stroke={`${characterColor}20`}
-                strokeWidth="3"
-              />
-              {/* 进度圆 */}
-              <motion.circle
-                cx="30"
-                cy="30"
-                r="24"
-                fill="none"
-                stroke={characterColor}
-                strokeWidth="3"
-                strokeLinecap="round"
-                strokeDasharray={circleCircumference}
+
+            {/* 提示文字 */}
+            <motion.div
+              className="text-center mb-4 text-sm font-medium"
+              style={{
+                color: characterColor,
+                opacity: textOpacity,
+              }}
+              initial={shouldReduceMotion ? { y: 0 } : { y: 10 }}
+              animate={{ y: 0 }}
+            >
+              {progress >= 1
+                ? t("ui.pullHint.release")
+                : t("ui.pullHint.continue")}
+            </motion.div>
+
+            {/* 底部拖拽条 */}
+            <div className="flex justify-center">
+              <motion.div
+                className="w-16 h-1.5 rounded-full transition-colors"
                 style={{
-                  strokeDashoffset,
-                  filter:
-                    progress >= 1
-                      ? "drop-shadow(0 0 8px currentColor)"
-                      : "none",
+                  backgroundColor:
+                    progress >= 1 ? characterColor : `${characterColor}40`,
+                  scaleX: barScaleX,
+                }}
+                animate={
+                  shouldReduceMotion
+                    ? {}
+                    : progress >= 1
+                      ? {
+                          scaleY: [1, 1.5, 1],
+                        }
+                      : {}
+                }
+                transition={{
+                  scaleY: {
+                    duration: 0.3,
+                    repeat: Infinity,
+                    repeatType: "loop",
+                  },
                 }}
               />
-            </svg>
-          </div>
-
-          {/* 提示文字 */}
-          <motion.div
-            className="text-center mb-4 text-sm font-medium"
-            style={{
-              color: characterColor,
-              opacity: textOpacity,
-            }}
-            initial={shouldReduceMotion ? { y: 0 } : { y: 10 }}
-            animate={{ y: 0 }}
-          >
-            {progress >= 1
-              ? t("ui.pullHint.release")
-              : t("ui.pullHint.continue")}
+            </div>
           </motion.div>
-
-          {/* 底部拖拽条 */}
-          <div className="flex justify-center">
-            <motion.div
-              className="w-16 h-1.5 rounded-full transition-colors"
-              style={{
-                backgroundColor:
-                  progress >= 1 ? characterColor : `${characterColor}40`,
-                scaleX: barScaleX,
-              }}
-              animate={
-                shouldReduceMotion
-                  ? {}
-                  : progress >= 1
-                    ? {
-                        scaleY: [1, 1.5, 1],
-                      }
-                    : {}
-              }
-              transition={{
-                scaleY: {
-                  duration: 0.3,
-                  repeat: Infinity,
-                  repeatType: "loop",
-                },
-              }}
-            />
-          </div>
-        </motion.div>
-      )}
-    </AnimatePresence>
+        )}
+      </AnimatePresence>
 
       {/* 🔥 底部触发区域提示 - 仅在调试模式且深色模式且在底部时显示 */}
       <AnimatePresence>
@@ -507,7 +506,9 @@ export function PullToReveal({
               transition={{ duration: 0.25, ease: "easeOut" }}
             >
               <div className="text-lg font-bold">✅ 触发区域激活</div>
-              <div className="text-sm mt-2">👆 现在可以向上拉动触发隐藏内容</div>
+              <div className="text-sm mt-2">
+                👆 现在可以向上拉动触发隐藏内容
+              </div>
               <div className="text-xs mt-1 opacity-70">
                 （这是调试提示，正式版会隐藏）
               </div>

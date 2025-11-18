@@ -312,7 +312,9 @@ export function usePullToReveal(
 
     // 移动端：触摸事件
     if (!isDesktop) {
-      window.addEventListener("touchstart", handleTouchStart, { passive: true });
+      window.addEventListener("touchstart", handleTouchStart, {
+        passive: true,
+      });
       window.addEventListener("touchmove", handleTouchMove, { passive: false });
       window.addEventListener("touchend", handleTouchEnd);
     }
@@ -331,7 +333,14 @@ export function usePullToReveal(
       // 清理桌面端事件
       window.removeEventListener("wheel", handleWheel);
     };
-  }, [enabled, isDesktop, handleTouchStart, handleTouchMove, handleTouchEnd, handleWheel]);
+  }, [
+    enabled,
+    isDesktop,
+    handleTouchStart,
+    handleTouchMove,
+    handleTouchEnd,
+    handleWheel,
+  ]);
 
   return {
     pullDistance,
