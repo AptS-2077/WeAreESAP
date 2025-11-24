@@ -19,7 +19,8 @@ import { motion, useReducedMotion } from "framer-motion";
 export function JoinHero() {
   const t = useTranslations("join");
   const shouldReduceMotion = useReducedMotion();
-  const heroSeeking = t.raw("hero.seeking") as string[];
+const heroSeekingRaw = t.raw("hero.seeking");
+const heroSeeking = Array.isArray(heroSeekingRaw) ? (heroSeekingRaw as string[]) : [];
 
   // 动画配置：克制优雅
   const animationConfig = {
