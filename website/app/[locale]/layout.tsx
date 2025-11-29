@@ -49,7 +49,8 @@ export async function generateMetadata(): Promise<Metadata> {
   const ogImage = DEFAULT_IMAGES.homepage;
   const title = `${t("title")} - ${t("subtitle")}`;
   const description = t("description");
-  const keywords = t.raw("keywords") as string[];
+  const rawKeywords = t.raw("keywords");
+  const keywords = Array.isArray(rawKeywords) ? (rawKeywords as string[]) : [];
 
   return {
     metadataBase: new URL(SITE_CONFIG.baseUrl),

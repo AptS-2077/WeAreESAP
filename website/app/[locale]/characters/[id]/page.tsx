@@ -138,7 +138,7 @@ export async function generateMetadata({
     character.name,
     character.code,
     character.role,
-    ...character.keywords,
+    ...(character.keywords || []),
   ];
 
   return {
