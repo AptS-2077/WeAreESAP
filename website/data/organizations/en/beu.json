@@ -1,5 +1,6 @@
 {
   "id": "beu",
+  "image": "/images/organizations/BEU.webp",
   "info": {
     "name": "Boundary Enforcement Unit",
     "code": "BEU",
@@ -46,19 +47,6 @@
         "Responsible for post-event auditing and structural revision"
       ],
       "visibility": "public"
-    },
-    {
-      "characterId": "1738",
-      "role": "Hidden Situation Mapping",
-      "responsibilities": [
-        "Not listed in regular member composition",
-        "Only appears in late execution or review phases",
-        "Responsible for cross-system, cross-temporal implicit correlation analysis",
-        "Does not participate in activation or execution",
-        "Their existence itself is not acknowledged by the Boundary Enforcement Unit"
-      ],
-      "visibility": "classified",
-      "note": "Classified"
     },
     {
       "characterId": "4869",

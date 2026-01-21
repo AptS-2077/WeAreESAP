@@ -1,5 +1,6 @@
 {
   "id": "beu",
+  "image": "/images/organizations/BEU.webp",
   "info": {
     "name": "边界执行小组",
     "code": "BEU",
@@ -46,19 +47,6 @@
         "负责事后审计与结构修订"
       ],
       "visibility": "public"
-    },
-    {
-      "characterId": "1738",
-      "role": "隐藏态势映射",
-      "responsibilities": [
-        "不列入常规成员构成",
-        "仅在执行后期或复盘阶段出现",
-        "负责对事件进行跨系统、跨时间的隐含关联分析",
-        "不参与启动、不参与执行",
-        "其存在本身不被边界执行小组确认"
-      ],
-      "visibility": "classified",
-      "note": "非公开"
     },
     {
       "characterId": "4869",

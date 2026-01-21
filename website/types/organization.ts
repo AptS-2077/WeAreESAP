@@ -57,6 +57,7 @@ export interface OrganizationTheme {
 // 组织
 export interface Organization {
   id: string;
+  image?: string;
   info: OrganizationInfo;
   icon?: IconName;
   theme: OrganizationTheme;

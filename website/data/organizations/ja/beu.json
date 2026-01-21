@@ -1,5 +1,6 @@
 {
   "id": "beu",
+  "image": "/images/organizations/BEU.webp",
   "info": {
     "name": "境界執行班",
     "code": "BEU",
@@ -46,19 +47,6 @@
         "事後監査と構造修正を担当"
       ],
       "visibility": "public"
-    },
-    {
-      "characterId": "1738",
-      "role": "隠蔽状況マッピング",
-      "responsibilities": [
-        "通常のメンバー構成には含まれない",
-        "実行後期または振り返り段階にのみ出現",
-        "システム間・時間間の暗黙的相関分析を担当",
-        "起動にも実行にも参加しない",
-        "その存在自体が境界執行班によって確認されていない"
-      ],
-      "visibility": "classified",
-      "note": "非公開"
     },
     {
       "characterId": "4869",

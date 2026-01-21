@@ -14,6 +14,7 @@
 "use client";
 
 import { memo } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Organization } from "@/types/organization";
@@ -77,6 +78,20 @@ export const OrganizationView = memo(
                 background: `linear-gradient(90deg, ${organization.theme.primary}, ${organization.theme.accent})`,
               }}
             />
+
+            {/* 组织图片 */}
+            {organization.image && (
+              <div className="mt-8 rounded-lg overflow-hidden shadow-lg">
+                <Image
+                  src={organization.image}
+                  alt={organization.info.name}
+                  width={1200}
+                  height={400}
+                  className="w-full h-auto object-cover"
+                  priority
+                />
+              </div>
+            )}
           </div>
 
           {/* 组织信息卡片 */}
