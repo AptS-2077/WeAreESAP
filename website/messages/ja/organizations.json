@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "title": "組織設定",
+    "subtitle": "We Are ESAP",
+    "description": "ESAPの世界の組織構造を探る：境界執行班などの組織設定の詳細",
+    "keywords": ["組織", "BEU", "境界執行班", "ESAP組織", "SF設定"]
+  },
+  "hero": {
+    "title": "組織設定",
+    "subtitle": "Organizations of The ESAP Project"
+  },
+  "loading": "組織設定を読み込み中...",
+  "empty": "組織設定データがありません",
+  "info": {
+    "code": "コード",
+    "fullName": "正式名称",
+    "affiliation": "所属",
+    "establishedTime": "設立時期",
+    "coreDirective": "コア指令",
+    "status": "ステータス",
+    "statusActive": "アクティブ",
+    "statusDormant": "休眠中",
+    "statusDisbanded": "解散済み"
+  },
+  "members": {
+    "title": "メンバー構成",
+    "role": "役割",
+    "responsibilities": "責任範囲",
+    "classified": "機密",
+    "classifiedNote": "このメンバーの情報は非公開です",
+    "requiredNote": "非公開メンバーを除き、いずれかのコアメンバーが欠けている場合、組織は完全に起動できません"
+  }
+}

@@ -48,6 +48,8 @@ import {
   LuSearch,
   LuSun,
   LuMoon,
+  LuShield,
+  LuLock,
 } from "react-icons/lu";
 
 import {
@@ -112,7 +114,10 @@ export type IconName =
   | "Search"
   // 主题图标
   | "Sun"
-  | "Moon";
+  | "Moon"
+  // 组织设定图标
+  | "Shield"
+  | "Lock";
 
 // 图标映射表
 const iconMap: Record<IconName, ComponentType<{ className?: string }>> = {
@@ -170,6 +175,10 @@ const iconMap: Record<IconName, ComponentType<{ className?: string }>> = {
   // 主题图标 (Lucide)
   Sun: LuSun,
   Moon: LuMoon,
+
+  // 组织设定图标 (Lucide)
+  Shield: LuShield,
+  Lock: LuLock,
 };
 
 export interface IconProps {

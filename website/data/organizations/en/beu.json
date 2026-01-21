@@ -1,0 +1,230 @@
+{
+  "id": "beu",
+  "info": {
+    "name": "Boundary Enforcement Unit",
+    "code": "BEU",
+    "fullName": "Boundary Enforcement Unit",
+    "affiliation": "ESAP (Strongly Affiliated Subordinate Organization)",
+    "establishedTime": "2024–2025",
+    "coreDirective": "You crossed the line.",
+    "status": "dormant"
+  },
+  "icon": "Shield",
+  "theme": {
+    "primary": "#475569",
+    "accent": "#F59E0B",
+    "dark": "#334155"
+  },
+  "description": "A system-level anomaly intervention module, activated only when conventional judgment mechanisms fail to maintain boundary integrity",
+  "members": [
+    {
+      "characterId": "1547",
+      "role": "Core Anchor / Execution Trigger",
+      "responsibilities": [
+        "Responsible for confirming 'whether a boundary violation exists'",
+        "Does not participate in execution details",
+        "Passively isolated from emotional feedback during execution phase"
+      ],
+      "visibility": "public"
+    },
+    {
+      "characterId": "1548",
+      "role": "Perception Mapping / Impact Absorption",
+      "responsibilities": [
+        "Responsible for sensing anomaly intensity and spread trends",
+        "Does not possess activation authority",
+        "Does not bear consequence assessment"
+      ],
+      "visibility": "public"
+    },
+    {
+      "characterId": "1549",
+      "role": "Supervision & Termination Authority",
+      "responsibilities": [
+        "The only member with 'execution termination' authority",
+        "Can forcibly reclaim execution authority at any stage",
+        "Responsible for post-event auditing and structural revision"
+      ],
+      "visibility": "public"
+    },
+    {
+      "characterId": "1738",
+      "role": "Hidden Situation Mapping",
+      "responsibilities": [
+        "Not listed in regular member composition",
+        "Only appears in late execution or review phases",
+        "Responsible for cross-system, cross-temporal implicit correlation analysis",
+        "Does not participate in activation or execution",
+        "Their existence itself is not acknowledged by the Boundary Enforcement Unit"
+      ],
+      "visibility": "classified",
+      "note": "Classified"
+    },
+    {
+      "characterId": "4869",
+      "role": "Constraint Executor",
+      "responsibilities": [
+        "Executes specific boundary restoration actions",
+        "Does not possess interpretation or judgment authority",
+        "Only accepts explicit 'boundary violation confirmed' signals"
+      ],
+      "visibility": "public"
+    }
+  ],
+  "sections": [
+    {
+      "id": "positioning",
+      "title": "Organizational Positioning",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "The Boundary Enforcement Unit is neither a security force, a judicial institution, nor an emotional response unit. It is designed as a **system-level anomaly intervention module**, activated only when conventional judgment mechanisms fail to maintain boundary integrity."
+        },
+        {
+          "type": "paragraph",
+          "content": "Its purpose is not to eliminate hostile entities, but to **restore damaged boundary conditions**, buying time for the system to regain judgment and control recovery."
+        },
+        {
+          "type": "warning",
+          "level": "info",
+          "title": "Core Principle",
+          "content": [
+            "This organization does not judge 'who is the enemy'",
+            "It only handles one thing: **boundary violations that have already occurred**"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "boundary-definition",
+      "title": "Definition of Boundary",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "In the ESAP context, 'boundary' is not physical space or faction division, but a collection of the following conditions:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "The demarcation between self and non-self",
+            "Legitimate sources of decision-making and intervention authority",
+            "The allowed upper limit of emotional influence on action",
+            "The principle that undefined reality (8e3u) shall not be forcibly converged"
+          ]
+        },
+        {
+          "type": "warning",
+          "level": "warning",
+          "title": "Boundary Failure Event",
+          "content": [
+            "When any condition is violated, and the violation has **persistent, invasive, or irreversible trends**",
+            "The system will determine it as a Boundary Failure Event"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "background",
+      "title": "Background",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "During 2024–2025, the ESAP system experienced multiple events with the following characteristics:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Emotional response speed exceeded judgment modules",
+            "Individual self bore system-level impact",
+            "Post-event supervision (1549) load continuously exceeded threshold",
+            "Internal members were forced to act before completing judgment"
+          ]
+        },
+        {
+          "type": "warning",
+          "level": "info",
+          "title": "Review Conclusion",
+          "content": [
+            "The problem was not whether to act, but that action came too late, or occurred at the wrong level"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "The Boundary Enforcement Unit was thus proposed and completed concept freezing and authority allocation within a short cycle."
+        }
+      ]
+    },
+    {
+      "id": "activation-conditions",
+      "title": "Activation Conditions",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "Activation of the Boundary Enforcement Unit requires all of the following conditions to be met simultaneously:"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Confirmed existence of boundary violation (not potential threat)",
+            "Conventional judgment module experiencing delay or failure",
+            "Event impact scope exceeds single personality's bearable threshold"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "After activation, the unit exists only within the **shortest necessary time window**."
+        }
+      ]
+    },
+    {
+      "id": "restrictions",
+      "title": "Restrictions",
+      "content": [
+        {
+          "type": "warning",
+          "level": "danger",
+          "title": "Mandatory Restrictions",
+          "content": [
+            "Must not execute directly against undefined reality (8e3u)",
+            "Must not intervene in internal personality conflicts",
+            "Must not interpret execution results as value judgments",
+            "Must not extend into a long-term standing institution"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "Violation of any clause is treated as a new Boundary Failure Event."
+        }
+      ]
+    },
+    {
+      "id": "epilogue",
+      "title": "Epilogue",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "The Boundary Enforcement Unit is not a weapon."
+        },
+        {
+          "type": "paragraph",
+          "content": "Its existence means the system acknowledges one thing:"
+        },
+        {
+          "type": "warning",
+          "level": "info",
+          "title": "System Note",
+          "content": [
+            "Sometimes, continuing discussion is more dangerous than immediate damage control"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "And when it sinks back into dormancy, ESAP will resume its original judgment, negotiation, and self-repair processes."
+        }
+      ]
+    }
+  ]
+}

@@ -11,29 +11,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-// 角色相关组件
-export * from "./character";
-
-// 项目企划组件
-export * from "./project";
-
-// 加入我们组件
-export * from "./join";
-
-// 技术设定组件
-export * from "./tech";
-
-// 组织设定组件
-export * from "./organizations";
-
-// 时间线组件
-export * from "./timeline";
-
-// 布局组件
-export * from "./layout";
-
-// 基础 UI 组件
-export * from "./ui";
-
-// 加载组件
-export * from "./loading";
+export { OrganizationTabs } from "./OrganizationTabs";
+export { OrganizationView } from "./OrganizationView";
+export { OrganizationMemberCard } from "./OrganizationMemberCard";
+export { OrganizationInfoCard } from "./OrganizationInfoCard";

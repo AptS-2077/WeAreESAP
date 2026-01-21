@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "title": "Organizations",
+    "subtitle": "We Are ESAP",
+    "description": "Explore the organizational structure of the ESAP world: Boundary Enforcement Unit and other organizational settings",
+    "keywords": [
+      "organizations",
+      "BEU",
+      "Boundary Enforcement Unit",
+      "ESAP organizations",
+      "sci-fi settings"
+    ]
+  },
+  "hero": {
+    "title": "Organizations",
+    "subtitle": "Organizations of The ESAP Project"
+  },
+  "loading": "Loading organizations...",
+  "empty": "No organization data available",
+  "info": {
+    "code": "Code",
+    "fullName": "Full Name",
+    "affiliation": "Affiliation",
+    "establishedTime": "Established",
+    "coreDirective": "Core Directive",
+    "status": "Status",
+    "statusActive": "Active",
+    "statusDormant": "Dormant",
+    "statusDisbanded": "Disbanded"
+  },
+  "members": {
+    "title": "Members",
+    "role": "Role",
+    "responsibilities": "Responsibilities",
+    "classified": "Classified",
+    "classifiedNote": "This member's information is classified",
+    "requiredNote": "Except for classified members, the unit cannot be fully activated if any core member is absent"
+  }
+}
