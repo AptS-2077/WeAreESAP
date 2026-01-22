@@ -66,11 +66,11 @@
       "content": [
         {
           "type": "paragraph",
-          "content": "The Boundary Enforcement Unit is neither a security force, a judicial institution, nor an emotional response unit. It is designed as a **system-level anomaly intervention module**, activated only when conventional judgment mechanisms fail to maintain boundary integrity."
+          "content": "The Boundary Enforcement Unit is neither a security force, a judicial institution, nor an emotional response unit. It is designed as a system-level anomaly intervention module, activated only when conventional judgment mechanisms fail to maintain boundary integrity."
         },
         {
           "type": "paragraph",
-          "content": "Its purpose is not to eliminate hostile entities, but to **restore damaged boundary conditions**, buying time for the system to regain judgment and control recovery."
+          "content": "Its purpose is not to eliminate hostile entities, but to restore damaged boundary conditions, buying time for the system to regain judgment and control recovery."
         },
         {
           "type": "warning",
@@ -78,7 +78,7 @@
           "title": "Core Principle",
           "content": [
             "This organization does not judge 'who is the enemy'",
-            "It only handles one thing: **boundary violations that have already occurred**"
+            "It only handles one thing: boundary violations that have already occurred"
           ]
         }
       ]
@@ -106,7 +106,7 @@
           "level": "warning",
           "title": "Boundary Failure Event",
           "content": [
-            "When any condition is violated, and the violation has **persistent, invasive, or irreversible trends**",
+            "When any condition is violated, and the violation has persistent, invasive, or irreversible trends",
             "The system will determine it as a Boundary Failure Event"
           ]
         }
@@ -163,7 +163,7 @@
         },
         {
           "type": "paragraph",
-          "content": "After activation, the unit exists only within the **shortest necessary time window**."
+          "content": "After activation, the unit exists only within the shortest necessary time window."
         }
       ]
     },
