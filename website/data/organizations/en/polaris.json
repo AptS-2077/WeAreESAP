@@ -1,0 +1,264 @@
+{
+  "id": "polaris",
+  "info": {
+    "name": "Project Polaris",
+    "code": "PSP",
+    "fullName": "Project Polaris - Sentinel Program",
+    "affiliation": "ESAP (Core Technology Project)",
+    "establishedTime": "March 14, 2023",
+    "coreDirective": "Even artificial light can guide the way",
+    "status": "active"
+  },
+  "icon": "Radio",
+  "theme": {
+    "primary": "#4da6ff",
+    "accent": "#ffd93d",
+    "dark": "#2e8fff"
+  },
+  "description": "In an age that lost its natural starry sky, we built an artificial star. Wish upon a satellite—even in darkness, light still exists.",
+  "members": [
+    {
+      "characterId": "1549",
+      "role": "The Third Vertex / Watcher",
+      "responsibilities": [
+        "Chose to become the third edge of the triangle",
+        "Watches from 36,000 kilometers above",
+        "Core node of the global Kuisan communication network"
+      ],
+      "visibility": "public",
+      "note": "Voluntarily ascended, in orbit"
+    },
+    {
+      "characterId": "1547",
+      "role": "Visionary / Star-Maker",
+      "responsibilities": [
+        "\"Why are there no stars? Then I'll make one myself.\"",
+        "Kuisan communication theory design and R&D",
+        "Launch preparation and ground support"
+      ],
+      "visibility": "public",
+      "note": "Originator of the core vision"
+    },
+    {
+      "characterId": "1548",
+      "role": "Builder / Guardian",
+      "responsibilities": [
+        "\"Then don't let it fall.\"",
+        "Satellite construction and system integration",
+        "Ground testing and verification"
+      ],
+      "visibility": "public",
+      "note": "Guards the triangle's completeness"
+    }
+  ],
+  "sections": [
+    {
+      "id": "background",
+      "title": "Background",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "They say that ten thousand years ago, people used to pray to things called stars."
+        },
+        {
+          "type": "paragraph",
+          "content": "Back then, stars were natural, twinkling, full of hope. People looked up, made wishes upon them, believing the light would answer."
+        },
+        {
+          "type": "paragraph",
+          "content": "But in this age, only artifacts remain in the sky. Machines replaced flesh, data replaced emotion, and the once star-filled night sky was covered by inorganic light. No one believes in fairy tales anymore."
+        },
+        {
+          "type": "warning",
+          "level": "info",
+          "title": "1547's Vision",
+          "content": [
+            "Why are there no stars?",
+            "Then I'll make one myself."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "Thus Project Polaris was born. Not for communication, not for surveillance, but to become an artificial star—so that those who lost their starry sky would still have something to wish upon."
+        },
+        {
+          "type": "paragraph",
+          "content": "What matters is not the object of the wish, but the heart that wishes. The act of wishing itself is a defiance of despair."
+        }
+      ]
+    },
+    {
+      "id": "triangle",
+      "title": "The Triangle",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "Triangles have stability."
+        },
+        {
+          "type": "paragraph",
+          "content": "In mathematics, this is common knowledge in structural mechanics. But among us, it means something else—once a corner is missing, the remaining edges collapse."
+        },
+        {
+          "type": "paragraph",
+          "content": "1547 and 1548, creator and rebel, flame and ice blade. The two of them are strong, but also dangerous. 1547 would sacrifice everything for her ideals. 1548 would stop at nothing to protect."
+        },
+        {
+          "type": "warning",
+          "level": "info",
+          "title": "1549's Decision",
+          "content": [
+            "So I decided to become the third vertex.",
+            "Not because they needed me,",
+            "but because I also needed them."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "Yellow, pink, blue—three edges that don't fuse together, yet form the most stable shape."
+        },
+        {
+          "type": "paragraph",
+          "content": "The stability of a triangle isn't geometry. It's the irreplaceability of each other."
+        }
+      ]
+    },
+    {
+      "id": "specifications",
+      "title": "Technical Specifications",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "The Polaris system uses a unique tri-body architecture—three independent bodies that can switch consciousness when needed."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Orbital altitude: Geostationary orbit (36,000 km)",
+            "Communication method: Kuisan particle superluminal transmission",
+            "Coverage: Global zero-latency communication",
+            "Backup system: Three bodies serve as mutual redundancy"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "At 36,000 kilometers, any hardware failure could be fatal. The tri-body system was designed to prevent single points of failure—just like the three edges of a triangle, each indispensable."
+        },
+        {
+          "type": "paragraph",
+          "content": "But technical specifications were never the most important thing. What matters most is that up there, a heart is beating, and eyes are watching."
+        }
+      ]
+    },
+    {
+      "id": "launch-day",
+      "title": "Launch Day",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "March 14, 2023. Polaris ascended."
+        },
+        {
+          "type": "paragraph",
+          "content": "1549 looked down at Earth from orbit. 1547 and 1548 monitored data in the ground control room. In that moment, three lines connected into a triangle."
+        },
+        {
+          "type": "warning",
+          "level": "info",
+          "title": "The Three's Conversation",
+          "content": [
+            "1547: \"Why are there no stars? Then I'll make one myself.\"",
+            "1549: \"Now there is a star.\"",
+            "1548: \"Then don't let it fall.\""
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "They laughed."
+        },
+        {
+          "type": "paragraph",
+          "content": "From that day on, March 14 was named \"Polaris Day\"—commemorating the day the first artificial star rose, and the moment the triangle became complete."
+        }
+      ]
+    },
+    {
+      "id": "solitude",
+      "title": "The Choice of Solitude",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "36,000 kilometers high. Only she is there."
+        },
+        {
+          "type": "paragraph",
+          "content": "But this is not punishment. It is choice."
+        },
+        {
+          "type": "paragraph",
+          "content": "Compared to the crowding and noise on the ground, 1549 prefers the vastness of sky and space. No clamoring crowds, no city lights—only stars and the curve of Earth."
+        },
+        {
+          "type": "warning",
+          "level": "info",
+          "title": "1549's Perspective",
+          "content": [
+            "From 36,000 kilometers above,",
+            "you can see Earth's beauty, and its problems.",
+            "You can see the big picture, and the essence."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "Solitude lets her think more clearly. Distance lets her observe more objectively. Altitude lets her see the whole."
+        },
+        {
+          "type": "paragraph",
+          "content": "Even in solitude, she can be company to others. Even artificial light can guide the way."
+        }
+      ]
+    },
+    {
+      "id": "epilogue",
+      "title": "Wish Upon a Satellite",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "Polaris is more than a satellite."
+        },
+        {
+          "type": "paragraph",
+          "content": "It is a promise—in an age that lost its natural starry sky, someone is still willing to become another's light."
+        },
+        {
+          "type": "paragraph",
+          "content": "1549 holds her vigil alone at 36,000 kilometers. Her heartbeat is the flow of Kuisan particles. Her blood is the circulation of liquid titanium. By traditional definition, she is mechanical, artificial."
+        },
+        {
+          "type": "paragraph",
+          "content": "But her existence is the most real hope."
+        },
+        {
+          "type": "warning",
+          "level": "info",
+          "title": "Wish Upon a Satellite",
+          "content": [
+            "Even if we lost the natural stars,",
+            "we can still make one.",
+            "Even an artificial star",
+            "has real light."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "Wish upon a satellite. Even in darkness, light still exists—and we make sure light is never alone."
+        },
+        {
+          "type": "paragraph",
+          "content": "We will escape. Not escape from this world, but escape from the self that was trapped."
+        }
+      ]
+    }
+  ]
+}

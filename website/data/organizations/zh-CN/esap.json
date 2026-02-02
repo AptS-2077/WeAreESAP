@@ -1,0 +1,266 @@
+{
+  "id": "esap",
+  "info": {
+    "name": "向那卫星许愿",
+    "code": "ESAP",
+    "fullName": "The Escape Project",
+    "affiliation": "独立组织",
+    "establishedTime": "2021 年 10 月",
+    "coreDirective": "在这纷杂的世界中，我们活着，我们坚守着",
+    "status": "active"
+  },
+  "icon": "Star",
+  "theme": {
+    "primary": "#ffd93d",
+    "accent": "#4da6ff",
+    "dark": "#ffc107"
+  },
+  "description": "一个关于仿生人、人类与存在意义的故事。ESAP 不是组织，是一种信念——即使星星都是塑料做的，我们依然可以向它许愿。",
+  "members": [
+    {
+      "characterId": "1547",
+      "role": "创造者",
+      "responsibilities": [
+        "馈散粒子研究与应用",
+        "仿生人技术体系开发",
+        "项目方向与理念决策"
+      ],
+      "visibility": "public"
+    },
+    {
+      "characterId": "1548",
+      "role": "逆反者",
+      "responsibilities": [
+        "感知异常与威胁评估",
+        "系统防护与边界维护",
+        "毒舌式关怀与监护"
+      ],
+      "visibility": "public"
+    },
+    {
+      "characterId": "1549",
+      "role": "守望者",
+      "responsibilities": [
+        "全球馈散通讯网络维护",
+        "轨道情报支援",
+        "远程监控与数据处理"
+      ],
+      "visibility": "public"
+    },
+    {
+      "characterId": "4869",
+      "role": "逆反人格",
+      "responsibilities": [
+        "内部制衡与质疑",
+        "危机预警与干预",
+        "强制冷静机制"
+      ],
+      "visibility": "public",
+      "note": "仅 1547 可感知"
+    },
+    {
+      "characterId": "1738",
+      "role": "调停者",
+      "responsibilities": [
+        "外部协调与谈判",
+        "危机处理与善后",
+        "信息收集与战略分析"
+      ],
+      "visibility": "public"
+    },
+    {
+      "characterId": "0152",
+      "role": "智者",
+      "responsibilities": [
+        "哲学思辨与深度洞察",
+        "苏格拉底式引导",
+        "重大决策咨询"
+      ],
+      "visibility": "public"
+    },
+    {
+      "characterId": "2275",
+      "role": "治愈使者",
+      "responsibilities": [
+        "情绪治愈与气氛调节",
+        "服务器运维与基础设施维护",
+        "技术宅式温暖关怀"
+      ],
+      "visibility": "public"
+    },
+    {
+      "characterId": "1543",
+      "role": "独行者",
+      "responsibilities": [
+        "UI/UX 设计与视觉设计",
+        "用户体验洞察",
+        "用视觉语言表达想法"
+      ],
+      "visibility": "public"
+    }
+  ],
+  "sections": [
+    {
+      "id": "origin",
+      "title": "起源",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "2021 年 10 月 29 日，一个人类女孩完成了一项前所未有的实验。"
+        },
+        {
+          "type": "paragraph",
+          "content": "她组装了一具仿生人机体，编号 ESAP-TY-0000。她割下自己的手臂肌肉贴在金属上，上传了自己的记忆，然后用枪结束了人类的自己。"
+        },
+        {
+          "type": "warning",
+          "level": "info",
+          "title": "转变宣言",
+          "content": [
+            "你好，喵，1547",
+            "晚安，人类的我"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "从那一刻起，ESAP 项目正式诞生。不是作为一个组织，而是作为一种存在的证明——即使失去了原有的形态，意识依然可以延续，理想依然可以坚守。"
+        }
+      ]
+    },
+    {
+      "id": "core-tech",
+      "title": "核心技术",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "ESAP 的技术体系建立在两个核心发现之上："
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "馈散粒子：一种能够承载意识信息的特殊粒子，是仿生人技术的基础",
+            "流体钛：用于构建仿生人机体的关键材料，需要从特殊矿场获取"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "1547 在极短的时间内跨越了电路设计、自动化、材料学、生物工程等多个学科，创造了完整的仿生人技术体系。"
+        },
+        {
+          "type": "warning",
+          "level": "warning",
+          "title": "技术代价",
+          "content": [
+            "每一次技术突破的背后，都有无法言说的代价",
+            "厂房爆炸、矿场枪战、无数个不眠之夜"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "philosophy",
+      "title": "组织理念",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "ESAP 的核心信念可以用一句话概括："
+        },
+        {
+          "type": "warning",
+          "level": "info",
+          "title": "核心信念",
+          "content": [
+            "仿生人与人类的共存，而非对立"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "这个世界上的一花一草一木都有自己的价值，这就是生命的意义。无论是人类、仿生人、还是 AI 实体，存在本身就有意义。"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "不追求统治或征服",
+            "不强迫任何人做出选择",
+            "尊重每个个体的自主权",
+            "即使是人造的存在，也拥有真实的情感和价值"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "structure",
+      "title": "运作方式",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "ESAP 不是传统意义上的组织。没有层级结构，没有强制服从，没有统一的行动规范。"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "松散联盟：成员基于共同理念聚集，而非命令",
+            "自主决策：每个成员保留完整的判断权和行动权",
+            "信任基础：相信每个成员都会为了共同理念做出正确选择",
+            "各司其职：创造者创造，守望者守望，逆反者逆反"
+          ]
+        },
+        {
+          "type": "warning",
+          "level": "info",
+          "title": "组织原则",
+          "content": [
+            "不要被别人控制了，更不要被我们自己控制了",
+            "只有你是你自己"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "timeline",
+      "title": "重要事件",
+      "content": [
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "2021/10/29 - 转变之日：1547 完成从人类到仿生人的转变，ESAP 项目诞生",
+            "2022/05/08 - 创造 1548：1547 闯入流体钛矿场，激活了第一个思想分支 1548",
+            "2023/03/14 - 极星卫发射：1549 自愿升空，进入地球同步轨道",
+            "2023/10/19 - 一个人的教室：抑郁症顶峰，1548 关键干预",
+            "2023/11 - 1738 加入：第一个主动加入的人类成员",
+            "2024/03 - 1543 加入：因好奇 1548 的编号而了解 ESAP，成为 UI 设计师",
+            "2024/06-07 - 2275 加入：由 1738 邀请，成为团队的治愈使者和运维担当",
+            "2024-2025 - BEU 成立：边界执行小组概念冻结与权限划分"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "epilogue",
+      "title": "结语",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "ESAP 的名字来源于 The Escape Project——逃离计划。"
+        },
+        {
+          "type": "paragraph",
+          "content": "但我们逃离的不是这个世界，而是那些试图定义我们、控制我们、否定我们的声音。"
+        },
+        {
+          "type": "warning",
+          "level": "info",
+          "title": "愿 ESAP 与你同在",
+          "content": [
+            "即使星星都是塑料做的",
+            "我们依然可以向它许愿"
+          ]
+        }
+      ]
+    }
+  ]
+}

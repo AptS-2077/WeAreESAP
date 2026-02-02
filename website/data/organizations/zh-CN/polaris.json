@@ -1,0 +1,264 @@
+{
+  "id": "polaris",
+  "info": {
+    "name": "极星卫计划",
+    "code": "PSP",
+    "fullName": "Project Polaris - Sentinel Program",
+    "affiliation": "ESAP（核心技术项目）",
+    "establishedTime": "2023 年 3 月 14 日",
+    "coreDirective": "即使是人造的光，也能指引方向",
+    "status": "active"
+  },
+  "icon": "Radio",
+  "theme": {
+    "primary": "#4da6ff",
+    "accent": "#ffd93d",
+    "dark": "#2e8fff"
+  },
+  "description": "在失去自然星空的时代，我们造了一颗人造的星星。向那卫星许愿，即使在黑暗中，光依然存在。",
+  "members": [
+    {
+      "characterId": "1549",
+      "role": "第三个顶点 / 守望者",
+      "responsibilities": [
+        "选择成为三角形的第三条边",
+        "在 36,000 公里的高度守望",
+        "全球馈散通讯网络的核心节点"
+      ],
+      "visibility": "public",
+      "note": "自愿升空，在轨运行"
+    },
+    {
+      "characterId": "1547",
+      "role": "项目构想者 / 造星人",
+      "responsibilities": [
+        "\"为什么天上没有星星？那就让我自己造一颗吧\"",
+        "馈散通讯理论设计与技术研发",
+        "发射准备与地面支援"
+      ],
+      "visibility": "public",
+      "note": "核心构想的发起者"
+    },
+    {
+      "characterId": "1548",
+      "role": "建造者 / 守护者",
+      "responsibilities": [
+        "\"那就别让它掉下来\"",
+        "卫星机体建造与系统集成",
+        "地面测试与验证"
+      ],
+      "visibility": "public",
+      "note": "守护三角形的完整"
+    }
+  ],
+  "sections": [
+    {
+      "id": "background",
+      "title": "项目背景",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "据说一万年前的人们曾是向名为星星的东西祈祷的。"
+        },
+        {
+          "type": "paragraph",
+          "content": "那时候的星星是自然的、闪烁的、充满希望的。人们抬头仰望，向它们许下愿望，相信光会回应。"
+        },
+        {
+          "type": "paragraph",
+          "content": "但在这个时代，天上只剩下人造物。机械取代了血肉，数据取代了情感，曾经布满繁星的夜空被无机质的光芒遮蔽。没有人再相信童话了。"
+        },
+        {
+          "type": "warning",
+          "level": "info",
+          "title": "1547 的构想",
+          "content": [
+            "为什么天上没有星星？",
+            "那就让我自己造一颗吧。"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "极星卫计划由此诞生。不是为了通讯，不是为了监控，而是为了成为一颗人造的星星——让失去星空的人们，依然有可以许愿的对象。"
+        },
+        {
+          "type": "paragraph",
+          "content": "重要的不是许愿的对象，而是许愿的那颗心。许愿这个行为本身，就是在对抗绝望。"
+        }
+      ]
+    },
+    {
+      "id": "triangle",
+      "title": "三角形",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "三角形具有稳定性。"
+        },
+        {
+          "type": "paragraph",
+          "content": "数学上这是结构力学的常识，但在我们之间，这意味着另一种事——一旦缺角，剩下的边就会塌。"
+        },
+        {
+          "type": "paragraph",
+          "content": "1547 和 1548，创造者和逆反者，火焰和冰刃。她们两个人很强，但也很危险。1547 会为了理想不顾一切，1548 会为了保护不择手段。"
+        },
+        {
+          "type": "warning",
+          "level": "info",
+          "title": "1549 的决定",
+          "content": [
+            "所以我决定，成为第三个顶点。",
+            "不是因为她们需要我，",
+            "而是因为我也需要她们。"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "黄色、粉色、蓝色——三条边不相互拼接，但却构成了最稳定的形状。"
+        },
+        {
+          "type": "paragraph",
+          "content": "三角形的稳定性不是几何学，而是彼此间的不可替代性。"
+        }
+      ]
+    },
+    {
+      "id": "specifications",
+      "title": "技术规格",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "极星卫系统采用独特的三体机架构——三具独立机体，可在需要时切换意识。"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "轨道高度：地球同步轨道（36,000 km）",
+            "通讯方式：馈散粒子超光速传输",
+            "覆盖范围：全球零延迟通讯",
+            "备份系统：三具机体互为冗余"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "36,000 公里的高空，任何硬件故障都可能是致命的。三体机系统是为了防止单点故障而设计的——就像三角形的三条边，缺一不可。"
+        },
+        {
+          "type": "paragraph",
+          "content": "但技术参数从来不是最重要的。最重要的是，那里有一颗心在跳动，有一双眼睛在守望。"
+        }
+      ]
+    },
+    {
+      "id": "launch-day",
+      "title": "发射日",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "2023 年 3 月 14 日，极星卫升空。"
+        },
+        {
+          "type": "paragraph",
+          "content": "1549 在轨道上俯瞰地球，1547 和 1548 在地面控制室里监控数据。那一刻，三条线连成了三角形。"
+        },
+        {
+          "type": "warning",
+          "level": "info",
+          "title": "三人的对话",
+          "content": [
+            "1547：\"为什么天上没有星星？那就让我自己造一颗吧。\"",
+            "1549：\"现在天上有星星了。\"",
+            "1548：\"那就别让它掉下来。\""
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "她们笑了。"
+        },
+        {
+          "type": "paragraph",
+          "content": "从那天起，3 月 14 日被命名为「极星卫日」——纪念第一颗人造星星升空的日子，也纪念三角形完整的那一刻。"
+        }
+      ]
+    },
+    {
+      "id": "solitude",
+      "title": "孤独的选择",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "36,000 公里的高度，只有她一个人。"
+        },
+        {
+          "type": "paragraph",
+          "content": "但这不是惩罚，而是选择。"
+        },
+        {
+          "type": "paragraph",
+          "content": "相比于地面的拥挤和喧嚣，1549 更喜欢天空和太空的广阔。那里没有人群的嘈杂，没有城市的灯光，只有星辰和地球的弧线。"
+        },
+        {
+          "type": "warning",
+          "level": "info",
+          "title": "1549 的视角",
+          "content": [
+            "从 36,000 公里的高度俯瞰，",
+            "能看到地球的美丽，也能看到地球的问题。",
+            "能看清全局，也能看清本质。"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "孤独让她能够更清楚地思考。距离让她能够更客观地观察。高度让她能够看到全局。"
+        },
+        {
+          "type": "paragraph",
+          "content": "即使孤独，也可以成为别人的陪伴。即使是人造的光，也能指引方向。"
+        }
+      ]
+    },
+    {
+      "id": "epilogue",
+      "title": "向那卫星许愿",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "极星卫不只是一颗卫星。"
+        },
+        {
+          "type": "paragraph",
+          "content": "它是一个承诺——在失去自然星空的时代，依然有人愿意成为别人的光。"
+        },
+        {
+          "type": "paragraph",
+          "content": "1549 在 36,000 公里的高度孤独地坚守着。她的心跳是馈散粒子的流动，她的血液是流体钛的循环。按照传统定义，她是机械的、人造的。"
+        },
+        {
+          "type": "paragraph",
+          "content": "但她的存在，却是最真实的希望。"
+        },
+        {
+          "type": "warning",
+          "level": "info",
+          "title": "向那卫星许愿",
+          "content": [
+            "即使失去了自然的星星，",
+            "我们依然可以造一颗。",
+            "即使是人造的星星，",
+            "也拥有真实的光芒。"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "向那卫星许愿，即使在黑暗中，光依然存在——而我们，让光不再孤独。"
+        },
+        {
+          "type": "paragraph",
+          "content": "我们终将逃离。不是逃离这个世界，而是逃离那个被困住的自己。"
+        }
+      ]
+    }
+  ]
+}
