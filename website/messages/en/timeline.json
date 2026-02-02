@@ -1,0 +1,26 @@
+{
+  "metadata": {
+    "title": "Timeline",
+    "subtitle": "We Are ESAP",
+    "description": "Explore the complete journey of the ESAP world, from 2021 to the present, every important moment",
+    "keywords": [
+      "ESAP timeline",
+      "worldview history",
+      "Entropic Heart birth",
+      "android journey",
+      "sci-fi chronicle",
+      "ESAP history"
+    ]
+  },
+  "hero": {
+    "title": "World Timeline",
+    "quote": "It began with a gunshot and the first beat of an entropic heart",
+    "subtitle": "Recording every significant moment of The ESAP Project from 2021 to today"
+  },
+  "loading": "Loading timeline...",
+  "empty": "No timeline data available",
+  "ending": {
+    "quote": "It began with a gunshot and the first beat of an entropic heart",
+    "conclusion": "We Will Escape"
+  }
+}

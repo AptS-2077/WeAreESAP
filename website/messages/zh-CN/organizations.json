@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "title": "组织设定",
+    "subtitle": "We Are ESAP",
+    "description": "探索 ESAP 世界的组织架构：边界执行小组等组织设定详解",
+    "keywords": ["组织", "BEU", "边界执行小组", "ESAP组织", "科幻设定"]
+  },
+  "hero": {
+    "title": "组织设定",
+    "subtitle": "Organizations of The ESAP Project"
+  },
+  "loading": "正在加载组织设定...",
+  "empty": "暂无组织设定数据",
+  "info": {
+    "code": "代号",
+    "fullName": "全称",
+    "affiliation": "隶属",
+    "establishedTime": "成立时间",
+    "coreDirective": "核心指令",
+    "status": "状态",
+    "statusActive": "活跃",
+    "statusDormant": "休眠",
+    "statusDisbanded": "已解散"
+  },
+  "members": {
+    "title": "成员构成",
+    "role": "职责",
+    "responsibilities": "职责范围",
+    "classified": "机密",
+    "classifiedNote": "此成员信息为非公开状态",
+    "requiredNote": "除非公开成员外，任一核心成员缺位，组织不得完整上线"
+  }
+}

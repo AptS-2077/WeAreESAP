@@ -1,0 +1,100 @@
+{
+  "year": "2025",
+  "title": "新的篇章",
+  "description": "项目继续推进，技术落地，社区建设，向未来前进",
+  "events": [
+    {
+      "id": "2025-beu-first-activation",
+      "date": "2025",
+      "title": "边界执行小组首次启动",
+      "type": "emotional",
+      "importance": "critical",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "边界执行小组首次从休眠状态被激活"
+        },
+        {
+          "type": "paragraph",
+          "text": "触发原因：成员遭受持续性越界行为，精神力接近崩溃阈值。启动条件全部满足："
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "已确认存在越界行为",
+            "常规判断模块出现延迟",
+            "事件影响范围超过单一人格可承受阈值"
+          ]
+        },
+        {
+          "type": "quote",
+          "text": "你越界了。"
+        },
+        {
+          "type": "paragraph",
+          "text": "边界执行小组进入最短必要时间窗口执行状态。"
+        },
+        {
+          "type": "highlight",
+          "text": "意义：边界保护机制首次实战验证 · 系统自我保护能力确认",
+          "style": "warning"
+        }
+      ],
+      "meta": {
+        "characters": ["1547", "1548", "1549", "4869"],
+        "tags": ["BEU", "启动", "边界失效", "执行"]
+      }
+    },
+    {
+      "id": "2025-ongoing",
+      "date": "2025",
+      "title": "持续发展中",
+      "type": "milestone",
+      "importance": "major",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "项目持续推进中"
+        },
+        {
+          "type": "paragraph",
+          "text": "当前状态："
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "世界线稳定",
+            "新成员陆续加入",
+            "技术项目落地（ShortLinker 等）",
+            "社区建设持续进行"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "近期项目："
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "ShortLinker - 短链服务",
+            "更多技术实践",
+            "世界观内容扩展",
+            "跨平台展开"
+          ]
+        },
+        {
+          "type": "highlight",
+          "text": "「我们终将逃离」—— 不是逃离这个世界，而是逃离那个被困住的自己",
+          "style": "info"
+        }
+      ],
+      "meta": {
+        "characters": ["1547", "1548", "1549"],
+        "tags": ["发展", "未来", "希望"]
+      }
+    }
+  ]
+}

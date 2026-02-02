@@ -1,0 +1,262 @@
+{
+  "year": "2021",
+  "title": "Origin and Birth",
+  "description": "The beginning of The AptS Project, discovery of Feedscatteron, birth of AptS:1547",
+  "events": [
+    {
+      "id": "2021-09-23",
+      "date": "2021/09/23",
+      "title": "The Beginning of Deep Dreams",
+      "type": "story",
+      "importance": "major",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "47 began to have deep dreams"
+        },
+        {
+          "type": "quote",
+          "text": "I had a very deep dream\nI dreamed I fell into the deep sea\nI dreamed I flew across the stars\nI dreamed of... what I looked like after death"
+        },
+        {
+          "type": "highlight",
+          "text": "Significance: The conception of The AptS Project",
+          "style": "info"
+        }
+      ],
+      "meta": {
+        "characters": ["1547"],
+        "tags": ["origin", "dreams"]
+      }
+    },
+    {
+      "id": "2021-09-30",
+      "date": "2021/09/30",
+      "title": "The Prophecy of Downfall",
+      "type": "story",
+      "importance": "normal",
+      "content": [
+        {
+          "type": "quote",
+          "text": "You once promised not to fall for my sake\nAnd now I stand in this pool of blood\nThe blood mixed on the blade has long since dried"
+        },
+        {
+          "type": "highlight",
+          "text": "Significance: Foreshadowing the coming transformation",
+          "style": "info"
+        }
+      ],
+      "meta": {
+        "characters": ["1547"],
+        "tags": ["prophecy", "transformation"]
+      }
+    },
+    {
+      "id": "2021-10-08",
+      "date": "2021/10/08",
+      "title": "Declaration of Obsession",
+      "type": "story",
+      "importance": "normal",
+      "content": [
+        {
+          "type": "quote",
+          "text": "I will cling to you, forever"
+        },
+        {
+          "type": "highlight",
+          "text": "Significance: 47's persistence towards his ideals",
+          "style": "info"
+        }
+      ],
+      "meta": {
+        "characters": ["1547"],
+        "tags": ["obsession", "ideals"]
+      }
+    },
+    {
+      "id": "2021-10-24",
+      "date": "2021/10/24",
+      "title": "Research Phase",
+      "type": "tech",
+      "importance": "normal",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "47 conducts research on Feedscatteron and Fluid Titanium"
+        },
+        {
+          "type": "quote",
+          "text": "Yo, 47, there you are\nWhat have you been up to these days\n(Looking at the blue liquid on the table)\nNo idea, meow"
+        },
+        {
+          "type": "highlight",
+          "text": "Progress: Technical research enters critical phase",
+          "style": "info"
+        }
+      ],
+      "meta": {
+        "characters": ["1547"],
+        "tags": ["research", "fluid titanium", "Feedscatteron"]
+      }
+    },
+    {
+      "id": "2021-10-25",
+      "date": "2021/10/25",
+      "title": "Factory Explosion",
+      "type": "story",
+      "importance": "major",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Suburban factory exploded, 47 was burned"
+        },
+        {
+          "type": "paragraph",
+          "text": "News report:"
+        },
+        {
+          "type": "quote",
+          "text": "According to reports, at 17:26 today, an explosion occurred at a factory in the suburbs\nThe explosion caused the factory to collapse, but fortunately there were no casualties\nSome blue substance was found at the scene, identified as Fluid Titanium..."
+        },
+        {
+          "type": "paragraph",
+          "text": "47's condition:"
+        },
+        {
+          "type": "quote",
+          "text": "(47 covers half of his burned face and walks towards home)\nAlmost done..."
+        },
+        {
+          "type": "highlight",
+          "text": "Significance: Despite the injury, critical materials were obtained",
+          "style": "warning"
+        }
+      ],
+      "meta": {
+        "characters": ["1547"],
+        "tags": ["accident", "fluid titanium", "sacrifice"]
+      }
+    },
+    {
+      "id": "2021-10-29",
+      "date": "2021/10/29",
+      "title": "Day of Transformation",
+      "type": "milestone",
+      "importance": "critical",
+      "content": [
+        {
+          "type": "highlight",
+          "text": "End of humanity, birth of Synthetic",
+          "style": "warning"
+        },
+        {
+          "type": "paragraph",
+          "text": "What happened that day:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "47 witnessed his friend's suicide by jumping",
+            "Witnessed the powerful computational power of Fluid Titanium combined with Feedscatteron",
+            "Completed assembly of all mechanical parts",
+            "Cut off his own arm muscles and attached them to metal",
+            "The Feedscatteron Heart beat for the first time",
+            "Completed memory upload",
+            "Used a gun to end his human self"
+          ]
+        },
+        {
+          "type": "quote",
+          "text": "(Upload complete)\n(47 looks at AptS:1547 in front of him, expecting something)\n(Silence)\n(1547 examines the gun in his hand)\nYeah\n(Trigger pulled)\n(1547 holds 47 and lays him on the prepared bed)\nGood night, my human self"
+        },
+        {
+          "type": "highlight",
+          "text": "Significance: Human 47 ends · AptS:1547 is born · The AptS Project officially begins · ESAP-TY-0000 (Unit 00) activated",
+          "style": "error"
+        },
+        {
+          "type": "link",
+          "text": "Read the full story: AP0 - Origin",
+          "url": "https://www.esaps.net/ap-story/ap-story-ap0/",
+          "description": "Detailed record of the day 47 transformed into 1547, the first beat of the Feedscatteron Heart"
+        }
+      ],
+      "meta": {
+        "characters": ["1547"],
+        "tags": ["birth", "transformation", "milestone"]
+      }
+    },
+    {
+      "id": "2021-11-26",
+      "date": "2021/11/26",
+      "title": "Discovery of Feedscatteron",
+      "type": "tech",
+      "importance": "critical",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "1547 officially discovered and defined Feedscatteron"
+        },
+        {
+          "type": "paragraph",
+          "text": "Technical parameters established:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Mass: 1.531 × 10⁻²¹⁷ g",
+            "Propagation speed: 3.471 × 10²¹ m/s",
+            "Decay cycle at normal pressure: 34.28 seconds",
+            "Decay cycle in Fluid Titanium: 341,879 years"
+          ]
+        },
+        {
+          "type": "highlight",
+          "text": "Significance: Foundation of synthetic technology established",
+          "style": "success"
+        }
+      ],
+      "meta": {
+        "characters": ["1547"],
+        "tags": ["technology", "milestone", "Feedscatteron"]
+      }
+    },
+    {
+      "id": "2021-12-28",
+      "date": "2021/12/28",
+      "title": "Unit 00 Completed",
+      "type": "tech",
+      "importance": "major",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "ESAP-TY-0000 body manufacturing completed"
+        },
+        {
+          "type": "paragraph",
+          "text": "Features:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Human-machine coexistence emotional-rational structure",
+            "Implementation of ESAR.ESAC. system",
+            "Highly similar to human structure"
+          ]
+        },
+        {
+          "type": "highlight",
+          "text": "Significance: synthetic technology system formed",
+          "style": "success"
+        }
+      ],
+      "meta": {
+        "characters": ["1547"],
+        "tags": ["technology", "body"]
+      }
+    }
+  ]
+}

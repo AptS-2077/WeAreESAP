@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "title": "We Are ESAP",
+    "subtitle": "Wish Upon a Satellite",
+    "description": "The ESAP Project - A sci-fi worldbuilding project about the coexistence of androids and humans in the future.",
+    "keywords": [
+      "ESAP",
+      "sci-fi",
+      "android",
+      "worldbuilding",
+      "creative project",
+      "Kuisan Particle",
+      "Fluid Titanium"
+    ]
+  },
+  "navigation": {
+    "home": "Home",
+    "characters": "Characters",
+    "timeline": "Timeline",
+    "tech": "Technology",
+    "organizations": "Organizations",
+    "project": "Project",
+    "join": "Join Us"
+  },
+  "header": {
+    "siteName": "We Are ESAP",
+    "tagline": "Wish Upon a Satellite"
+  },
+  "mobileMenu": {
+    "theme": "Theme",
+    "language": "Language"
+  },
+  "footer": {
+    "quote": "There were no stars in the sky, so we made one",
+    "projectName": "The ESAP Project",
+    "developedBy": "by",
+    "developers": "AptS:1547, AptS:1548 and contributors",
+    "developed": "",
+    "license": "Licensed under",
+    "licenseName": "CC-BY 4.0",
+    "licenseText": "",
+    "quickLinks": "Quick Links",
+    "social": "Social Media",
+    "about": "About",
+    "version": "Version",
+    "updated": "Updated",
+    "comingSoon": "Coming Soon",
+    "website": "Website",
+    "allRightsReserved": "All Rights Reserved"
+  }
+}

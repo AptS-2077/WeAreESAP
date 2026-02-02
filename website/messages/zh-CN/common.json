@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "title": "We Are ESAP",
+    "subtitle": "向那卫星许愿",
+    "description": "The ESAP Project（逃离计划）是一个科幻世界观创作企划，讲述仿生人与人类共存的未来故事。",
+    "keywords": [
+      "ESAP",
+      "科幻",
+      "仿生人",
+      "世界观",
+      "创作企划",
+      "逃离计划",
+      "馈散粒子",
+      "流体钛"
+    ]
+  },
+  "navigation": {
+    "home": "首页",
+    "characters": "角色档案",
+    "timeline": "时间线",
+    "tech": "技术设定",
+    "organizations": "组织设定",
+    "project": "项目企划",
+    "join": "加入我们"
+  },
+  "header": {
+    "siteName": "We Are ESAP",
+    "tagline": "向那卫星许愿"
+  },
+  "mobileMenu": {
+    "theme": "主题",
+    "language": "语言"
+  },
+  "footer": {
+    "quote": "天上没有星星，但我们造了一颗",
+    "projectName": "The ESAP Project",
+    "developedBy": "由",
+    "developers": "AptS:1547、AptS:1548 及贡献者",
+    "developed": "开发",
+    "license": "本作品采用",
+    "licenseName": "CC-BY 4.0",
+    "licenseText": "协议授权",
+    "quickLinks": "快速链接",
+    "social": "社交媒体",
+    "about": "关于项目",
+    "version": "版本",
+    "updated": "更新于",
+    "comingSoon": "即将开放",
+    "website": "官网",
+    "allRightsReserved": "保留所有权利"
+  }
+}

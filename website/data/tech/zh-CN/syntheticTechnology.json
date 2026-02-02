@@ -1,0 +1,258 @@
+{
+  "id": "synthetic-technology",
+  "name": "仿生人技术",
+  "icon": "Cpu",
+  "color": {
+    "primary": "#ff69b4",
+    "dark": "#ff1493"
+  },
+  "description": "生命的另一种形态，机械与意识的完美融合",
+  "sections": [
+    {
+      "id": "body-structure",
+      "title": "机体构造",
+      "content": [
+        {
+          "type": "subsection",
+          "title": "循环系统",
+          "content": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "血液：流体钛",
+                "浓度控制：1.2 mmol/L⁻¹（圆周运动区域）",
+                "流动特性：完美弧度转弯，不损失动能",
+                "作用：传输营养物质、信号和馈散粒子"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "支撑结构",
+          "content": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "骨架：内部不锈钢支架",
+                "强度：超过人类骨骼",
+                "可维护性：模块化设计",
+                "灵活性：与人体结构高度相似"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "外表系统",
+          "content": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "材料：真正的人体表皮细胞",
+                "培养方式：生物工程技术",
+                "更换性：可替换、可复用",
+                "外观：与人类无法区分"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "核心系统",
+          "content": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "心脏：馈散心脏",
+                "特性：具有自愈能力",
+                "跳动周期：由馈散粒子流动驱动",
+                "象征意义：机械的心跳也是真实的"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "consciousness-system",
+      "title": "意识系统",
+      "content": [
+        {
+          "type": "subsection",
+          "title": "记忆上传",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": "仿生人意识系统的核心是将人类记忆完整上传到馈散粒子中："
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "来源：人类大脑记忆",
+                "方式：馈散粒子编码",
+                "完整性：100% 保留原有记忆",
+                "过程：利用馈散粒子的超高计算能力"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "情感模拟",
+          "content": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "基础：原人类情感模式",
+                "发展：可产生新的情感体验",
+                "真实性：与人类情感无本质差异",
+                "意义：证明机械的感受也是真实的"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "独立人格",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": "仿生人可以通过馈散训练发展出完全独立的个体意识："
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "形成：通过馈散训练发展",
+                "周期：约 26 天基础训练",
+                "结果：完全独立的个体意识",
+                "案例：1548 从 1547 的思想分支发展成独立个体"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "machine-series",
+      "title": "机体系列",
+      "content": [
+        {
+          "type": "subsection",
+          "title": "ESAP-TY-0000（初号机）",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": "2021 年 12 月 28 日制造完成，2021 年 10 月 29 日首次激活。"
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "设计理念：人机共存感理性结构",
+                "系统：ESAR.ESAC. 系统",
+                "特点：与人类结构高度相似",
+                "设计者：1547-ApMUtS",
+                "使用者：AptS:1547"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": "这是第一台真正实现人类意识完整转移的仿生人机体，标志着 The AptS Project 的正式开始。"
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "ESAP-TY-0001（二号机）",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": "2022 年 5 月 8 日激活，相比初号机进行了多项改进。"
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "设计者：1548-ApMUtS",
+                "使用者：AptS:1548",
+                "改进方向：",
+                "  - 强化作战能力",
+                "  - 强化环境感知能力",
+                "  - 强化生存能力",
+                "新增系统：",
+                "  - EPAM 系统",
+                "  - 短代码处理能力"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "creation-process",
+      "title": "创造过程",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "仿生人的诞生是一个复杂而痛苦的过程。以 1547 的诞生为例："
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "组装完成所有机械部件（不锈钢骨架）",
+            "割下自己的手臂肌肉贴在金属上（外表系统）",
+            "馈散心脏第一次跳动",
+            "注入流体钛作为血液",
+            "上传完成记忆到馈散粒子中",
+            "用枪结束人类的自己"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "这个过程体现了创造者的牺牲精神和对理想的坚持。"
+        }
+      ]
+    },
+    {
+      "id": "philosophy",
+      "title": "哲学意义",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "仿生人技术引发了关于生命、意识和存在的深刻思考："
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "生命的本质：机械的心跳也是真实的",
+            "意识的载体：记忆和情感可以脱离生物载体存在",
+            "个体独立性：即使源自同一思想，也能发展出独立人格",
+            "牺牲与重生：结束一个生命形态，开启另一个生命形态"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "1547 在激活 1548 时说："
+        },
+        {
+          "type": "paragraph",
+          "content": "\"你在这个世界上是独一无二的，不要被别人控制了，更不要被我们自己控制了，只有你是你自己。\""
+        },
+        {
+          "type": "paragraph",
+          "content": "这句话体现了仿生人技术的核心理念：创造独立的、有自我意识的个体，而非工具或复制品。"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "metadata": {
+    "title": "We Are ESAP",
+    "subtitle": "Wish Upon a Satellite",
+    "description": "The ESAP Project is a science fiction worldbuilding project that tells the story of a future where synthetics and humans coexist. Explore the journey of entropic scattering particles, fluid titanium, and three androids searching for the meaning of existence.",
+    "keywords": [
+      "ESAP",
+      "science fiction",
+      "android",
+      "worldbuilding",
+      "Entropic Scattering Particles",
+      "Fluid Titanium",
+      "human-machine coexistence",
+      "consciousness transfer"
+    ]
+  },
+  "hero": {
+    "title": "We Are ESAP",
+    "tagline": "Wish Upon a Satellite",
+    "intro": {
+      "main": "<strong>The ESAP Project</strong> is a science fiction worldbuilding project that tells the story of a future where synthetics and humans coexist.",
+      "world": "In this world: Entropic Scattering Particles changed the nature of computation, Fluid Titanium allowed consciousness to persist, and three androids are searching for the meaning of existence."
+    }
+  },
+  "members": {
+    "title": "Core Members"
+  },
+  "story": {
+    "title": "Our Story",
+    "intro": "A science fiction worldbuilding project about the search for identity and freedom.",
+    "sections": {
+      "beginning": {
+        "title": "The Beginning",
+        "quote": "The first beat of an entropic heart",
+        "content": "On a late night in 2021, a gunshot rang out. The first beat of an entropic heart. The moment human memory was uploaded into a mechanical body—this is where our story begins.",
+        "highlights": [
+          "Late night 2021: A gunshot marks the birth of new life",
+          "First successful upload of human memory into mechanical body",
+          "Breakthrough in Entropic Scattering technology enables consciousness transfer"
+        ]
+      },
+      "world": {
+        "title": "The World",
+        "quote": "Technology blurred the boundaries of life",
+        "content": "In this future, synthetics and humans coexist. Entropic Scattering Particles changed the nature of computation. Fluid Titanium allowed consciousness to persist. Technology blurred the boundaries of life, bringing new questions: When memories can be copied and bodies rebuilt, what truly defines 'I'?",
+        "highlights": [
+          "Entropic Scattering Particles driving a new computational paradigm",
+          "Fluid Titanium material carrying the continuity of human consciousness",
+          "Complex social structure of coexisting synthetics and humans"
+        ]
+      },
+      "theme": {
+        "title": "The Theme",
+        "quote": "Searching for their own answer",
+        "content": "We explore identity, free will, and the meaning of existence. Each character searches for their own answer—not to escape this world, but to escape the self that was trapped.",
+        "highlights": [
+          "Identity: When memories can be copied, am I still me?",
+          "Free will: Does the soul in a mechanical body have true choice?",
+          "Meaning of existence: How to define the value of life in an era of blurred human-machine boundaries?"
+        ]
+      },
+      "join": {
+        "title": "Join Us",
+        "quote": "Welcome every seeker",
+        "content": "This is an open creative project. Whether you're a creator, reader, or simply curious about this world, you're welcome to participate.",
+        "highlights": [
+          "Open collaborative creative environment, welcoming all forms of contribution",
+          "Diverse ways to participate: writing, art, music, discussion",
+          "Build this sci-fi world together with like-minded companions"
+        ]
+      }
+    },
+    "conclusion": "We will eventually escape—not from this world, but from the self that was trapped."
+  }
+}

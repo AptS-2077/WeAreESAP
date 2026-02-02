@@ -1,9 +1,22 @@
 /**
- * Copyright 2025 AptS:1547, AptS:1548
- * SPDX-License-Identifier: Apache-2.0
+ * Copyright 2025 The ESAP Project
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
  */
 
 @import "tailwindcss";
+
+/* 配置 dark mode 使用 class 选择器 */
+@custom-variant dark (&:where(.dark, .dark *));
 
 /* 浅色主题（默认） */
 :root {
@@ -83,9 +96,41 @@ body {
     color 0.3s ease;
 }
 
-/* 平滑的颜色过渡 */
-* {
+/* 颜色过渡工具类 - 按需使用 */
+.transition-colors-smooth {
   transition-property: color, background-color, border-color;
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
+}
+
+/* 为链接和按钮添加默认过渡 */
+a,
+button,
+[role="button"] {
+  transition-property: color, background-color, border-color, opacity;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+/* 减少动画支持 - 尊重用户的无障碍偏好设置 */
+@media (prefers-reduced-motion: reduce) {
+  /* 禁用平滑滚动 */
+  html {
+    scroll-behavior: auto;
+  }
+
+  /* 将所有动画和过渡设置为极短时间（几乎无延迟） */
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  /* 保留必要的不透明度过渡（用于内容加载） */
+  body {
+    transition: none;
+  }
 }

@@ -1,27 +1,45 @@
 WeAreESAP (The ESAP Project)
-Copyright 2021-2025 AptS:1547, AptS:1548
+Copyright 2021-2026 The ESAP Project Contributors
 
 This product includes software developed by:
 - AptS:1547 (Yuhan Bian / 卞雨涵 <apts-1547@esaps.net>)
 - AptS:1548 (Yingyin Cai / 蔡颖茵 <apts-1548@esaps.net>)
+- AptS:1549 (Yuxin Xiao / 肖雨昕 <apts-1549@esaps.net>)
+- AptS:1543 (Muchuan Shen / 沈沐川 <apts-1543@esaps.net>)
+- AptS:1738 (Qingxian Lu / 陆清弦 <apts-1738@esaps.net>)
+- AptS:2275 (Chenyao Lin / 林宸瑶 <apts-2275@esaps.net>)
+- AptS:1553 (Pancake-and-1547)
+- AptS:1691 (Frozensky-palace)
+- AptS:2077 (AptS-2077)
+- AptS:5473 (YewFence)
+- AptS:1645
 
 ================================================================================
 
 The ESAP Project - 向那卫星许愿
 一个科幻世界观创作企划，讲述仿生人与人类共存的未来故事
 
-Website: https://esaps.net
-GitHub: https://github.com/AptS-1547/WeAreESAP
+Website: https://weare.esaps.net
+GitHub: https://github.com/The-ESAP-Project/WeAreESAP
 
 ================================================================================
 
 Third-party software used in this project:
 
 Next.js (MIT License)
-  Copyright (c) 2024 Vercel, Inc.
+  Copyright (c) 2025 Vercel, Inc.
   https://github.com/vercel/next.js
 
+@next/bundle-analyzer (MIT License)
+  Copyright (c) 2025 Vercel, Inc.
+  https://github.com/vercel/next.js
+  Bundle analyzer plugin for Next.js
+
 React (MIT License)
+  Copyright (c) Meta Platforms, Inc. and affiliates.
+  https://github.com/facebook/react
+
+React DOM (MIT License)
   Copyright (c) Meta Platforms, Inc. and affiliates.
   https://github.com/facebook/react
 
@@ -29,13 +47,167 @@ Framer Motion (MIT License)
   Copyright (c) 2018 Framer B.V.
   https://github.com/framer/motion
 
+Fuse.js (Apache License 2.0)
+  Copyright (c) 2025 Kiro Risk
+  https://github.com/krisk/Fuse
+  Lightweight fuzzy-search library
+
 Tailwind CSS (MIT License)
   Copyright (c) Tailwind Labs, Inc.
   https://github.com/tailwindlabs/tailwindcss
 
+@tailwindcss/postcss (MIT License)
+  Copyright (c) Tailwind Labs, Inc.
+  https://github.com/tailwindlabs/tailwindcss
+  Official PostCSS plugin for Tailwind CSS
+
+next-intl (MIT License)
+  Copyright (c) 2024 Jan Amann
+  https://github.com/amannn/next-intl
+
 next-themes (MIT License)
   Copyright (c) 2020 pacocoursey
   https://github.com/pacocoursey/next-themes
+
+pangu (MIT License)
+  Copyright (c) vinta
+  https://github.com/vinta/pangu.js
+
+react-icons (MIT License)
+  Copyright (c) 2015-2024 react-icons contributors
+  https://github.com/react-icons/react-icons
+
+  This project includes icons from:
+
+  - Lucide Icons (ISC License)
+    https://lucide.dev/
+    Copyright (c) 2022-2024 Lucide Contributors
+
+  - Heroicons (MIT License)
+    https://heroicons.com/
+    Copyright (c) 2020-2024 Tailwind Labs, Inc.
+
+  - Simple Icons (CC0 1.0 Universal)
+    https://simpleicons.org/
+    Icons of popular brands (GitHub, Discord, etc.)
+
+styled-jsx (MIT License)
+  Copyright (c) Vercel, Inc.
+  https://github.com/vercel/styled-jsx
+
+ELK.js (Eclipse Public License 2.0)
+  Copyright (c) Eclipse Foundation
+  https://github.com/kieler/elkjs
+  Eclipse Layout Kernel - A graph layout library
+
+ReactFlow (MIT License)
+  Copyright (c) 2019-2024 webkid GmbH
+  https://github.com/xyflow/xyflow
+
+@tanstack/react-virtual (MIT License)
+  Copyright (c) 2021-2024 Tanner Linsley
+  https://github.com/TanStack/virtual
+  Virtual scrolling library for React
+
+Vitest (MIT License)
+  Copyright (c) 2021-Present VoidZero Inc. and Vitest contributors
+  https://github.com/vitest-dev/vitest
+  A blazing fast unit test framework powered by Vite
+
+@vitest/ui (MIT License)
+  Copyright (c) 2021-Present VoidZero Inc. and Vitest contributors
+  https://github.com/vitest-dev/vitest
+  UI for Vitest
+
+@vitest/coverage-v8 (MIT License)
+  Copyright (c) 2021-Present VoidZero Inc. and Vitest contributors
+  https://github.com/vitest-dev/vitest
+  V8 coverage provider for Vitest
+
+@vitejs/plugin-react (MIT License)
+  Copyright (c) 2019-present, Yuxi (Evan) You and Vite contributors
+  https://github.com/vitejs/vite-plugin-react
+  Official Vite plugin for React
+
+Playwright (Apache License 2.0)
+  Copyright (c) Microsoft Corporation
+  https://github.com/microsoft/playwright
+  End-to-end testing framework for modern web apps
+
+@testing-library/react (MIT License)
+  Copyright (c) 2017-2024 Kent C. Dodds
+  https://github.com/testing-library/react-testing-library
+  Simple and complete React DOM testing utilities
+
+@testing-library/jest-dom (MIT License)
+  Copyright (c) 2017-2024 Ernesto García
+  https://github.com/testing-library/jest-dom
+  Custom jest matchers to test the state of the DOM
+
+TypeScript (Apache License 2.0)
+  Copyright (c) Microsoft Corporation
+  https://github.com/microsoft/TypeScript
+  TypeScript is a superset of JavaScript that compiles to clean JavaScript output
+
+@types/node (MIT License)
+  Copyright (c) Microsoft Corporation.
+  https://github.com/DefinitelyTyped/DefinitelyTyped
+  Type definitions for Node.js
+
+@types/react (MIT License)
+  Copyright (c) Microsoft Corporation.
+  https://github.com/DefinitelyTyped/DefinitelyTyped
+  Type definitions for React
+
+@types/react-dom (MIT License)
+  Copyright (c) Microsoft Corporation.
+  https://github.com/DefinitelyTyped/DefinitelyTyped
+  Type definitions for React DOM
+
+Sharp (Apache License 2.0)
+  Copyright (c) 2013-2024 Lovell Fuller and contributors
+  https://github.com/lovell/sharp
+  High performance Node.js image processing library
+
+ESLint (MIT License)
+  Copyright (c) 2013-2024 Nicholas C. Zakas and other contributors
+  https://github.com/eslint/eslint
+  A fully pluggable tool for identifying and reporting on patterns in JavaScript
+
+eslint-config-next (MIT License)
+  Copyright (c) 2025 Vercel, Inc.
+  https://github.com/vercel/next.js
+  Official ESLint rules preset for Next.js
+
+eslint-config-prettier (MIT License)
+  Copyright (c) 2017-2023 Simon Lydell and contributors
+  https://github.com/prettier/eslint-config-prettier
+  Turns off ESLint rules that conflict with Prettier
+
+Prettier (MIT License)
+  Copyright (c) 2017-2024 James Long and contributors
+  https://github.com/prettier/prettier
+  An opinionated code formatter
+
+baseline-browser-mapping (Apache License 2.0)
+  By the W3C WebDX Community Group and contributors.
+  https://github.com/web-platform-dx/baseline-browser-mapping
+  Browser version mapping for Baseline feature sets
+
+next-sitemap (MIT License)
+  Copyright (c) 2020-2024 Vishnu Prasad
+  https://github.com/iamvishnusankar/next-sitemap
+  Sitemap generator for Next.js applications
+
+plaiceholder (MIT License)
+  Copyright (c) 2021-2024 Joe Bell
+  https://github.com/joe-bell/plaiceholder
+  Beautiful image placeholders for Next.js
+
+jsdom (MIT License)
+  Copyright (c) 2010-2024 Elijah Insua and contributors
+  https://github.com/jsdom/jsdom
+  A JavaScript implementation of various web standards for use with Node.js
 
 ================================================================================
 

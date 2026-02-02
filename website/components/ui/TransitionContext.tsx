@@ -1,5 +1,15 @@
-// Copyright 2025 AptS:1547, AptS:1548
-// SPDX-License-Identifier: Apache-2.0
+// Copyright 2025 The ESAP Project
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
 
 "use client";
 
@@ -8,9 +18,9 @@ import {
   useContext,
   useState,
   useEffect,
+  useRef,
   ReactNode,
 } from "react";
-import { usePathname } from "next/navigation";
 
 interface TransitionContextType {
   isTransitioning: boolean;
@@ -22,17 +32,31 @@ const TransitionContext = createContext<TransitionContextType | undefined>(
   undefined
 );
 
-const MIN_TRANSITION_TIME = 300; // 最小过渡时间，防止闪烁
+const MIN_TRANSITION_TIME = 500; // 最小过渡时间，防止闪烁
 const MAX_TRANSITION_TIME = 1000; // 最大过渡时间，避免等太久
-const INITIAL_LOAD_TIME = 800; // 首次加载动画时长
+const INITIAL_LOAD_TIME = 400; // 首次加载动画时长
 
 export function TransitionProvider({ children }: { children: ReactNode }) {
   const [isTransitioning, setIsTransitioning] = useState(true); // 初始为 true，显示首次加载
+  // 使用 lazy initializer 避免在每次渲染时调用 Date.now()
   const [transitionStartTime, setTransitionStartTime] = useState<number | null>(
-    Date.now()
+    () => Date.now()
   );
   const [isInitialLoad, setIsInitialLoad] = useState(true);
-  const pathname = usePathname();
+
+  // 跟踪所有的 timeout，确保在组件卸载或新过渡开始时清理
+  const timersRef = useRef<Set<NodeJS.Timeout>>(new Set());
+
+  // 清理所有 timers
+  const clearAllTimers = () => {
+    timersRef.current.forEach((timer) => clearTimeout(timer));
+    timersRef.current.clear();
+  };
+
+  // 组件卸载时清理所有 timers
+  useEffect(() => {
+    return clearAllTimers;
+  }, []);
 
   // 处理首次加载
   useEffect(() => {
@@ -42,11 +66,15 @@ export function TransitionProvider({ children }: { children: ReactNode }) {
         const elapsed = Date.now() - (transitionStartTime || Date.now());
         const remainingTime = Math.max(0, INITIAL_LOAD_TIME - elapsed);
 
-        setTimeout(() => {
+        // 复制到局部变量，避免 cleanup 时引用变化
+        const timers = timersRef.current;
+        const timer = setTimeout(() => {
           setIsTransitioning(false);
           setTransitionStartTime(null);
           setIsInitialLoad(false);
+          timers.delete(timer);
         }, remainingTime);
+        timers.add(timer);
       };
 
       // 如果页面已经加载完成，立即执行
@@ -60,21 +88,8 @@ export function TransitionProvider({ children }: { children: ReactNode }) {
     }
   }, [isInitialLoad, transitionStartTime]);
 
-  // 监听路由变化，自动结束过渡（仅在非首次加载时）
-  useEffect(() => {
-    if (!isInitialLoad && isTransitioning && transitionStartTime) {
-      const elapsed = Date.now() - transitionStartTime;
-      const remainingTime = Math.max(0, MIN_TRANSITION_TIME - elapsed);
-
-      // 确保至少显示最小过渡时间
-      const timer = setTimeout(() => {
-        setIsTransitioning(false);
-        setTransitionStartTime(null);
-      }, remainingTime);
-
-      return () => clearTimeout(timer);
-    }
-  }, [pathname, isTransitioning, transitionStartTime, isInitialLoad]);
+  // 注意：不再监听 pathname 自动结束过渡
+  // 改为由 PageTransition 组件在页面渲染完成后主动调用 finishTransition()
 
   // 最大过渡时间保护，避免卡住（仅在非首次加载时）
   useEffect(() => {
@@ -82,13 +97,26 @@ export function TransitionProvider({ children }: { children: ReactNode }) {
       const timer = setTimeout(() => {
         setIsTransitioning(false);
         setTransitionStartTime(null);
+        timersRef.current.delete(timer);
       }, MAX_TRANSITION_TIME);
+      timersRef.current.add(timer);
 
-      return () => clearTimeout(timer);
+      // 复制到局部变量，避免 cleanup 时引用变化
+      const timers = timersRef.current;
+      return () => {
+        clearTimeout(timer);
+        timers.delete(timer);
+      };
     }
   }, [isTransitioning, transitionStartTime, isInitialLoad]);
 
   const startTransition = () => {
+    // 防止快速连续点击：如果已经在过渡中，忽略新的请求
+    if (isTransitioning) {
+      return;
+    }
+    // 清理之前的所有 timers，防止堆积
+    clearAllTimers();
     setIsTransitioning(true);
     setTransitionStartTime(Date.now());
   };
@@ -99,10 +127,14 @@ export function TransitionProvider({ children }: { children: ReactNode }) {
     const elapsed = Date.now() - transitionStartTime;
     const remainingTime = Math.max(0, MIN_TRANSITION_TIME - elapsed);
 
-    setTimeout(() => {
+    // 复制到局部变量，避免 cleanup 时引用变化
+    const timers = timersRef.current;
+    const timer = setTimeout(() => {
       setIsTransitioning(false);
       setTransitionStartTime(null);
+      timers.delete(timer);
     }, remainingTime);
+    timers.add(timer);
   };
 
   return (

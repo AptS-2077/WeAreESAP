@@ -1,11 +1,22 @@
-// Copyright 2025 AptS:1547, AptS:1548
-// SPDX-License-Identifier: Apache-2.0
+// Copyright 2025 The ESAP Project
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
 
 "use client";
 
 import { ReactNode, useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { LoadingSpinner } from "./LoadingSpinner";
+import { useReducedMotion } from "@/hooks/useReducedMotion";
 
 interface LoadingWrapperProps {
   /** 是否正在加载 */
@@ -67,6 +78,7 @@ export function LoadingWrapper({
 }: LoadingWrapperProps) {
   const [showLoading, setShowLoading] = useState(isLoading);
   const [loadingStartTime, setLoadingStartTime] = useState<number | null>(null);
+  const shouldReduceMotion = useReducedMotion();
 
   const { duration = 0.3, stagger = 0.1 } = transition;
 
@@ -118,30 +130,46 @@ export function LoadingWrapper({
         {error ? (
           <motion.div
             key="error"
-            initial={{ opacity: 0, y: 20 }}
+            initial={
+              shouldReduceMotion ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }
+            }
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration }}
+            exit={
+              shouldReduceMotion ? { opacity: 1, y: 0 } : { opacity: 0, y: -20 }
+            }
+            transition={shouldReduceMotion ? { duration: 0 } : { duration }}
           >
             {errorComponent || defaultErrorComponent}
           </motion.div>
         ) : showLoading ? (
           <motion.div
             key="loading"
-            initial={{ opacity: 0, y: 20 }}
+            initial={
+              shouldReduceMotion ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }
+            }
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration }}
+            exit={
+              shouldReduceMotion ? { opacity: 1, y: 0 } : { opacity: 0, y: -20 }
+            }
+            transition={shouldReduceMotion ? { duration: 0 } : { duration }}
           >
             {loadingComponent || defaultLoadingComponent}
           </motion.div>
         ) : (
           <motion.div
             key="content"
-            initial={{ opacity: 0, y: 20 }}
+            initial={
+              shouldReduceMotion ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }
+            }
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration, delay: stagger }}
+            exit={
+              shouldReduceMotion ? { opacity: 1, y: 0 } : { opacity: 0, y: -20 }
+            }
+            transition={
+              shouldReduceMotion
+                ? { duration: 0 }
+                : { duration, delay: stagger }
+            }
           >
             {children}
           </motion.div>

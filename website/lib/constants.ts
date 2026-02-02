@@ -1,5 +1,15 @@
-// Copyright 2025 AptS:1547, AptS:1548
-// SPDX-License-Identifier: Apache-2.0
+// Copyright 2025 The ESAP Project
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
 
 /**
  * ESAP 项目常量定义
@@ -42,7 +52,8 @@ export const ROUTES = {
 
 // 网站元数据
 export const SITE_CONFIG = {
-  name: "We Are ESAP",
+  baseUrl: process.env.NEXT_PUBLIC_SITE_URL || "https://weare.esaps.net",
+  siteName: "We Are ESAP",
   tagline: "向那卫星许愿",
   description:
     "The ESAP Project（逃离计划）- 一个科幻世界观创作企划，讲述仿生人与人类共存的未来故事",
@@ -50,6 +61,13 @@ export const SITE_CONFIG = {
   license: "CC-BY 4.0",
   licenseUrl: "https://creativecommons.org/licenses/by/4.0/deed.zh-hans",
   startYear: 2021,
+} as const;
+
+// 默认图片路径
+export const DEFAULT_IMAGES = {
+  homepage: "/images/homepage.jpg", // 首页和默认 OG 图片
+  notFound: "/images/not-found.webp", // 404 页面图片
+  favicon: "/favicon.ico", // 默认图标
 } as const;
 
 // 动画配置

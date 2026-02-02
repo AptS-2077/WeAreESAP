@@ -1,10 +1,21 @@
-// Copyright 2025 AptS:1547, AptS:1548
-// SPDX-License-Identifier: Apache-2.0
+// Copyright 2025 The ESAP Project
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
 
 "use client";
 
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import { useRef } from "react";
+import { useReducedMotion } from "@/hooks/useReducedMotion";
 
 interface TimelineLineProps {
   totalEvents: number;
@@ -12,6 +23,7 @@ interface TimelineLineProps {
 
 export function TimelineLine({ totalEvents }: TimelineLineProps) {
   const containerRef = useRef<HTMLDivElement>(null);
+  const shouldReduceMotion = useReducedMotion();
 
   // 监听滚动进度
   const { scrollYProgress } = useScroll({
@@ -27,7 +39,10 @@ export function TimelineLine({ totalEvents }: TimelineLineProps) {
   });
 
   // 将滚动进度映射到 path 绘制进度（0 到 1）
-  const pathLength = useTransform(smoothProgress, [0, 1], [0, 1]);
+  const transformedProgress = useTransform(smoothProgress, [0, 1], [0, 1]);
+
+  // 如果启用了减少动画，直接显示完整状态
+  const pathLength = shouldReduceMotion ? 1 : transformedProgress;
 
   return (
     <div

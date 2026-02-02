@@ -1,5 +1,15 @@
-// Copyright 2025 AptS:1547, AptS:1548
-// SPDX-License-Identifier: Apache-2.0
+// Copyright 2025 The ESAP Project
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
 
 import {
   TimelineContentBlock,
@@ -10,6 +20,7 @@ import {
   HighlightBlock,
   LinkBlock,
 } from "@/types/timeline";
+import { Icon, type IconName } from "@/components/ui";
 
 // 角色颜色映射
 const CHARACTER_COLORS: Record<
@@ -103,26 +114,33 @@ function List({ data }: { data: ListBlock }) {
 
 // 高亮块
 function Highlight({ data }: { data: HighlightBlock }) {
-  const styles = {
+  const styles: Record<
+    string,
+    { bg: string; border: string; icon: IconName; iconColor: string }
+  > = {
     success: {
       bg: "bg-green-500/10 dark:bg-green-500/20",
       border: "border-green-500/50",
-      icon: "✓",
+      icon: "CheckCircle",
+      iconColor: "text-green-500",
     },
     warning: {
       bg: "bg-yellow-500/10 dark:bg-yellow-500/20",
       border: "border-yellow-500/50",
-      icon: "⚠",
+      icon: "Warning",
+      iconColor: "text-yellow-500",
     },
     error: {
       bg: "bg-red-500/10 dark:bg-red-500/20",
       border: "border-red-500/50",
-      icon: "⭐",
+      icon: "XCircle",
+      iconColor: "text-red-500",
     },
     info: {
       bg: "bg-blue-500/10 dark:bg-blue-500/20",
       border: "border-blue-500/50",
-      icon: "ℹ",
+      icon: "InfoCircle",
+      iconColor: "text-blue-500",
     },
   };
 
@@ -132,7 +150,11 @@ function Highlight({ data }: { data: HighlightBlock }) {
     <div
       className={`my-4 p-4 rounded-lg border-2 ${style.bg} ${style.border} flex items-start gap-3`}
     >
-      <span className="text-xl flex-shrink-0">{style.icon}</span>
+      <Icon
+        name={style.icon}
+        size={20}
+        className={`${style.iconColor} shrink-0`}
+      />
       <p className="text-sm text-foreground/90 leading-relaxed flex-1 whitespace-pre-wrap">
         {data.text}
       </p>

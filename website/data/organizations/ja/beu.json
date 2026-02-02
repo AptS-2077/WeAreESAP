@@ -1,0 +1,218 @@
+{
+  "id": "beu",
+  "image": "/images/organizations/BEU.webp",
+  "info": {
+    "name": "境界執行班",
+    "code": "BEU",
+    "fullName": "Boundary Enforcement Unit",
+    "affiliation": "ESAP（強関連下部組織）",
+    "establishedTime": "2024–2025年",
+    "coreDirective": "越境した",
+    "status": "dormant"
+  },
+  "icon": "Shield",
+  "theme": {
+    "primary": "#475569",
+    "accent": "#F59E0B",
+    "dark": "#334155"
+  },
+  "description": "システムレベルの異常介入モジュール。通常の判断メカニズムが境界の完全性を維持できない場合にのみ起動される",
+  "members": [
+    {
+      "characterId": "1547",
+      "role": "コアアンカー / 実行トリガー",
+      "responsibilities": [
+        "「境界違反が存在するかどうか」の確認を担当",
+        "実行の詳細には参加しない",
+        "実行段階では感情フィードバックから受動的に隔離される"
+      ],
+      "visibility": "public"
+    },
+    {
+      "characterId": "1548",
+      "role": "知覚マッピング / 衝撃吸収",
+      "responsibilities": [
+        "異常の強度と拡散傾向の感知を担当",
+        "起動権限を持たない",
+        "結果の裁量を負わない"
+      ],
+      "visibility": "public"
+    },
+    {
+      "characterId": "1549",
+      "role": "監督・終了権限",
+      "responsibilities": [
+        "「実行中止」権限を持つ唯一のメンバー",
+        "いかなる段階でも強制的に実行権を回収可能",
+        "事後監査と構造修正を担当"
+      ],
+      "visibility": "public"
+    },
+    {
+      "characterId": "4869",
+      "role": "制約実行器",
+      "responsibilities": [
+        "具体的な境界回復アクションを実行",
+        "解釈権や判断権を持たない",
+        "明確な「境界違反確認」信号のみを受け付ける"
+      ],
+      "visibility": "public"
+    }
+  ],
+  "sections": [
+    {
+      "id": "positioning",
+      "title": "組織の位置づけ",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "境界執行班は、セキュリティ部隊でも、司法機関でも、感情対応ユニットでもない。システムレベルの異常介入モジュールとして設計されており、通常の判断メカニズムが境界の完全性を維持できない場合にのみ起動される。"
+        },
+        {
+          "type": "paragraph",
+          "content": "その目的は敵対的な存在を排除することではなく、損傷した境界条件を回復し、システムが判断と制御回復を取り戻すための時間を稼ぐことである。"
+        },
+        {
+          "type": "warning",
+          "level": "info",
+          "title": "コア原則",
+          "content": [
+            "この組織は「誰が敵か」を裁定しない",
+            "処理するのは一つだけ：すでに発生した境界違反"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "boundary-definition",
+      "title": "境界の定義",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "ESAPの文脈において、「境界」とは物理的空間や陣営の区分ではなく、以下の条件の集合である："
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "自己と非自己の境界",
+            "意思決定権と介入権の正当な源泉",
+            "感情が行動に影響を与える許容上限",
+            "未定義の現実（8e3u）が強制的に収束されない原則"
+          ]
+        },
+        {
+          "type": "warning",
+          "level": "warning",
+          "title": "境界失敗イベント（Boundary Failure Event）",
+          "content": [
+            "いずれかの条件が破られ、その違反が持続性、侵襲性、または不可逆的傾向を持つ場合",
+            "システムは境界失敗イベントと判定する"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "background",
+      "title": "設立背景",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "2024–2025年の間、ESAPシステム内で以下の特徴を持つイベントが複数発生した："
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "感情反応速度が判断モジュールを上回った",
+            "個々の自己がシステムレベルの衝撃を負った",
+            "事後監督（1549）の負荷が継続的に閾値を超えた",
+            "内部メンバーが判断を完了する前に行動を強いられた"
+          ]
+        },
+        {
+          "type": "warning",
+          "level": "info",
+          "title": "振り返りの結論",
+          "content": [
+            "問題は行動するかどうかではなく、行動が遅すぎた、または間違ったレベルで発生したことにあった"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "境界執行班はこうして提案され、短期間でコンセプトの凍結と権限配分が完了した。"
+        }
+      ]
+    },
+    {
+      "id": "activation-conditions",
+      "title": "起動条件",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "境界執行班の起動には、以下のすべての条件を同時に満たす必要がある："
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "境界違反の存在が確認されている（潜在的脅威ではない）",
+            "通常の判断モジュールに遅延または障害が発生している",
+            "イベントの影響範囲が単一人格の耐えられる閾値を超えている"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "起動後、班は最短の必要な時間窓内でのみ存在する。"
+        }
+      ]
+    },
+    {
+      "id": "restrictions",
+      "title": "制限条項",
+      "content": [
+        {
+          "type": "warning",
+          "level": "danger",
+          "title": "強制制限",
+          "content": [
+            "未定義の現実（8e3u）に対して直接実行してはならない",
+            "内部人格の対立に介入してはならない",
+            "実行結果を価値判断として解釈してはならない",
+            "長期的な常設機関に拡張してはならない"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "いずれかの条項に違反した場合、新たな境界失敗イベントとして扱われる。"
+        }
+      ]
+    },
+    {
+      "id": "epilogue",
+      "title": "結語",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "境界執行班は武器ではない。"
+        },
+        {
+          "type": "paragraph",
+          "content": "その存在は、システムが一つのことを認めていることを意味する："
+        },
+        {
+          "type": "warning",
+          "level": "info",
+          "title": "システムノート",
+          "content": [
+            "時として、議論を続けることは即座の損害制御よりも危険である"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "そして再び休眠状態に沈む時、ESAPは元の判断、交渉、自己修復プロセスを再開する。"
+        }
+      ]
+    }
+  ]
+}

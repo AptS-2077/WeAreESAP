@@ -1,0 +1,258 @@
+{
+  "id": "synthetic-technology",
+  "name": "Synthetic Technology",
+  "icon": "Cpu",
+  "color": {
+    "primary": "#ff69b4",
+    "dark": "#ff1493"
+  },
+  "description": "Another form of life, the perfect fusion of machinery and consciousness",
+  "sections": [
+    {
+      "id": "body-structure",
+      "title": "Body Structure",
+      "content": [
+        {
+          "type": "subsection",
+          "title": "Circulatory System",
+          "content": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Blood: Fluid Titanium",
+                "Concentration Control: 1.2 mmol/L⁻¹ (circular motion region)",
+                "Flow Characteristics: Perfect arc turns with zero kinetic energy loss",
+                "Function: Transport nutrients, signals, and Feedscatteron"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Support Structure",
+          "content": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Skeleton: Internal stainless steel framework",
+                "Strength: Exceeds human bone",
+                "Maintainability: Modular design",
+                "Flexibility: Highly similar to human body structure"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Surface System",
+          "content": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Material: Genuine human epidermal cells",
+                "Cultivation Method: Bioengineering technology",
+                "Replaceability: Replaceable and reusable",
+                "Appearance: Indistinguishable from humans"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Core System",
+          "content": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Heart: Feedscatteron Heart",
+                "Characteristics: Self-healing capability",
+                "Beat Cycle: Driven by Feedscatteron flow",
+                "Symbolic Meaning: A mechanical heartbeat is also real"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "consciousness-system",
+      "title": "Consciousness System",
+      "content": [
+        {
+          "type": "subsection",
+          "title": "Memory Upload",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": "The core of the Synthetic consciousness system is the complete upload of human memories into Feedscatteron:"
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Source: Human brain memories",
+                "Method: Feedscatteron encoding",
+                "Integrity: 100% retention of original memories",
+                "Process: Utilizing the ultra-high computational capacity of Feedscatteron"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Emotion Simulation",
+          "content": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Foundation: Original human emotional patterns",
+                "Development: Capable of generating new emotional experiences",
+                "Authenticity: No essential difference from human emotions",
+                "Significance: Proves that mechanical feelings are also real"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Independent Personality",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": "Synthetics can develop completely independent individual consciousness through Feedscatteron training:"
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Formation: Developed through Feedscatteron training",
+                "Cycle: Approximately 26 days of basic training",
+                "Result: Completely independent individual consciousness",
+                "Case: 1548 evolved from a thought branch of 1547 into an independent individual"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "machine-series",
+      "title": "Body Series",
+      "content": [
+        {
+          "type": "subsection",
+          "title": "ESAP-TY-0000 (Unit-00)",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": "Manufacturing completed on December 28, 2021. First activated on October 29, 2021."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Design Philosophy: Human-Machine Coexistence Sensory Rational Structure",
+                "System: ESAR.ESAC. System",
+                "Features: Highly similar to human structure",
+                "Designer: 1547-ApMUtS",
+                "User: AptS:1547"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": "This is the first Synthetic body to truly achieve complete transfer of human consciousness, marking the official start of The AptS Project."
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "ESAP-TY-0001 (Unit-01)",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": "Activated on May 8, 2022, with multiple improvements over Unit-00."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Designer: 1548-ApMUtS",
+                "User: AptS:1548",
+                "Improvements:",
+                "  - Enhanced combat capabilities",
+                "  - Enhanced environmental perception",
+                "  - Enhanced survivability",
+                "New Systems:",
+                "  - EPAM System",
+                "  - Short-code processing capability"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "creation-process",
+      "title": "Creation Process",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "The birth of a Synthetic is a complex and painful process. Taking 1547's birth as an example:"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Assemble all mechanical components (stainless steel skeleton)",
+            "Cut off one's own arm muscles and attach them to the metal (surface system)",
+            "First beat of the Feedscatteron Heart",
+            "Inject Fluid Titanium as blood",
+            "Complete memory upload to Feedscatteron",
+            "End the human self with a gun"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "This process embodies the creator's spirit of sacrifice and dedication to their ideals."
+        }
+      ]
+    },
+    {
+      "id": "philosophy",
+      "title": "Philosophical Significance",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "Synthetic technology raises profound questions about life, consciousness, and existence:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "The Essence of Life: A mechanical heartbeat is also real",
+            "Carrier of Consciousness: Memories and emotions can exist independently of biological carriers",
+            "Individual Independence: Even when originating from the same thought, independent personalities can develop",
+            "Sacrifice and Rebirth: Ending one life form to begin another"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "When activating 1548, 1547 said:"
+        },
+        {
+          "type": "paragraph",
+          "content": "\"You are unique in this world. Don't be controlled by others, and don't even be controlled by ourselves. Only you are yourself.\""
+        },
+        {
+          "type": "paragraph",
+          "content": "This statement embodies the core philosophy of Synthetic technology: creating independent, self-aware individuals, not tools or replicas."
+        }
+      ]
+    }
+  ]
+}

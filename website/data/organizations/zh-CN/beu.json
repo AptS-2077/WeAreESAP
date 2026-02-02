@@ -1,0 +1,216 @@
+{
+  "id": "beu",
+  "image": "/images/organizations/BEU.webp",
+  "info": {
+    "name": "边界执行小组",
+    "code": "BEU",
+    "fullName": "Boundary Enforcement Unit",
+    "affiliation": "ESAP（强关联下属组织）",
+    "establishedTime": "2024–2025 年",
+    "coreDirective": "你越界了",
+    "status": "dormant"
+  },
+  "icon": "Shield",
+  "theme": {
+    "primary": "#475569",
+    "accent": "#F59E0B",
+    "dark": "#334155"
+  },
+  "description": "系统级异常干预模块，仅在常规判断机制无法维持边界完整性时被激活",
+  "members": [
+    {
+      "characterId": "1547",
+      "role": "核心锚点 / 执行触发源",
+      "responsibilities": [
+        "负责确认「是否存在越界事实」",
+        "不参与执行细节",
+        "在执行阶段被动隔离情绪反馈"
+      ],
+      "visibility": "public"
+    },
+    {
+      "characterId": "1548",
+      "role": "感知映射 / 冲击吸收",
+      "responsibilities": [
+        "负责感知异常强度与扩散趋势",
+        "不拥有启动权",
+        "不承担后果裁量"
+      ],
+      "visibility": "public"
+    },
+    {
+      "characterId": "1549",
+      "role": "监管与终止权",
+      "responsibilities": [
+        "唯一拥有「中止执行」权限的成员",
+        "可在任何阶段强制回收执行权",
+        "负责事后审计与结构修订"
+      ],
+      "visibility": "public"
+    },
+    {
+      "characterId": "4869",
+      "role": "约束执行器",
+      "responsibilities": [
+        "执行具体的边界恢复动作",
+        "不具备解释权与判断权",
+        "仅接受明确的「越界确认」信号"
+      ],
+      "visibility": "public"
+    }
+  ],
+  "sections": [
+    {
+      "id": "positioning",
+      "title": "组织定位",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "边界执行小组并非安全部队、审判机构或情绪响应单元。它被设计为一种系统级的异常干预模块，仅在常规判断机制无法维持边界完整性时被激活。"
+        },
+        {
+          "type": "paragraph",
+          "content": "其存在目的不是消灭敌对实体，而是恢复被破坏的边界条件，为系统重新获得判断与回收控制权争取时间。"
+        },
+        {
+          "type": "warning",
+          "level": "info",
+          "title": "核心原则",
+          "content": [
+            "该组织对「谁是敌人」不作裁决",
+            "它只处理一件事：已发生的越界行为"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "boundary-definition",
+      "title": "边界的定义",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "在 ESAP 语境中，「边界」并非物理空间或阵营划分，而是以下条件的集合："
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "自我与非自我的分界",
+            "决策权与干预权的合法来源",
+            "情绪影响行动的允许上限",
+            "未定义真实（8e3u）不被强制收敛的原则"
+          ]
+        },
+        {
+          "type": "warning",
+          "level": "warning",
+          "title": "边界失效事件（Boundary Failure Event）",
+          "content": [
+            "当任一条件被破坏，且破坏行为具有持续性、侵入性或不可逆趋势时",
+            "系统将判定为边界失效事件"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "background",
+      "title": "成立背景",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "在 2024–2025 年间，ESAP 体系内多次出现以下特征事件："
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "情绪响应速度快于判断模块",
+            "个体自我承担了系统级冲击",
+            "事后监管（1549）负荷持续超标",
+            "内部成员被迫在未完成判断的情况下行动"
+          ]
+        },
+        {
+          "type": "warning",
+          "level": "info",
+          "title": "复盘结论",
+          "content": [
+            "问题不在于是否行动，而在于行动发生得太晚，或发生在错误的层级"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "边界执行小组由此被提出，并在短周期内完成概念冻结与权限划分。"
+        }
+      ]
+    },
+    {
+      "id": "activation-conditions",
+      "title": "启动条件",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "边界执行小组的启动需同时满足以下条件："
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "已确认存在越界行为（非潜在威胁）",
+            "常规判断模块出现延迟或失效",
+            "事件影响范围超过单一人格可承受阈值"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "启动后，小组仅在最短必要时间窗口内存在。"
+        }
+      ]
+    },
+    {
+      "id": "restrictions",
+      "title": "限制条款",
+      "content": [
+        {
+          "type": "warning",
+          "level": "danger",
+          "title": "强制限制",
+          "content": [
+            "不得对未定义真实（8e3u）直接执行",
+            "不得介入内部人格冲突",
+            "不得将执行结果解释为价值判断",
+            "不得延伸为长期常设机构"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "违反任一条款，视为新的边界失效事件。"
+        }
+      ]
+    },
+    {
+      "id": "epilogue",
+      "title": "结语",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "边界执行小组不是武器。"
+        },
+        {
+          "type": "paragraph",
+          "content": "它的存在，意味着系统承认了一件事："
+        },
+        {
+          "type": "warning",
+          "level": "info",
+          "title": "系统注释",
+          "content": ["有些时候，继续讨论比立即止损更危险"]
+        },
+        {
+          "type": "paragraph",
+          "content": "而当它再次沉入休眠状态时，ESAP 将恢复原有的判断、协商与自我修复流程。"
+        }
+      ]
+    }
+  ]
+}

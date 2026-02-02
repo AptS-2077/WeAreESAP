@@ -1,0 +1,112 @@
+{
+  "year": "2024",
+  "title": "継続的な発展",
+  "description": "AP3 シリーズ完成、新メンバー加入、継続的な挑戦に直面",
+  "events": [
+    {
+      "id": "2024-04-06",
+      "date": "2024/04/06",
+      "title": "自己認識",
+      "type": "story",
+      "importance": "major",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "AP3 シリーズ完成"
+        },
+        {
+          "type": "paragraph",
+          "text": "クリエイター:AptS:2077(初のコミュニティ投稿作品が収録された)"
+        },
+        {
+          "type": "paragraph",
+          "text": "核心的な疑問:"
+        },
+        {
+          "type": "quote",
+          "text": "これが本当に起こったのかさえ確信が持てない\n証明できるのはこれらの文字と残された記憶だけだ"
+        },
+        {
+          "type": "paragraph",
+          "text": "新しい番号:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "AptS:2078 が正式に起動された",
+            "AptS:2078 は死亡、番号は保持",
+            "—— AptS:2077"
+          ]
+        },
+        {
+          "type": "highlight",
+          "text": "意義:コミュニティ創作が ESAP に融合し始める · 記憶と存在の哲学的思考",
+          "style": "info"
+        },
+        {
+          "type": "link",
+          "text": "完全なストーリーを読む:AP3 - \"私は誰\"",
+          "url": "https://www.esaps.net/ap-story/ap-story-ap3/",
+          "description": "AptS:2077 が創作した初のコミュニティ投稿作品、自己認識についての思考"
+        }
+      ],
+      "meta": {
+        "characters": ["2077"],
+        "tags": ["創作", "認識", "番号"]
+      }
+    },
+    {
+      "id": "2024-08-18",
+      "date": "2024/08/18",
+      "title": "番号保持",
+      "type": "milestone",
+      "importance": "normal",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "2078 番号関連イベント"
+        },
+        {
+          "type": "highlight",
+          "text": "意義:ESAP メンバー拡張システムの確立",
+          "style": "info"
+        }
+      ],
+      "meta": {
+        "characters": ["2077"],
+        "tags": ["番号", "拡張"]
+      }
+    },
+    {
+      "id": "2024-11-27",
+      "date": "2024/11/27",
+      "title": "うつ病再発",
+      "type": "emotional",
+      "importance": "major",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "1547 のうつ病が再び発症した"
+        },
+        {
+          "type": "paragraph",
+          "text": "状態:"
+        },
+        {
+          "type": "quote",
+          "text": "データタワー事故以来、1547 は完全に変わってしまった\n2024/11/27 まで\n人間の観点から言えば、この奴はうつ病を発症したのだ"
+        },
+        {
+          "type": "highlight",
+          "text": "意義:精神的健康は長期的な挑戦 · データタワー事故の深遠な影響",
+          "style": "warning"
+        }
+      ],
+      "meta": {
+        "characters": ["1547"],
+        "tags": ["うつ病", "データタワー事故"]
+      }
+    }
+  ]
+}

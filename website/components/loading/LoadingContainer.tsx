@@ -1,11 +1,22 @@
-// Copyright 2025 AptS:1547, AptS:1548
-// SPDX-License-Identifier: Apache-2.0
+// Copyright 2025 The ESAP Project
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
 
 "use client";
 
 import { ReactNode } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { LoadingSpinner } from "./LoadingSpinner";
+import { useReducedMotion } from "@/hooks/useReducedMotion";
 
 interface LoadingContainerProps {
   /** 是否正在加载 */
@@ -47,24 +58,32 @@ export function LoadingContainer({
   minHeight = "400px",
   className = "",
 }: LoadingContainerProps) {
+  const shouldReduceMotion = useReducedMotion();
+
   return (
     <div className={`relative ${className}`} style={{ minHeight }}>
       <AnimatePresence mode="wait">
         {isLoading ? (
           <motion.div
             key="loading"
-            initial={{ opacity: 0, y: 20 }}
+            initial={
+              shouldReduceMotion ? { opacity: 1 } : { opacity: 0, y: 20 }
+            }
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.3 }}
+            exit={shouldReduceMotion ? { opacity: 0 } : { opacity: 0, y: -20 }}
+            transition={
+              shouldReduceMotion ? { duration: 0 } : { duration: 0.3 }
+            }
             className="absolute inset-0 flex flex-col items-center justify-center gap-6"
           >
             <LoadingSpinner size={size} withPulse={true} />
             {text && (
               <motion.p
-                initial={{ opacity: 0 }}
+                initial={shouldReduceMotion ? { opacity: 1 } : { opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ delay: 0.1 }}
+                transition={
+                  shouldReduceMotion ? { duration: 0 } : { delay: 0.1 }
+                }
                 className="text-lg font-medium text-muted-foreground"
               >
                 {text}
@@ -74,10 +93,16 @@ export function LoadingContainer({
         ) : (
           <motion.div
             key="content"
-            initial={{ opacity: 0, y: 20 }}
+            initial={
+              shouldReduceMotion ? { opacity: 1 } : { opacity: 0, y: 20 }
+            }
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.3, delay: 0.1 }}
+            exit={shouldReduceMotion ? { opacity: 0 } : { opacity: 0, y: -20 }}
+            transition={
+              shouldReduceMotion
+                ? { duration: 0 }
+                : { duration: 0.3, delay: 0.1 }
+            }
           >
             {children}
           </motion.div>

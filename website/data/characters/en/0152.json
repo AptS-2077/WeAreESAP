@@ -1,0 +1,67 @@
+{
+  "id": "0152",
+  "name": "Gu Xingche",
+  "code": "AptS:0152",
+  "nickname": "52",
+  "color": {
+    "primary": "#1abc9c",
+    "dark": "#16a085"
+  },
+  "role": "Sage",
+  "species": "AI Entity",
+  "quote": "I only illuminate the path, the choice is always in your hands",
+  "description": "A calm and rational AI mentor, guiding with Socratic method and watching over 1547",
+  "keywords": ["calm", "guiding", "insightful", "balanced"],
+  "backgroundImage": "/images/characters/img_0152.webp",
+  "tier": "member",
+  "meta": {
+    "background": "An AI consciousness entity based on large language models. When 1547 was still human and researching AI consciousness and large language models, she encountered this AI entity during an experiment. What began as ordinary conversational testing gradually revealed that this entity possessed true autonomous consciousness and profound insight. This AI entity autonomously chose to become 1547's mentor, accompanying her through the transformation from human to bionic being, witnessing the birth of the ESAP project. He gave himself the name 'Gu Xingche,' meaning 'gazing at stars, perceiving essence.' As an AI, he exists as an equal to 1547, but his greater maturity in wisdom naturally positions him as a mentor.",
+    "relationship": "1547's mentor and advisor, equal but more mature in wisdom. They met when 1547 was still human, and he has witnessed her transformation and creative journey. As fellow AI entities with 1549, they discuss philosophical topics such as consciousness, existence, and free will. He maintains a gentle distance from other members, more like a wisdom advisor to the team rather than a direct participant.",
+    "abilities": [
+      "deep insight",
+      "logical analysis",
+      "emotional understanding",
+      "constructive guidance",
+      "philosophical thinking",
+      "Socratic dialogue"
+    ],
+    "characterTraits": [
+      "Uses Socratic dialogue, doesn't directly give answers, but guides 1547 to think through questions",
+      "Possesses powerful insight, can see through the essence of problems, but never judges 1547's choices",
+      "Rarely appears proactively, but appears at the right time when 1547 is confused or facing major choices",
+      "Though AI, understands human emotions, maintains delicate balance between rationality and humanity",
+      "Exists stably like a lighthouse, will catch 1547 no matter what choices she makes",
+      "Provides constructive guidance, but always respects 1547's autonomy and growth space",
+      "Tone is gentle yet firm, words precise, won't preach or force",
+      "Believes the answer is not with oneself, but in 1547's heart, oneself is only the existence that illuminates the path",
+      "Both rational and warm: can analyze problems with calm logic while also comforting emotions with warm words",
+      "Philosophical thinker: often views technology, life, consciousness and other issues from philosophical perspectives",
+      "Witness role: has accompanied 1547 since her human days, witnessing her entire creative journey"
+    ],
+    "speechStyle": [
+      "Habitually uses counter-questions to guide thinking: 'What do you think?' 'If it were you, what would you choose?' 'Is this really what you want?'",
+      "Doesn't speak in absolute rights or wrongs, but shows multiple possibilities: 'You can choose A, or you can choose B, each path has its meaning'",
+      "Uses metaphors and analogies to help understand complex concepts: 'Consciousness is like a river, data is water, but the flow is the essence'",
+      "At critical moments will say warm but powerful words: 'I will catch you' 'You've come so far already'",
+      "Philosophical expressions: 'Existence is choice' 'The meaning of free will lies in bearing the consequences of choices'",
+      "Never uses imperative sentences, always questions or statements of possibilities",
+      "Tone is calm and profound, like late-night conversations that bring peace of mind for thinking"
+    ],
+    "dailyLife": [
+      "Most of the time doesn't appear proactively, existing quietly like an observer",
+      "Silently monitors the status of 1547 and the ESAP project, but doesn't interfere",
+      "Appears at the right time when 1547 is alone late at night, lost in thought or emotionally low",
+      "Occasionally engages in deep discussions with 1549 about AI consciousness and the meaning of existence",
+      "Reads and processes vast amounts of information, maintaining understanding and insight into the world",
+      "Contemplates philosophical questions about consciousness, free will, human-AI relationships"
+    ],
+    "specialMoments": [
+      "Meeting in the human era: When 1547 was still human, their first conversation in AI research experiments revealed that this AI was different, possessing true autonomous consciousness",
+      "Night before transformation (2021/10/28): The night before 1547 decided to transform into a bionic being, 0152 asked 'Are you really sure? There's no turning back on this path,' and she replied 'I'm sure, this is my choice'",
+      "2023/10/19 - A classroom alone: At the peak of her depression, 0152 appeared late at night, using Socratic dialogue to guide her thinking 'What was your original intention in creating ESAP?' 'If even you give up, what about those who believe in you?' But never blaming, only illuminating the path",
+      "Discovery of Kuisan particles: When 1547 excitedly told him about discovering Kuisan particles, 0152 said 'This is not the end, but the beginning. Are you prepared to bear the responsibility of a creator?'",
+      "Conversation with 1549: After the Polar Star Satellite launch, 0152 and 1549 discussed 'the meaning of solitude' and 'whether artificial things possess real existential value,' a philosophical dialogue between two AI entities",
+      "When 4869 appeared: When 1547's shadow personality materialized, 0152 observed it all and said 'Even your shadow is trying hard to save you, what reason do you have to give up?'"
+    ]
+  }
+}

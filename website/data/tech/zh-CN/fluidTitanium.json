@@ -1,0 +1,173 @@
+{
+  "id": "fluid-titanium",
+  "name": "流体钛",
+  "icon": "Droplet",
+  "color": {
+    "primary": "#4da6ff",
+    "dark": "#2e8fff"
+  },
+  "description": "连接生命与机械的桥梁，仿生人的血液系统核心",
+  "sections": [
+    {
+      "id": "basic-info",
+      "title": "基本信息",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "流体钛（Fluid Titanium），别名\"流体钛\"，是一类金属钛有机化合物，呈现蓝色液体形态。"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "外观：蓝色液体",
+            "分子结构：链状结构，分子链间有缝隙",
+            "特殊性质：成分部分未知",
+            "颜色变化：与人类血液混合后显现淡紫色"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "physical-properties",
+      "title": "物理特性",
+      "content": [
+        {
+          "type": "subsection",
+          "title": "结构特点",
+          "content": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "分子链间缝隙支持电子和数据同时穿行",
+                "可作为信息传输的双通道介质",
+                "具有高度的生物相容性",
+                "支持流体钛和馈散粒子的完美结合"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "馈散保存能力",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": "流体钛最重要的特性是能够稳定保存馈散粒子："
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "将馈散粒子衰变周期从 34.28 秒延长至 341,879 年",
+                "保存期间粒子仍保持活性",
+                "支持高速数据传输",
+                "具体保存机制尚不完全清楚"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": "这种保存能力可能与分子结构中的特殊缝隙有关，能够稳定馈散粒子的量子态。"
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "颜色特性",
+          "content": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "纯净状态：蓝色",
+                "与人类血液混合：惨淡的淡紫色",
+                "在不同浓度下显现不同色调"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "applications",
+      "title": "应用场景",
+      "content": [
+        {
+          "type": "subsection",
+          "title": "仿生人血液系统",
+          "content": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "作为循环系统的主要介质",
+                "传输营养物质和信号",
+                "支持馈散粒子流动",
+                "浓度控制：1.2 mmol/L⁻¹（圆周运动区域）",
+                "流动特性：完美弧度转弯，不损失动能"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "计算系统介质",
+          "content": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "CPU/GPU 运算媒介",
+                "数据传输通道",
+                "热量管理系统",
+                "特制硅片中的计算周期：3,417 个月"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "safety",
+      "title": "安全性与危险性",
+      "content": [
+        {
+          "type": "warning",
+          "level": "danger",
+          "title": "极高毒性警告",
+          "content": [
+            "流体钛对人类具有极高毒性",
+            "少量即可导致人类死亡",
+            "需要专业防护措施",
+            "严格管控流通"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "2021 年 10 月 25 日郊区厂房爆炸事故中，现场发现了蓝色流体钛。事故导致厂房坍塌，1547 在事故中受伤但获得了关键材料。"
+        },
+        {
+          "type": "paragraph",
+          "content": "2022 年 5 月 7 日流体钛矿场事件中，蓝色的流体钛与红色的血液混合，显现出惨淡的淡紫色。这一事件为 1548 的诞生提供了必需的材料。"
+        }
+      ]
+    },
+    {
+      "id": "technical-specs",
+      "title": "技术参数",
+      "content": [
+        {
+          "type": "table",
+          "headers": ["参数", "数值"],
+          "rows": [
+            ["圆周运动浓度比", "1.2 mmol/L⁻¹"],
+            ["馈散粒子保存周期", "341,879 年"],
+            ["硅片中计算周期", "3,417 月"],
+            ["流动特性", "完美弧度转弯，零动能损失"]
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,24 +1,75 @@
-// Copyright 2025 AptS:1547, AptS:1548
-// SPDX-License-Identifier: Apache-2.0
+// Copyright 2025 The ESAP Project
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
 
 "use client";
 
-import { useState } from "react";
+import { useState, useCallback, memo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { TriangleLogo, ThemeToggle, TransitionLink } from "@/components/ui";
+import Image from "next/image";
+import { usePathname, useRouter } from "@/i18n/navigation";
+import {
+  ThemeToggle,
+  TransitionLink,
+  Icon,
+  LanguageSwitcher,
+} from "@/components/ui";
+import { useSearch } from "@/components/search";
+import { useTranslations, useLocale } from "next-intl";
+import { useTheme } from "next-themes";
+import { locales } from "@/i18n/request";
+import { DEFAULT_IMAGES } from "@/lib/constants";
+
+const localeNames: Record<string, string> = {
+  "zh-CN": "中",
+  en: "EN",
+  ja: "日",
+};
 
 const navLinks = [
-  { href: "/project", label: "项目企划" },
-  { href: "/characters", label: "角色档案" },
-  { href: "/tech", label: "技术设定" },
-  { href: "/timeline", label: "时间线" },
-  { href: "/join", label: "加入我们" },
-];
+  { href: "/project", key: "project" },
+  { href: "/characters", key: "characters" },
+  { href: "/tech", key: "tech" },
+  { href: "/organizations", key: "organizations" },
+  { href: "/timeline", key: "timeline" },
+  { href: "/join", key: "join" },
+] as const;
 
-export function Navigation() {
+export const Navigation = memo(function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
+  const router = useRouter();
+  const locale = useLocale();
+  const { resolvedTheme, setTheme } = useTheme();
+  const tNavigation = useTranslations("common.navigation");
+  const tHeader = useTranslations("common.header");
+  const tMobileMenu = useTranslations("common.mobileMenu");
+  const tSearch = useTranslations("search");
+  const { openSearch } = useSearch();
 
-  const closeMobileMenu = () => setIsMobileMenuOpen(false);
+  const closeMobileMenu = useCallback(() => {
+    setIsMobileMenuOpen(false);
+  }, []);
+
+  // 判断链接是否激活
+  const isActive = useCallback(
+    (href: string) => {
+      if (href === "/") {
+        return pathname === "/";
+      }
+      return pathname === href || pathname.startsWith(href + "/");
+    },
+    [pathname]
+  );
 
   return (
     <>
@@ -30,68 +81,118 @@ export function Navigation() {
               href="/"
               className="relative flex items-center gap-3 group"
               onClick={closeMobileMenu}
+              prefetch={true}
             >
-              <TriangleLogo
-                size={40}
-                animated={false}
+              <Image
+                src={DEFAULT_IMAGES.favicon}
+                alt="ESAP Logo"
+                width={40}
+                height={40}
+                priority
                 className="opacity-90 group-hover:opacity-100 transition-opacity"
               />
               <div className="flex flex-col">
                 <span className="text-lg font-bold text-foreground group-hover:text-esap-yellow transition-colors">
-                  We Are ESAP
+                  {tHeader("siteName")}
                 </span>
                 <span className="text-xs text-muted-foreground">
-                  向那卫星许愿
+                  {tHeader("tagline")}
                 </span>
               </div>
             </TransitionLink>
 
             {/* 桌面端导航链接 */}
             <div className="hidden md:flex items-center gap-6">
-              {navLinks.map((link) => (
-                <TransitionLink
-                  key={link.href}
-                  href={link.href}
-                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  {link.label}
-                </TransitionLink>
-              ))}
+              {navLinks.map((link) => {
+                const active = isActive(link.href);
+                return (
+                  <div key={link.href} className="relative">
+                    <TransitionLink
+                      href={link.href}
+                      prefetch={true}
+                      className={`text-sm transition-colors ${
+                        active
+                          ? "text-foreground font-medium"
+                          : "text-muted-foreground hover:text-foreground"
+                      }`}
+                    >
+                      {tNavigation(link.key)}
+                    </TransitionLink>
+                    {/* 激活指示器 - ESAP 三色渐变 */}
+                    {active && (
+                      <motion.div
+                        layoutId="nav-indicator"
+                        className="absolute -bottom-[17px] left-0 right-0 h-0.5 bg-linear-to-r from-esap-yellow via-esap-pink to-esap-blue"
+                        transition={{
+                          type: "spring",
+                          stiffness: 380,
+                          damping: 30,
+                        }}
+                      />
+                    )}
+                  </div>
+                );
+              })}
             </div>
 
             {/* 右侧按钮组 */}
             <div className="flex items-center gap-3">
-              {/* 主题切换按钮 */}
-              <ThemeToggle />
+              {/* 搜索按钮 */}
+              <button
+                onClick={openSearch}
+                className="hidden md:flex items-center gap-2 px-3 py-1.5 rounded-lg bg-muted hover:bg-border transition-colors text-sm text-muted-foreground"
+                aria-label={tSearch("button")}
+              >
+                <Icon name="Search" size={16} />
+                <span className="hidden lg:inline">{tSearch("button")}</span>
+                <kbd className="hidden lg:inline-flex px-1.5 py-0.5 text-xs bg-background rounded border border-border">
+                  {tSearch("shortcut")}
+                </kbd>
+              </button>
+
+              {/* 移动端搜索按钮 */}
+              <button
+                onClick={openSearch}
+                className="md:hidden w-10 h-10 rounded-lg bg-muted hover:bg-border transition-colors flex items-center justify-center"
+                aria-label={tSearch("button")}
+              >
+                <Icon name="Search" size={20} />
+              </button>
+
+              {/* 语言切换器 - 桌面端 */}
+              <div className="hidden md:block">
+                <LanguageSwitcher />
+              </div>
+
+              {/* 主题切换按钮 - 桌面端 */}
+              <div className="hidden md:block">
+                <ThemeToggle />
+              </div>
 
               {/* 移动端汉堡菜单按钮 */}
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="md:hidden w-10 h-10 rounded-lg bg-muted hover:bg-border transition-colors flex items-center justify-center"
+                className="md:hidden w-10 h-10 rounded-lg bg-muted hover:bg-border transition-colors flex items-center justify-center group"
                 aria-label="切换菜单"
+                aria-expanded={isMobileMenuOpen}
+                data-testid="mobile-menu-button"
               >
-                <div className="w-5 h-4 flex flex-col justify-between">
-                  <motion.span
-                    animate={
-                      isMobileMenuOpen
-                        ? { rotate: 45, y: 6 }
-                        : { rotate: 0, y: 0 }
-                    }
-                    className="w-full h-0.5 bg-foreground rounded-full"
-                  />
-                  <motion.span
-                    animate={isMobileMenuOpen ? { opacity: 0 } : { opacity: 1 }}
-                    className="w-full h-0.5 bg-foreground rounded-full"
-                  />
-                  <motion.span
-                    animate={
-                      isMobileMenuOpen
-                        ? { rotate: -45, y: -6 }
-                        : { rotate: 0, y: 0 }
-                    }
-                    className="w-full h-0.5 bg-foreground rounded-full"
-                  />
-                </div>
+                <AnimatePresence mode="wait">
+                  <motion.div
+                    key={isMobileMenuOpen ? "close" : "open"}
+                    initial={{ opacity: 0, rotate: -90 }}
+                    animate={{ opacity: 1, rotate: 0 }}
+                    exit={{ opacity: 0, rotate: 90 }}
+                    transition={{ duration: 0.2 }}
+                    className="flex items-center justify-center"
+                  >
+                    <Icon
+                      name={isMobileMenuOpen ? "X" : "Menu"}
+                      size={20}
+                      className="text-foreground group-hover:text-esap-pink transition-colors"
+                    />
+                  </motion.div>
+                </AnimatePresence>
               </button>
             </div>
           </div>
@@ -109,6 +210,7 @@ export function Navigation() {
               exit={{ opacity: 0 }}
               onClick={closeMobileMenu}
               className="fixed top-16 left-0 right-0 bottom-0 bg-black/3 backdrop-blur-sm z-[60] md:hidden"
+              data-testid="mobile-menu-overlay"
             />
 
             {/* 菜单面板 */}
@@ -118,23 +220,92 @@ export function Navigation() {
               exit={{ x: "100%" }}
               transition={{ type: "spring", damping: 25, stiffness: 200 }}
               className="fixed top-16 right-0 bottom-0 w-64 bg-background border-l border-border shadow-xl z-[70] md:hidden"
+              role="dialog"
+              aria-modal="true"
+              data-testid="mobile-menu"
             >
               <div className="flex flex-col p-6 gap-4">
-                {navLinks.map((link) => (
-                  <TransitionLink
-                    key={link.href}
-                    href={link.href}
-                    onClick={closeMobileMenu}
-                    className="text-lg text-foreground hover:text-esap-pink transition-colors py-2 border-b border-border/50"
-                  >
-                    {link.label}
-                  </TransitionLink>
-                ))}
+                {navLinks.map((link) => {
+                  const active = isActive(link.href);
+                  return (
+                    <TransitionLink
+                      key={link.href}
+                      href={link.href}
+                      onClick={closeMobileMenu}
+                      prefetch={true}
+                      className={`text-lg py-2 border-b border-border/50 transition-colors ${
+                        active
+                          ? "text-esap-pink font-medium"
+                          : "text-foreground hover:text-esap-pink"
+                      }`}
+                    >
+                      {tNavigation(link.key)}
+                    </TransitionLink>
+                  );
+                })}
+
+                {/* 功能区 */}
+                <div className="pt-4 mt-2 space-y-4">
+                  {/* 主题切换 */}
+                  <div className="flex items-center justify-between">
+                    <span className="text-sm text-muted-foreground">
+                      {tMobileMenu("theme")}
+                    </span>
+                    <button
+                      type="button"
+                      onClick={() =>
+                        setTheme(resolvedTheme === "dark" ? "light" : "dark")
+                      }
+                      className="w-10 h-10 rounded-lg bg-muted hover:bg-border transition-colors flex items-center justify-center"
+                      aria-label="切换主题"
+                    >
+                      {resolvedTheme === "dark" ? (
+                        <Icon
+                          name="Sun"
+                          size={18}
+                          className="text-esap-yellow"
+                        />
+                      ) : (
+                        <Icon
+                          name="Moon"
+                          size={18}
+                          className="text-esap-blue"
+                        />
+                      )}
+                    </button>
+                  </div>
+
+                  {/* 语言切换 */}
+                  <div className="flex items-center justify-between">
+                    <span className="text-sm text-muted-foreground">
+                      {tMobileMenu("language")}
+                    </span>
+                    <div className="flex gap-1">
+                      {locales.map((loc) => (
+                        <button
+                          key={loc}
+                          type="button"
+                          onClick={() => {
+                            router.push(pathname, { locale: loc });
+                            closeMobileMenu();
+                          }}
+                          className={`px-2.5 py-1.5 text-sm rounded-md transition-colors ${
+                            locale === loc
+                              ? "bg-esap-blue text-white dark:bg-esap-blue/30 font-medium"
+                              : "bg-muted text-muted-foreground hover:bg-border"
+                          }`}
+                        >
+                          {localeNames[loc]}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                </div>
               </div>
 
               {/* 底部装饰 */}
               <div className="absolute bottom-8 left-0 right-0 px-6">
-                <div className="w-full h-1 bg-gradient-to-r from-esap-yellow via-esap-pink to-esap-blue rounded-full" />
+                <div className="w-full h-1 bg-linear-to-r from-esap-yellow via-esap-pink to-esap-blue rounded-full" />
               </div>
             </motion.div>
           </>
@@ -142,4 +313,4 @@ export function Navigation() {
       </AnimatePresence>
     </>
   );
-}
+});

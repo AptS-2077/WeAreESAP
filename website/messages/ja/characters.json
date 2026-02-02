@@ -1,0 +1,93 @@
+{
+  "metadata": {
+    "title": "キャラクター",
+    "subtitle": "We Are ESAP",
+    "description": "ESAPプロジェクトのコアメンバーを探索し、それぞれのストーリーと設定について学ぶ",
+    "profileAlt": "キャラクタープロフィール",
+    "keywords": [
+      "ESAPキャラクター",
+      "アンドロイド档案",
+      "キャラクター設定",
+      "人物紹介",
+      "AptSメンバー",
+      "SFキャラクター"
+    ]
+  },
+  "hero": {
+    "title": "キャラクター",
+    "subtitle": "ESAPプロジェクトのコアメンバーを探索"
+  },
+  "sections": {
+    "otherMembers": "その他のメンバー"
+  },
+  "ui": {
+    "expandHint": "タップして詳細を見る ↓",
+    "detailHint": "タップして完全なプロフィールを見る →",
+    "backToList": "← リストに戻る"
+  },
+  "detail": {
+    "sections": {
+      "info": "基本情報",
+      "story": "キャラクターストーリー",
+      "abilities": "能力設定",
+      "dailyLife": "日常生活",
+      "specialMoments": "特別な瞬間",
+      "philosophy": "哲学観",
+      "relationships": "人間関係",
+      "speechStyle": "話し方"
+    },
+    "fields": {
+      "code": "コード",
+      "name": "名前",
+      "nickname": "別名",
+      "role": "役割",
+      "species": "種族",
+      "bodyType": "ボディタイプ",
+      "location": "所在地",
+      "occupation": "職業",
+      "mission": "任務",
+      "threeBodySystem": "三体システム",
+      "description": "概要",
+      "keywords": "キーワード"
+    },
+    "abilities": {
+      "special": "特殊能力",
+      "weapons": "武器と装備"
+    },
+    "story": {
+      "background": "背景",
+      "traits": "性格特性"
+    },
+    "philosophy": {
+      "onLoneliness": "孤独について",
+      "onExistence": "存在について",
+      "onChoice": "選択について",
+      "onFreedom": "自由について",
+      "onMeaning": "意味について"
+    },
+    "relationships": {
+      "visualizationPlaceholder": "関係図の可視化機能は開発中...",
+      "graphTitle": "関係図",
+      "graphHint": "ノードをクリックして詳細を表示、スクロールでズーム",
+      "mobileHint": "ピンチでズーム、ドラッグで移動",
+      "loading": "読み込み中...",
+      "noData": "関係データがありません"
+    },
+    "hiddenProfile": {
+      "ui": {
+        "closeButton": "隠しプロフィールを閉じる",
+        "imageAlt": "隠しコンテンツ {index}",
+        "interactive": {
+          "label": "インタラクティブ要素：{type}",
+          "developing": "（開発中...）"
+        },
+        "pullHint": {
+          "release": "指を離して秘密を解除！",
+          "continue": "もっと引っ張って..."
+        }
+      }
+    }
+  },
+  "notFound": "キャラクターが見つかりません",
+  "notFoundDescription": "このキャラクターは存在しないか、削除されました。キャラクターリストに戻って他のメンバーをご覧ください。"
+}

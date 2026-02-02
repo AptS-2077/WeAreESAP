@@ -1,15 +1,27 @@
-// Copyright 2025 AptS:1547, AptS:1548
-// SPDX-License-Identifier: Apache-2.0
+// Copyright 2025 The ESAP Project
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
 
 "use client";
 
 import { Character } from "@/types/character";
+import { useTranslations } from "next-intl";
 
 interface CharacterStoryProps {
   character: Character;
 }
 
 export function CharacterStory({ character }: CharacterStoryProps) {
+  const t = useTranslations("characters");
   // 从 meta 中读取背景故事
   const background = character.meta?.background as string | undefined;
   const characterTraits = character.meta?.characterTraits as
@@ -29,7 +41,7 @@ export function CharacterStory({ character }: CharacterStoryProps) {
             background: `linear-gradient(to bottom, ${character.color.primary}, ${character.color.dark})`,
           }}
         />
-        角色故事
+        {t("detail.sections.story")}
       </h2>
 
       <div className="space-y-8">
@@ -41,7 +53,7 @@ export function CharacterStory({ character }: CharacterStoryProps) {
                 className="w-1.5 h-6 rounded-full"
                 style={{ backgroundColor: character.color.primary }}
               />
-              背景
+              {t("detail.story.background")}
             </h3>
             <div className="prose prose-lg max-w-none dark:prose-invert">
               <p className="text-foreground/90 leading-relaxed whitespace-pre-wrap">
@@ -59,7 +71,7 @@ export function CharacterStory({ character }: CharacterStoryProps) {
                 className="w-1.5 h-6 rounded-full"
                 style={{ backgroundColor: character.color.primary }}
               />
-              性格特征
+              {t("detail.story.traits")}
             </h3>
             <ul className="space-y-4">
               {characterTraits.map((trait, index) => (
